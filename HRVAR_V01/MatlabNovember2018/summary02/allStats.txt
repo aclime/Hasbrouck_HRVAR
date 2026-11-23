@@ -1,0 +1,260 @@
+
+====================================================================================================
+18-Nov-2018 16:29:16 MVARiPartSIP02: 60 files found in ./HPC results/PartSIP02/save/
+
+====================================================================================================
+18-Nov-2018 16:29:16 MVARiLexExl02: 60 files found in ./HPC results/LexExl02/save/
+
+====================================================================================================
+18-Nov-2018 16:29:16 MVARiDarkLit02: 60 files found in ./HPC results/DarkLit02/save/
+
+
+====================================================================================================
+18-Nov-2018 16:29:16 MVARiPartSIP02: 60 files in ./HPC results/PartSIP02/save/
+----------------------------------------------------------------------------------------------------
+Starting IBM
+Results for 30 dates read.
+Results for October 3, 2016
+Random walk decomposition for secondFactor=100000
+Sum of vma coefficients:
+  nbbPart  nboPart    nbbSIP    nboSIP
+   0.6471   0.7446  -0.02569  0.001201
+per period var_w:    0.000000 sd_w:    0.000025
+annualized var_w:  365.727309 sd_w:   19.123998
+info share bounds:
+             Min      Max
+nbbPart  0.42455  0.42894
+nboPart  0.57040  0.57477
+nbbSIP   0.00064  0.00068
+nboSIP   0.00000  0.00001
+Grouped info share bounds
+                     Min      Max
+nbbPart nboPart  0.99931  0.99936
+nbbSIP nboSIP    0.00064  0.00069
+                   Min    Max
+nbbPart nboPart  0.999  0.999
+nbbSIP nboSIP    0.001  0.001
+Means and SEMs over first 30 days in sample (30 valid observations)
+sdw_Annual:   19.824 (   1.031)
+                   Min    Max
+nbbPart nboPart  0.997  0.997
+nbbSIP nboSIP    0.003  0.003
+                   Min    Max
+nbbPart nboPart  0.001  0.001
+nbbSIP nboSIP    0.001  0.001
+----------------------------------------------------------------------------------------------------
+Starting NVDA
+Results for 30 dates read.
+Results for October 3, 2016
+Random walk decomposition for secondFactor=100000
+Sum of vma coefficients:
+  nbbPart  nboPart    nbbSIP   nboSIP
+   0.4459   0.4586  -0.01257  0.02042
+per period var_w:    0.000000 sd_w:    0.000016
+annualized var_w:  145.101779 sd_w:   12.045820
+info share bounds:
+             Min      Max
+nbbPart  0.45891  0.46872
+nboPart  0.52986  0.53971
+nbbSIP   0.00034  0.00041
+nboSIP   0.00096  0.00109
+Grouped info share bounds
+                     Min      Max
+nbbPart nboPart  0.99850  0.99870
+nbbSIP nboSIP    0.00130  0.00150
+                   Min    Max
+nbbPart nboPart  0.999  0.999
+nbbSIP nboSIP    0.001  0.001
+Means and SEMs over first 30 days in sample (30 valid observations)
+sdw_Annual:   15.461 (   1.518)
+                   Min    Max
+nbbPart nboPart  0.997  0.997
+nbbSIP nboSIP    0.003  0.003
+                   Min    Max
+nbbPart nboPart  0.001  0.001
+nbbSIP nboSIP    0.001  0.001
+
+
+====================================================================================================
+18-Nov-2018 16:29:18 MVARiLexExl02: 60 files in ./HPC results/LexExl02/save/
+----------------------------------------------------------------------------------------------------
+Starting IBM
+Results for 30 dates read.
+Results for October 3, 2016
+Random walk decomposition for secondFactor=100000
+Sum of vma coefficients:
+  nbbLex  nboLex  nbbExl  nboExl
+  0.3755  0.4661  0.4264  0.3618
+per period var_w:    0.000000 sd_w:    0.000025
+annualized var_w:  366.143660 sd_w:   19.134881
+info share bounds:
+            Min      Max
+nbbLex  0.19189  0.19321
+nboLex  0.33202  0.33362
+nbbExl  0.23130  0.23261
+nboExl  0.24201  0.24334
+Grouped info share bounds
+                   Min      Max
+nbbLex nboLex  0.52490  0.52584
+nbbExl nboExl  0.47416  0.47510
+                 Min    Max
+nbbLex nboLex  0.525  0.526
+nbbExl nboExl  0.474  0.475
+Means and SEMs over first 30 days in sample (30 valid observations)
+sdw_Annual:   19.859 (   1.035)
+                 Min    Max
+nbbLex nboLex  0.401  0.403
+nbbExl nboExl  0.597  0.599
+                 Min    Max
+nbbLex nboLex  0.012  0.012
+nbbExl nboExl  0.012  0.012
+----------------------------------------------------------------------------------------------------
+Starting NVDA
+Results for 30 dates read.
+Results for October 3, 2016
+Random walk decomposition for secondFactor=100000
+Sum of vma coefficients:
+  nbbLex  nboLex  nbbExl  nboExl
+   0.329  0.3574  0.2812  0.2857
+per period var_w:    0.000000 sd_w:    0.000016
+annualized var_w:  142.529804 sd_w:   11.938585
+info share bounds:
+            Min      Max
+nbbLex  0.24270  0.24903
+nboLex  0.28660  0.29381
+nbbExl  0.22317  0.22845
+nboExl  0.23542  0.24090
+Grouped info share bounds
+                   Min      Max
+nbbLex nboLex  0.53348  0.53861
+nbbExl nboExl  0.46139  0.46652
+                 Min    Max
+nbbLex nboLex  0.533  0.539
+nbbExl nboExl  0.461  0.467
+Means and SEMs over first 30 days in sample (30 valid observations)
+sdw_Annual:   15.301 (   1.509)
+                 Min    Max
+nbbLex nboLex  0.535  0.542
+nbbExl nboExl  0.458  0.465
+                 Min    Max
+nbbLex nboLex  0.010  0.010
+nbbExl nboExl  0.010  0.010
+
+
+====================================================================================================
+18-Nov-2018 16:29:20 MVARiDarkLit02: 60 files in ./HPC results/DarkLit02/save/
+----------------------------------------------------------------------------------------------------
+Starting IBM
+Results for 30 dates read.
+Results for October 3, 2016
+Random walk decomposition for secondFactor=100000
+Sum of vma coefficients:
+  nbbPart  nboPart   trLit   trDark
+    0.478    0.554  0.5399  0.03023
+per period var_w:    0.000000 sd_w:    0.000024
+annualized var_w:  344.256917 sd_w:   18.554162
+info share bounds:
+             Min      Max
+nbbPart  0.24568  0.27152
+nboPart  0.33456  0.37375
+trLit    0.35512  0.41642
+trDark   0.00212  0.00217
+Grouped info share bounds
+                     Min      Max
+nbbPart nboPart  0.58144  0.64274
+trLit            0.35512  0.41642
+trDark           0.00212  0.00217
+                   Min    Max
+nbbPart nboPart  0.581  0.643
+trLit            0.355  0.416
+trDark           0.002  0.002
+Means and SEMs over first 30 days in sample (30 valid observations)
+sdw_Annual:   19.650 (   1.013)
+                   Min    Max
+nbbPart nboPart  0.630  0.683
+trLit            0.313  0.366
+trDark           0.004  0.004
+                   Min    Max
+nbbPart nboPart  0.012  0.011
+trLit            0.011  0.012
+trDark           0.001  0.001
+----------------------------------------------------------------------------------------------------
+Starting NVDA
+Results for 30 dates read.
+Results for October 3, 2016
+Random walk decomposition for secondFactor=100000
+Sum of vma coefficients:
+  nbbPart  nboPart   trLit   trDark
+   0.3792    0.393  0.4497  0.02819
+per period var_w:    0.000000 sd_w:    0.000016
+annualized var_w:  148.813841 sd_w:   12.198928
+info share bounds:
+             Min      Max
+nbbPart  0.32321  0.34793
+nboPart  0.37912  0.40271
+trLit    0.25393  0.28941
+trDark   0.00228  0.00231
+Grouped info share bounds
+                     Min      Max
+nbbPart nboPart  0.70828  0.74379
+trLit            0.25393  0.28941
+trDark           0.00228  0.00231
+                   Min    Max
+nbbPart nboPart  0.708  0.744
+trLit            0.254  0.289
+trDark           0.002  0.002
+Means and SEMs over first 30 days in sample (30 valid observations)
+sdw_Annual:   15.307 (   1.504)
+                   Min    Max
+nbbPart nboPart  0.691  0.726
+trLit            0.271  0.305
+trDark           0.003  0.003
+                   Min    Max
+nbbPart nboPart  0.009  0.008
+trLit            0.008  0.009
+trDark           0.001  0.001
+
+
+
+ 1   20161003
+ 2   20161004
+ 3   20161005
+ 4   20161006
+ 5   20161007
+ 6   20161010
+ 7   20161011
+ 8   20161012
+ 9   20161013
+10   20161014
+11   20161017
+12   20161018
+13   20161019
+14   20161020
+15   20161021
+16   20161024
+17   20161025
+18   20161026
+19   20161027
+20   20161028
+21   20161031
+22   20161101
+23   20161102
+24   20161103
+25   20161104
+26   20161107
+27   20161108
+28   20161109
+29   20161110
+30   20161111
+31   20161114
+32   20161115
+33   20161116
+34   20161117
+35   20161118
+36   20161121
+37   20161122
+38   20161123
+39   20161125
+40   20161128
+41   20161129
+42   20161130

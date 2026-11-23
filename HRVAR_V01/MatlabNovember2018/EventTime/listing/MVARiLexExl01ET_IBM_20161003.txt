@@ -1,0 +1,250 @@
+MVARiLexExl01ET_IBM_20161003 starting at 10-Nov-2018 10:53:09
+Reading data for event-time analysis (10-Nov-2018 10:53:09)
+  35100.131687  157.500000  157.630000  157.510000  157.620000
+  35101.029904  157.500000  157.620000  157.510000  157.620000
+  35101.846640  157.500000  157.620000  157.520000  157.620000
+  35101.935398  157.500000  157.620000  157.520000  157.610000
+  35102.829438  157.500000  157.630000  157.520000  157.610000
+  57597.307796  157.600000  157.610000  157.600000  157.610000
+  57598.301755  157.600000  157.610000  157.600000  157.620000
+  57599.242588  157.600000  157.610000  157.600000  157.610000
+  57599.273153  157.600000  157.610000  157.600000  157.620000
+  57599.974041  157.600000  157.610000  157.600000  157.610000
+  57599.974246  157.600000  157.610000  157.600000  157.620000
+ 
+   <strong>4-Dimensional Rank = 3 VEC(10) Model</strong>
+ 
+    Johansen Model: H2
+    Effective Sample Size: 41719
+    Number of Estimated Parameters: 172
+    LogLikelihood: 604724
+    AIC: -1.2091e+06
+    BIC: -1.20762e+06
+ 
+                            <strong>Value</strong>       <strong>StandardError</strong>    <strong>TStatistic</strong>      <strong>PValue</strong>   
+                         <strong>___________</strong>    <strong>_____________</strong>    <strong>__________</strong>    <strong>___________</strong>
+    <strong>Adjustment(1,1)  </strong>       0.011932      0.0033274          3.586      0.00033575
+    <strong>Adjustment(2,1)  </strong>       0.088059      0.0035714         24.656     3.1361e-134
+    <strong>Adjustment(3,1)  </strong>      -0.016976      0.0032049        -5.2968      1.1784e-07
+    <strong>Adjustment(4,1)  </strong>       -0.10039      0.0039069        -25.696     1.2975e-145
+    <strong>Adjustment(1,2)  </strong>       -0.10052      0.0044178        -22.753      1.348e-114
+    <strong>Adjustment(2,2)  </strong>      -0.034059      0.0047418        -7.1827      6.8345e-13
+    <strong>Adjustment(3,2)  </strong>        0.12053      0.0042552         28.326     1.6766e-176
+    <strong>Adjustment(4,2)  </strong>     -0.0028923      0.0051872       -0.55758         0.57713
+    <strong>Adjustment(1,3)  </strong>      -0.014058       0.003544        -3.9665      7.2924e-05
+    <strong>Adjustment(2,3)  </strong>      -0.081093       0.003804        -21.318     7.7384e-101
+    <strong>Adjustment(3,3)  </strong>     -0.0068669      0.0034136        -2.0116        0.044257
+    <strong>Adjustment(4,3)  </strong>        0.12215      0.0041613         29.353     2.1569e-189
+    <strong>Impact(1,1)      </strong>       -0.10264      0.0039788        -25.797     9.5345e-147
+    <strong>Impact(2,1)      </strong>      -0.027094      0.0042707        -6.3441      2.2375e-10
+    <strong>Impact(3,1)      </strong>       0.096687      0.0038324         25.229     1.9163e-140
+    <strong>Impact(4,1)      </strong>       0.018865      0.0046718          4.038      5.3907e-05
+    <strong>Impact(1,2)      </strong>      -0.011932      0.0033274         -3.586      0.00033575
+    <strong>Impact(2,2)      </strong>      -0.088059      0.0035714        -24.656     3.1361e-134
+    <strong>Impact(3,2)      </strong>       0.016976      0.0032049         5.2968      1.1784e-07
+    <strong>Impact(4,2)      </strong>        0.10039      0.0039069         25.696     1.2975e-145
+    <strong>Impact(1,3)      </strong>        0.10052      0.0044178         22.753      1.348e-114
+    <strong>Impact(2,3)      </strong>       0.034059      0.0047418         7.1827      6.8345e-13
+    <strong>Impact(3,3)      </strong>       -0.12053      0.0042552        -28.326     1.6766e-176
+    <strong>Impact(4,3)      </strong>      0.0028923      0.0051872        0.55758         0.57713
+    <strong>Impact(1,4)      </strong>       0.014058       0.003544         3.9665      7.2924e-05
+    <strong>Impact(2,4)      </strong>       0.081093       0.003804         21.318     7.7384e-101
+    <strong>Impact(3,4)      </strong>      0.0068669      0.0034136         2.0116        0.044257
+    <strong>Impact(4,4)      </strong>       -0.12215      0.0041613        -29.353     2.1569e-189
+    <strong>ShortRun{1}(1,1) </strong>       -0.26834      0.0058816        -45.624               0
+    <strong>ShortRun{1}(2,1) </strong>        0.15793       0.006313         25.017     3.9862e-138
+    <strong>ShortRun{1}(3,1) </strong>       0.089119      0.0056651         15.731       9.219e-56
+    <strong>ShortRun{1}(4,1) </strong>       0.086864      0.0069059         12.578        2.78e-36
+    <strong>ShortRun{1}(1,2) </strong>        0.12891      0.0052871         24.382     2.6277e-131
+    <strong>ShortRun{1}(2,2) </strong>       -0.24037      0.0056749        -42.356               0
+    <strong>ShortRun{1}(3,2) </strong>       0.060358      0.0050925         11.852      2.0919e-32
+    <strong>ShortRun{1}(4,2) </strong>       0.075995      0.0062079         12.242      1.8649e-34
+    <strong>ShortRun{1}(1,3) </strong>        0.08017      0.0062206         12.888      5.2675e-38
+    <strong>ShortRun{1}(2,3) </strong>       0.050869      0.0066768         7.6188      2.5607e-14
+    <strong>ShortRun{1}(3,3) </strong>        -0.2433      0.0059916        -40.607               0
+    <strong>ShortRun{1}(4,3) </strong>        0.11098      0.0073039         15.194      3.8587e-52
+    <strong>ShortRun{1}(1,4) </strong>         0.0415       0.005059         8.2033      2.3394e-16
+    <strong>ShortRun{1}(2,4) </strong>       0.055214        0.00543         10.168      2.7491e-24
+    <strong>ShortRun{1}(3,4) </strong>       0.069432      0.0048727         14.249      4.5446e-46
+    <strong>ShortRun{1}(4,4) </strong>       -0.22605        0.00594        -38.055     7.0553e-317
+    <strong>ShortRun{2}(1,1) </strong>      -0.079682      0.0060512        -13.168      1.3393e-39
+    <strong>ShortRun{2}(2,1) </strong>        0.11587       0.006495         17.839      3.4958e-71
+    <strong>ShortRun{2}(3,1) </strong>       0.086798      0.0058284         14.892      3.7096e-50
+    <strong>ShortRun{2}(4,1) </strong>       0.081875      0.0071051         11.523      1.0048e-30
+    <strong>ShortRun{2}(1,2) </strong>       0.091665       0.005416         16.925      2.9446e-64
+    <strong>ShortRun{2}(2,2) </strong>      -0.079483      0.0058133        -13.673      1.4764e-42
+    <strong>ShortRun{2}(3,2) </strong>       0.055569      0.0052166         10.652       1.702e-26
+    <strong>ShortRun{2}(4,2) </strong>       0.068505      0.0063592         10.773      4.6381e-27
+    <strong>ShortRun{2}(1,3) </strong>       0.080448      0.0063021         12.765      2.5638e-37
+    <strong>ShortRun{2}(2,3) </strong>       0.064165      0.0067644         9.4858      2.4064e-21
+    <strong>ShortRun{2}(3,3) </strong>      -0.067286      0.0060702        -11.085      1.4885e-28
+    <strong>ShortRun{2}(4,3) </strong>        0.10033      0.0073997         13.558       7.073e-42
+    <strong>ShortRun{2}(1,4) </strong>       0.047598      0.0051156         9.3046      1.3445e-20
+    <strong>ShortRun{2}(2,4) </strong>       0.054587      0.0054908         9.9415      2.7464e-23
+    <strong>ShortRun{2}(3,4) </strong>       0.065678      0.0049273          13.33      1.5587e-40
+    <strong>ShortRun{2}(4,4) </strong>      -0.070884      0.0060065        -11.801      3.8466e-32
+    <strong>ShortRun{3}(1,1) </strong>       -0.12218      0.0060516         -20.19      1.2078e-90
+    <strong>ShortRun{3}(2,1) </strong>       0.087773      0.0064954         13.513      1.3117e-41
+    <strong>ShortRun{3}(3,1) </strong>       0.054394      0.0058288          9.332      1.0391e-20
+    <strong>ShortRun{3}(4,1) </strong>       0.049501      0.0071055         6.9666       3.247e-12
+    <strong>ShortRun{3}(1,2) </strong>       0.066442      0.0054074         12.287      1.0607e-34
+    <strong>ShortRun{3}(2,2) </strong>        -0.1276       0.005804        -21.984     4.1022e-107
+    <strong>ShortRun{3}(3,2) </strong>       0.036872      0.0052084         7.0793      1.4485e-12
+    <strong>ShortRun{3}(4,2) </strong>       0.035394      0.0063492         5.5746      2.4803e-08
+    <strong>ShortRun{3}(1,3) </strong>       0.049766      0.0062674         7.9404      2.0152e-15
+    <strong>ShortRun{3}(2,3) </strong>       0.033441      0.0067271         4.9711      6.6569e-07
+    <strong>ShortRun{3}(3,3) </strong>       -0.11264      0.0060367         -18.66      1.0555e-77
+    <strong>ShortRun{3}(4,3) </strong>        0.06603      0.0073589         8.9727      2.8924e-19
+    <strong>ShortRun{3}(1,4) </strong>       0.028501      0.0050909         5.5984      2.1637e-08
+    <strong>ShortRun{3}(2,4) </strong>       0.035871      0.0054643         6.5645      5.2193e-11
+    <strong>ShortRun{3}(3,4) </strong>       0.050912      0.0049035         10.383      2.9682e-25
+    <strong>ShortRun{3}(4,4) </strong>       -0.10703      0.0059775        -17.906      1.0553e-71
+    <strong>ShortRun{4}(1,1) </strong>      -0.028893      0.0060335        -4.7888       1.678e-06
+    <strong>ShortRun{4}(2,1) </strong>       0.074199      0.0064761         11.457      2.1598e-30
+    <strong>ShortRun{4}(3,1) </strong>       0.045908      0.0058114         7.8997      2.7968e-15
+    <strong>ShortRun{4}(4,1) </strong>       0.039049      0.0070843          5.512      3.5469e-08
+    <strong>ShortRun{4}(1,2) </strong>       0.060374      0.0053954          11.19       4.565e-29
+    <strong>ShortRun{4}(2,2) </strong>      -0.047183      0.0057911        -8.1475      3.7146e-16
+    <strong>ShortRun{4}(3,2) </strong>       0.033217      0.0051968          6.392      1.6378e-10
+    <strong>ShortRun{4}(4,2) </strong>       0.031328       0.006335         4.9452      7.6062e-07
+    <strong>ShortRun{4}(1,3) </strong>       0.054613      0.0062128         8.7904      1.4907e-18
+    <strong>ShortRun{4}(2,3) </strong>       0.026204      0.0066686         3.9294      8.5142e-05
+    <strong>ShortRun{4}(3,3) </strong>      -0.030981      0.0059841        -5.1772      2.2523e-07
+    <strong>ShortRun{4}(4,3) </strong>        0.05844      0.0072949         8.0111      1.1367e-15
+    <strong>ShortRun{4}(1,4) </strong>       0.022715      0.0050489         4.4989      6.8296e-06
+    <strong>ShortRun{4}(2,4) </strong>       0.041374      0.0054192         7.6347      2.2628e-14
+    <strong>ShortRun{4}(3,4) </strong>       0.029422       0.004863         6.0502      1.4465e-09
+    <strong>ShortRun{4}(4,4) </strong>      -0.039838      0.0059282        -6.7201      1.8156e-11
+    <strong>ShortRun{5}(1,1) </strong>      -0.051336      0.0059721        -8.5959      8.2597e-18
+    <strong>ShortRun{5}(2,1) </strong>       0.055962      0.0064102         8.7302      2.5431e-18
+    <strong>ShortRun{5}(3,1) </strong>       0.030425      0.0057523         5.2893      1.2281e-07
+    <strong>ShortRun{5}(4,1) </strong>       0.028597      0.0070122         4.0781      4.5399e-05
+    <strong>ShortRun{5}(1,2) </strong>       0.045702      0.0053392         8.5596      1.1324e-17
+    <strong>ShortRun{5}(2,2) </strong>      -0.081313      0.0057309        -14.189      1.0793e-45
+    <strong>ShortRun{5}(3,2) </strong>       0.028851      0.0051427         5.6101      2.0219e-08
+    <strong>ShortRun{5}(4,2) </strong>       0.017531      0.0062691         2.7963       0.0051685
+    <strong>ShortRun{5}(1,3) </strong>       0.013965      0.0061406         2.2742        0.022955
+    <strong>ShortRun{5}(2,3) </strong>       0.011004       0.006591         1.6695        0.095015
+    <strong>ShortRun{5}(3,3) </strong>      -0.066199      0.0059145        -11.193      4.4359e-29
+    <strong>ShortRun{5}(4,3) </strong>       0.049601        0.00721         6.8794      6.0088e-12
+    <strong>ShortRun{5}(1,4) </strong>       0.013247      0.0049867         2.6564       0.0078973
+    <strong>ShortRun{5}(2,4) </strong>       0.023225      0.0053525         4.3391      1.4308e-05
+    <strong>ShortRun{5}(3,4) </strong>       0.023351      0.0048031         4.8615      1.1648e-06
+    <strong>ShortRun{5}(4,4) </strong>      -0.072436      0.0058552        -12.371      3.7422e-35
+    <strong>ShortRun{6}(1,1) </strong>      -0.036542      0.0058993        -6.1943      5.8559e-10
+    <strong>ShortRun{6}(2,1) </strong>       0.031427       0.006332         4.9632      6.9333e-07
+    <strong>ShortRun{6}(3,1) </strong>       0.010849      0.0056822         1.9093        0.056218
+    <strong>ShortRun{6}(4,1) </strong>       0.024823      0.0069268         3.5836      0.00033884
+    <strong>ShortRun{6}(1,2) </strong>       0.041682      0.0052699         7.9095      2.5852e-15
+    <strong>ShortRun{6}(2,2) </strong>      -0.055828      0.0056564        -9.8699      5.6206e-23
+    <strong>ShortRun{6}(3,2) </strong>        0.02719      0.0050759         5.3567      8.4746e-08
+    <strong>ShortRun{6}(4,2) </strong>       0.011831      0.0061877          1.912        0.055872
+    <strong>ShortRun{6}(1,3) </strong>       0.021452      0.0060289         3.5581      0.00037354
+    <strong>ShortRun{6}(2,3) </strong>      0.0070902      0.0064712         1.0957         0.27322
+    <strong>ShortRun{6}(3,3) </strong>      -0.031227       0.005807        -5.3775      7.5519e-08
+    <strong>ShortRun{6}(4,3) </strong>       0.046078       0.007079         6.5092      7.5547e-11
+    <strong>ShortRun{6}(1,4) </strong>      0.0095231      0.0048982         1.9442        0.051872
+    <strong>ShortRun{6}(2,4) </strong>       0.026083      0.0052575         4.9612      7.0076e-07
+    <strong>ShortRun{6}(3,4) </strong>       0.020327      0.0047179         4.3085      1.6435e-05
+    <strong>ShortRun{6}(4,4) </strong>      -0.035092      0.0057513        -6.1016      1.0504e-09
+    <strong>ShortRun{7}(1,1) </strong>      -0.038979         0.0058        -6.7205      1.8114e-11
+    <strong>ShortRun{7}(2,1) </strong>       0.032795      0.0062254         5.2679      1.3799e-07
+    <strong>ShortRun{7}(3,1) </strong>     0.00065661      0.0055865        0.11753         0.90644
+    <strong>ShortRun{7}(4,1) </strong>       0.022605      0.0068101         3.3193      0.00090248
+    <strong>ShortRun{7}(1,2) </strong>       0.033562      0.0051986          6.456      1.0753e-10
+    <strong>ShortRun{7}(2,2) </strong>      -0.043301      0.0055799        -7.7602      8.4785e-15
+    <strong>ShortRun{7}(3,2) </strong>       0.020033      0.0050072         4.0008      6.3139e-05
+    <strong>ShortRun{7}(4,2) </strong>       0.019615      0.0061039         3.2135       0.0013113
+    <strong>ShortRun{7}(1,3) </strong>      0.0090147      0.0059221         1.5222         0.12795
+    <strong>ShortRun{7}(2,3) </strong>        0.00156      0.0063565        0.24542         0.80613
+    <strong>ShortRun{7}(3,3) </strong>      -0.057692      0.0057041        -10.114       4.785e-24
+    <strong>ShortRun{7}(4,3) </strong>       0.029068      0.0069535         4.1804      2.9105e-05
+    <strong>ShortRun{7}(1,4) </strong>      0.0089055      0.0048164          1.849        0.064458
+    <strong>ShortRun{7}(2,4) </strong>       0.018766      0.0051697           3.63      0.00028345
+    <strong>ShortRun{7}(3,4) </strong>       0.017817      0.0046391         3.8406      0.00012272
+    <strong>ShortRun{7}(4,4) </strong>      -0.038274      0.0056552        -6.7679      1.3067e-11
+    <strong>ShortRun{8}(1,1) </strong>      -0.023268      0.0056205        -4.1398      3.4758e-05
+    <strong>ShortRun{8}(2,1) </strong>        0.03357      0.0060327         5.5647      2.6256e-08
+    <strong>ShortRun{8}(3,1) </strong>       0.011736      0.0054136          2.168        0.030162
+    <strong>ShortRun{8}(4,1) </strong>      0.0060627      0.0065993        0.91869         0.35826
+    <strong>ShortRun{8}(1,2) </strong>       0.026637      0.0050608         5.2635      1.4134e-07
+    <strong>ShortRun{8}(2,2) </strong>      -0.043035       0.005432        -7.9224      2.3293e-15
+    <strong>ShortRun{8}(3,2) </strong>       0.030222      0.0048745         6.2001      5.6421e-10
+    <strong>ShortRun{8}(4,2) </strong>      0.0071529      0.0059422         1.2038         0.22869
+    <strong>ShortRun{8}(1,3) </strong>      0.0037623      0.0057288        0.65674         0.51135
+    <strong>ShortRun{8}(2,3) </strong>    -0.00069177       0.006149        -0.1125         0.91043
+    <strong>ShortRun{8}(3,3) </strong>      -0.014061      0.0055179        -2.5483        0.010825
+    <strong>ShortRun{8}(4,3) </strong>       0.019758      0.0067265         2.9373       0.0033109
+    <strong>ShortRun{8}(1,4) </strong>      0.0051541      0.0046746         1.1026         0.27021
+    <strong>ShortRun{8}(2,4) </strong>       0.010934      0.0050174         2.1792        0.029317
+    <strong>ShortRun{8}(3,4) </strong>       0.023599      0.0045025         5.2412      1.5953e-07
+    <strong>ShortRun{8}(4,4) </strong>      -0.015796      0.0054887        -2.8779        0.004003
+    <strong>ShortRun{9}(1,1) </strong>       -0.01677      0.0054384        -3.0836       0.0020452
+    <strong>ShortRun{9}(2,1) </strong>       0.041054      0.0058373          7.033      2.0213e-12
+    <strong>ShortRun{9}(3,1) </strong>       0.011064      0.0052382         2.1122        0.034666
+    <strong>ShortRun{9}(4,1) </strong>      0.0081973      0.0063855         1.2837         0.19924
+    <strong>ShortRun{9}(1,2) </strong>       0.020183      0.0049331         4.0913      4.2891e-05
+    <strong>ShortRun{9}(2,2) </strong>      -0.031455       0.005295        -5.9404      2.8425e-09
+    <strong>ShortRun{9}(3,2) </strong>       0.011646      0.0047516         2.4511        0.014243
+    <strong>ShortRun{9}(4,2) </strong>      0.0011002      0.0057923        0.18994         0.84935
+    <strong>ShortRun{9}(1,3) </strong>       0.012072       0.005523         2.1857        0.028835
+    <strong>ShortRun{9}(2,3) </strong>      0.0034109      0.0059281        0.57537         0.56504
+    <strong>ShortRun{9}(3,3) </strong>      -0.031338      0.0053197        -5.8909      3.8415e-09
+    <strong>ShortRun{9}(4,3) </strong>       0.014202      0.0064849           2.19        0.028528
+    <strong>ShortRun{9}(1,4) </strong>       0.006921      0.0045263         1.5291         0.12625
+    <strong>ShortRun{9}(2,4) </strong>      0.0066726      0.0048583         1.3735         0.16961
+    <strong>ShortRun{9}(3,4) </strong>       0.018052      0.0043597         4.1406      3.4637e-05
+    <strong>ShortRun{9}(4,4) </strong>      -0.022374      0.0053146        -4.2099      2.5549e-05
+    <strong>ShortRun{10}(1,1)</strong>      -0.008148       0.004956        -1.6441         0.10016
+    <strong>ShortRun{10}(2,1)</strong>        0.02428      0.0053195         4.5644      5.0096e-06
+    <strong>ShortRun{10}(3,1)</strong>      0.0081869      0.0047735         1.7151        0.086336
+    <strong>ShortRun{10}(4,1)</strong>     -0.0022009      0.0058191       -0.37822         0.70527
+    <strong>ShortRun{10}(1,2)</strong>       0.012521      0.0045889         2.7285       0.0063616
+    <strong>ShortRun{10}(2,2)</strong>      -0.023373      0.0049256        -4.7453      2.0818e-06
+    <strong>ShortRun{10}(3,2)</strong>       0.014146        0.00442         3.2004       0.0013722
+    <strong>ShortRun{10}(4,2)</strong>      -0.017097      0.0053882        -3.1731       0.0015083
+    <strong>ShortRun{10}(1,3)</strong>       0.010119      0.0050589         2.0002        0.045476
+    <strong>ShortRun{10}(2,3)</strong>      0.0077839        0.00543         1.4335         0.15171
+    <strong>ShortRun{10}(3,3)</strong>     -0.0053527      0.0048727        -1.0985         0.27198
+    <strong>ShortRun{10}(4,3)</strong>      0.0084957        0.00594         1.4303         0.15264
+    <strong>ShortRun{10}(1,4)</strong>      0.0082984      0.0041817         1.9845        0.047204
+    <strong>ShortRun{10}(2,4)</strong>      0.0097766      0.0044884         2.1782        0.029391
+    <strong>ShortRun{10}(3,4)</strong>      0.0071719      0.0040277         1.7806        0.074974
+    <strong>ShortRun{10}(4,4)</strong>      0.0045433        0.00491        0.92533         0.35479
+ 
+<strong>   Cointegration Matrix (User-Specified):</strong>
+     1     1     1
+    -1     0     0
+     0    -1     0
+     0     0    -1
+ 
+<strong>   Innovations Covariance Matrix:</strong>
+   1.0e-04 *
+    0.3800    0.0200    0.0345    0.0086
+    0.0200    0.4378    0.0071    0.0361
+    0.0345    0.0071    0.3526    0.0119
+    0.0086    0.0361    0.0119    0.5239
+ 
+<strong>   Innovations Correlation Matrix:</strong>
+    1.0000    0.0489    0.0944    0.0193
+    0.0489    1.0000    0.0180    0.0753
+    0.0944    0.0180    1.0000    0.0278
+    0.0193    0.0753    0.0278    1.0000
+Random walk decomposition in event time
+Sum of vma coefficients:
+  nbbLex  nboLex  nbbExl  nboExl
+  0.3614  0.4582  0.4398  0.3705
+per period var_w:    0.000032 sd_w:    0.005662
+info share bounds:
+            Min      Max
+nbbLex  0.15309  0.22313
+nboLex  0.28447  0.35846
+nbbExl  0.21064  0.27156
+nboExl  0.22292  0.28562
+Grouped info share bounds
+                   Min      Max
+nbbLex nboLex  0.45787  0.55525
+nbbExl nboExl  0.44475  0.54213
+
+Ending IBM 20161003 analysis at 10-Nov-2018 10:53:26. Elapsed time is 00:17.18.
+

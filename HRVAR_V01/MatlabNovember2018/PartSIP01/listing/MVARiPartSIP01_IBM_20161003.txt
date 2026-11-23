@@ -1,0 +1,1361 @@
+MVARiPartSIP01_IBM_20161003 starting at 07-Nov-2018 18:37:07
+
+MVARiPartSIP01_IBM_20161003 secondFactor=1
+Setting polynomials
+name=p0; deg=0; n=1; kOffset=0; vNames=p0d0.
+name=p1; deg=0; n=9; kOffset=1; vNames=p1d0.
+Reading data for secondFactor=1 (07-Nov-2018 18:37:07)
+20161003 IBM   4543 observations (3843 with nonzero price changes and 9am-5pm)
+{No appropriate method, property, or field 'set' for class 'spl'.
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('MVARiPartSIP01', 'C:\Active\PDL\MatlabNovember2018\MVARiPartSIP01.m', 77)" style="font-weight:bold">MVARiPartSIP01</a> (<a href="matlab: opentoline('C:\Active\PDL\MatlabNovember2018\MVARiPartSIP01.m',77,0)">line 77</a>)
+        prices(1).set(t.time2, t.price);} 
+opentoline('C:\Active\PDL\MatlabNovember2018\MVARiPartSIP01.m',77,0)
+MVARiPartSIP01
+MVARiPartSIP01_IBM_20161003 starting at 07-Nov-2018 18:38:18
+
+MVARiPartSIP01_IBM_20161003 secondFactor=1
+Setting polynomials
+name=p0; deg=0; n=1; kOffset=0; vNames=p0d0.
+name=p1; deg=0; n=9; kOffset=1; vNames=p1d0.
+Reading data for secondFactor=1 (07-Nov-2018 18:38:18)
+20161003 IBM   4543 observations (3843 with nonzero price changes and 9am-5pm)
+20161003 IBM   4358 observations (3799 with nonzero price changes and 9am-5pm)
+{Index exceeds the number of array elements (1).
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('MVARiPartSIP01', 'C:\Active\PDL\MatlabNovember2018\MVARiPartSIP01.m', 79)" style="font-weight:bold">MVARiPartSIP01</a> (<a href="matlab: opentoline('C:\Active\PDL\MatlabNovember2018\MVARiPartSIP01.m',79,0)">line 79</a>)
+        prices(2).set(t.time2, t.price);} 
+MVARiPartSIP01
+MVARiPartSIP01_IBM_20161003 starting at 07-Nov-2018 18:40:14
+
+MVARiPartSIP01_IBM_20161003 secondFactor=1
+Setting polynomials
+name=p0; deg=0; n=1; kOffset=0; vNames=p0d0.
+name=p1; deg=0; n=9; kOffset=1; vNames=p1d0.
+Reading data for secondFactor=1 (07-Nov-2018 18:40:14)
+20161003 IBM   4543 observations (3843 with nonzero price changes and 9am-5pm)
+20161003 IBM   4358 observations (3799 with nonzero price changes and 9am-5pm)
+20161003 IBM   4545 observations (3844 with nonzero price changes and 9am-5pm)
+20161003 IBM   4358 observations (3797 with nonzero price changes and 9am-5pm)
+Data read finished for IBM 20161003. secondFactor=1. Elapsed time is 7.7945 sec.
+starting estimates secondFactor=1. 07-Nov-2018 18:40:22
+(nbbPart nboPart nbbSIP nboSIP)
+{Unrecognized property 'spec' for class 'MVARi'.
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('MVARiPartSIP01', 'C:\Active\PDL\MatlabNovember2018\MVARiPartSIP01.m', 104)" style="font-weight:bold">MVARiPartSIP01</a> (<a href="matlab: opentoline('C:\Active\PDL\MatlabNovember2018\MVARiPartSIP01.m',104,0)">line 104</a>)
+        mv.spec = Specification.PDL;} 
+MVARiPartSIP01
+MVARiPartSIP01_IBM_20161003 starting at 07-Nov-2018 18:42:03
+
+MVARiPartSIP01_IBM_20161003 secondFactor=1
+Setting polynomials
+name=p0; deg=0; n=1; kOffset=0; vNames=p0d0.
+name=p1; deg=0; n=9; kOffset=1; vNames=p1d0.
+Reading data for secondFactor=1 (07-Nov-2018 18:42:03)
+20161003 IBM   4543 observations (3843 with nonzero price changes and 9am-5pm)
+20161003 IBM   4358 observations (3799 with nonzero price changes and 9am-5pm)
+20161003 IBM   4545 observations (3844 with nonzero price changes and 9am-5pm)
+20161003 IBM   4358 observations (3797 with nonzero price changes and 9am-5pm)
+Data read finished for IBM 20161003. secondFactor=1. Elapsed time is 6.3303 sec.
+starting estimates secondFactor=1. 07-Nov-2018 18:42:09
+(nbbPart nboPart nbbSIP nboSIP)
+setValid (computing largest possible range)
+     nbbPart            1 (00:00:01) to        64800 (18:00:00)
+     nboPart            1 (00:00:01) to        64800 (18:00:00)
+      nbbSIP            1 (00:00:01) to        64800 (18:00:00)
+      nboSIP            1 (00:00:01) to        64800 (18:00:00)
+valid range:        35100 (09:45:00) to        57600 (16:00:00)
+     nbbPart       3843 total observations,       3715 in valid range.
+     nboPart       3799 total observations,       3658 in valid range.
+      nbbSIP       3844 total observations,       3716 in valid range.
+      nboSIP       3797 total observations,       3656 in valid range.
+eVecMeans: -0.0326  1.3333e-06     -0.0326
+buildzpzSparsePDLpar (nCPU=0)
+zpzLayoutPDL s:
+     <strong>type</strong>      <strong>tIndex</strong>    <strong>first</strong>    <strong>last</strong>
+    <strong>_______</strong>    <strong>______</strong>    <strong>_____</strong>    <strong>____</strong>
+    'const'      0         1        1 
+    'price'      1         2        4 
+    'price'      2         5        7 
+    'price'      3         8       10 
+    'price'      4        11       13 
+    'ecm'        1        14       14 
+    'ecm'        2        15       15 
+    'ecm'        3        16       16 
+zpzLayoutPDL t:
+    <strong>k</strong>     <strong>i</strong>    <strong>j</strong>
+    <strong>__</strong>    <strong>_</strong>    <strong>_</strong>
+     1    1    1
+     2    2    1
+     3    3    1
+     4    4    1
+     5    5    1
+     6    6    1
+     7    7    1
+     8    8    1
+     9    2    2
+    10    3    2
+    11    4    2
+    12    5    2
+    13    6    2
+    14    7    2
+    15    8    2
+    16    3    3
+    17    4    3
+    18    5    3
+    19    6    3
+    20    7    3
+    21    8    3
+    22    4    4
+    23    5    4
+    24    6    4
+    25    7    4
+    26    8    4
+    27    5    5
+    28    6    5
+    29    7    5
+    30    8    5
+    31    6    6
+    32    7    6
+    33    8    6
+    34    7    7
+    35    8    7
+    36    8    8
+Starting k: 36 i:8   ecm 3 j:8    ecm 3 
+Ending k: 36 Elapsed time is 0.01 seconds
+Starting k: 35 i:8   ecm 3 j:7    ecm 2 
+Ending k: 35 Elapsed time is 0.01 seconds
+Starting k: 34 i:7   ecm 2 j:7    ecm 2 
+Ending k: 34 Elapsed time is 0.01 seconds
+Starting k: 33 i:8   ecm 3 j:6    ecm 1 
+Ending k: 33 Elapsed time is 0.01 seconds
+Starting k: 32 i:7   ecm 2 j:6    ecm 1 
+Ending k: 32 Elapsed time is 0.02 seconds
+Starting k: 31 i:6   ecm 1 j:6    ecm 1 
+Ending k: 31 Elapsed time is 0.01 seconds
+Starting k: 30 i:8   ecm 3 j:5  price 4 
+Ending k: 30 Elapsed time is 0.66 seconds
+Starting k: 29 i:7   ecm 2 j:5  price 4 
+Ending k: 29 Elapsed time is 0.43 seconds
+Starting k: 28 i:6   ecm 1 j:5  price 4 
+Ending k: 28 Elapsed time is 0.52 seconds
+Starting k: 27 i:5 price 4 j:5  price 4 
+Ending k: 27 Elapsed time is 1.50 seconds
+Starting k: 26 i:8   ecm 3 j:4  price 3 
+Ending k: 26 Elapsed time is 0.49 seconds
+Starting k: 25 i:7   ecm 2 j:4  price 3 
+Ending k: 25 Elapsed time is 0.45 seconds
+Starting k: 24 i:6   ecm 1 j:4  price 3 
+Ending k: 24 Elapsed time is 0.53 seconds
+Starting k: 23 i:5 price 4 j:4  price 3 
+Ending k: 23 Elapsed time is 1.39 seconds
+Starting k: 22 i:4 price 3 j:4  price 3 
+Ending k: 22 Elapsed time is 1.58 seconds
+Starting k: 21 i:8   ecm 3 j:3  price 2 
+Ending k: 21 Elapsed time is 0.48 seconds
+Starting k: 20 i:7   ecm 2 j:3  price 2 
+Ending k: 20 Elapsed time is 0.41 seconds
+Starting k: 19 i:6   ecm 1 j:3  price 2 
+Ending k: 19 Elapsed time is 0.49 seconds
+Starting k: 18 i:5 price 4 j:3  price 2 
+Ending k: 18 Elapsed time is 1.35 seconds
+Starting k: 17 i:4 price 3 j:3  price 2 
+Ending k: 17 Elapsed time is 1.30 seconds
+Starting k: 16 i:3 price 2 j:3  price 2 
+Ending k: 16 Elapsed time is 1.34 seconds
+Starting k: 15 i:8   ecm 3 j:2  price 1 
+Ending k: 15 Elapsed time is 0.50 seconds
+Starting k: 14 i:7   ecm 2 j:2  price 1 
+Ending k: 14 Elapsed time is 0.42 seconds
+Starting k: 13 i:6   ecm 1 j:2  price 1 
+Ending k: 13 Elapsed time is 0.50 seconds
+Starting k: 12 i:5 price 4 j:2  price 1 
+Ending k: 12 Elapsed time is 1.24 seconds
+Starting k: 11 i:4 price 3 j:2  price 1 
+Ending k: 11 Elapsed time is 1.42 seconds
+Starting k: 10 i:3 price 2 j:2  price 1 
+Ending k: 10 Elapsed time is 1.25 seconds
+Starting k:  9 i:2 price 1 j:2  price 1 
+Ending k:  9 Elapsed time is 1.44 seconds
+Across the full parfor loop, the start to finish elapsed time is 19.78 sec.
+VAR/VECM estimates for secondFactor=1
+                 dnbbPart        t  dnboPart         t   dnbbSIP        t   dnboSIP         t
+dnbbPartp0d0      -0.7296   -1.258    -0.316   -0.5153   -0.7306    -1.26   -0.3158   -0.5156
+dnbbPartp1d0      -0.2916  -0.7112  -0.03027  -0.06985   -0.2919  -0.7122  -0.02996  -0.06921
+dnboPartp0d0      -0.2037  -0.8108   0.02397   0.09029   -0.2038  -0.8117   0.02368    0.0893
+dnboPartp1d0     0.009435  0.05314    0.1143    0.6092  0.009521  0.05364    0.1146     0.611
+dnbbSIPp0d0        0.7003    1.207    0.4169    0.6798    0.7012    1.209    0.4166    0.6801
+dnbbSIPp1d0        0.2717   0.6626    0.0632    0.1458    0.2718   0.6631    0.0628    0.1451
+dnboSIPp0d0        0.2861    1.139  -0.06835   -0.2575    0.2861     1.14  -0.06833   -0.2577
+dnboSIPp1d0       0.02055   0.1157   -0.1371   -0.7305   0.02062   0.1162   -0.1371   -0.7312
+nbbPart-nboPart   -0.7578   -2.463  -0.08996   -0.2766   -0.7579   -2.465    -1.091    -3.358
+nbbPart-nbbSIP     0.1818   0.2558     1.487      1.98     1.183    1.666     1.488     1.983
+nbbPart-nboSIP     0.7295    2.372    0.1108    0.3406    0.7298    2.374     1.111     3.422
+eCov
+           dnbbPart   dnboPart    dnbbSIP    dnboSIP
+dnbbPart  4.937e-05  3.686e-05  4.934e-05  3.681e-05
+dnboPart  3.686e-05  5.517e-05  3.684e-05  5.507e-05
+dnbbSIP   4.934e-05  3.684e-05  4.932e-05  3.679e-05
+dnboSIP   3.681e-05  5.507e-05  3.679e-05  5.504e-05
+eCorr
+          dnbbPart  dnboPart  dnbbSIP  dnboSIP
+dnbbPart         1    0.7062   0.9999   0.7061
+dnboPart    0.7062         1   0.7062   0.9994
+dnbbSIP     0.9999    0.7062        1   0.7062
+dnboSIP     0.7061    0.9994   0.7062        1
+Estimation finished for IBM 20161003. secondFactor=1. Elapsed time is 00:20.43.
+starting random walk decomposition for secondFactor=1. 07-Nov-2018 18:42:30
+Random walk decomposition for secondFactor=1
+Sum of vma coefficients:
+  nbbPart  nboPart  nbbSIP   nboSIP
+    1.589    1.111  -1.093  -0.4357
+per period var_w:    0.000062 sd_w:    0.007883
+Random walk decomposition for secondFactor=1 
+ annualized var_w:  363.486961 sd_w:   19.065334
+info share bounds:
+             Min      Max
+nbbPart  0.00053  0.79587
+nboPart  0.00138  0.90151
+nbbSIP   0.00020  0.79524
+nboSIP   0.00017  0.89946
+starting grouped rw analysis.
+{Undefined function or variable 'isGroups'.
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('MVARiPartSIP01', 'C:\Active\PDL\MatlabNovember2018\MVARiPartSIP01.m', 139)" style="font-weight:bold">MVARiPartSIP01</a> (<a href="matlab: opentoline('C:\Active\PDL\MatlabNovember2018\MVARiPartSIP01.m',139,0)">line 139</a>)
+        r.isBoundsGrouped(isGroups,true);} 
+MVARiPartSIP01_IBM_20161003 starting at 08-Nov-2018 06:40:01
+
+MVARiPartSIP01_IBM_20161003 secondFactor=1
+Setting polynomials
+name=p0; deg=0; n=1; kOffset=0; vNames=p0d0.
+name=p1; deg=0; n=9; kOffset=1; vNames=p1d0.
+Reading data for secondFactor=1 (08-Nov-2018 06:40:01)
+20161003 IBM   4543 observations (3843 with nonzero price changes and 9am-5pm)
+20161003 IBM   4358 observations (3799 with nonzero price changes and 9am-5pm)
+20161003 IBM   4545 observations (3844 with nonzero price changes and 9am-5pm)
+20161003 IBM   4358 observations (3797 with nonzero price changes and 9am-5pm)
+Data read finished for IBM 20161003. secondFactor=1. Elapsed time is 6.7266 sec.
+starting estimates secondFactor=1. 08-Nov-2018 06:40:08
+(nbbPart nboPart nbbSIP nboSIP)
+setValid (computing largest possible range)
+     nbbPart            1 (00:00:01) to        64800 (18:00:00)
+     nboPart            1 (00:00:01) to        64800 (18:00:00)
+      nbbSIP            1 (00:00:01) to        64800 (18:00:00)
+      nboSIP            1 (00:00:01) to        64800 (18:00:00)
+valid range:        35100 (09:45:00) to        57600 (16:00:00)
+     nbbPart       3843 total observations,       3715 in valid range.
+     nboPart       3799 total observations,       3658 in valid range.
+      nbbSIP       3844 total observations,       3716 in valid range.
+      nboSIP       3797 total observations,       3656 in valid range.
+eVecMeans: -0.0326  1.3333e-06     -0.0326
+buildzpzSparsePDLpar (nCPU=0)
+zpzLayoutPDL s:
+     <strong>type</strong>      <strong>tIndex</strong>    <strong>first</strong>    <strong>last</strong>
+    <strong>_______</strong>    <strong>______</strong>    <strong>_____</strong>    <strong>____</strong>
+    'const'      0         1        1 
+    'price'      1         2        4 
+    'price'      2         5        7 
+    'price'      3         8       10 
+    'price'      4        11       13 
+    'ecm'        1        14       14 
+    'ecm'        2        15       15 
+    'ecm'        3        16       16 
+zpzLayoutPDL t:
+    <strong>k</strong>     <strong>i</strong>    <strong>j</strong>
+    <strong>__</strong>    <strong>_</strong>    <strong>_</strong>
+     1    1    1
+     2    2    1
+     3    3    1
+     4    4    1
+     5    5    1
+     6    6    1
+     7    7    1
+     8    8    1
+     9    2    2
+    10    3    2
+    11    4    2
+    12    5    2
+    13    6    2
+    14    7    2
+    15    8    2
+    16    3    3
+    17    4    3
+    18    5    3
+    19    6    3
+    20    7    3
+    21    8    3
+    22    4    4
+    23    5    4
+    24    6    4
+    25    7    4
+    26    8    4
+    27    5    5
+    28    6    5
+    29    7    5
+    30    8    5
+    31    6    6
+    32    7    6
+    33    8    6
+    34    7    7
+    35    8    7
+    36    8    8
+Starting k: 36 i:8   ecm 3 j:8    ecm 3 
+Ending k: 36 Elapsed time is 0.01 seconds
+Starting k: 35 i:8   ecm 3 j:7    ecm 2 
+Ending k: 35 Elapsed time is 0.02 seconds
+Starting k: 34 i:7   ecm 2 j:7    ecm 2 
+Ending k: 34 Elapsed time is 0.01 seconds
+Starting k: 33 i:8   ecm 3 j:6    ecm 1 
+Ending k: 33 Elapsed time is 0.01 seconds
+Starting k: 32 i:7   ecm 2 j:6    ecm 1 
+Ending k: 32 Elapsed time is 0.02 seconds
+Starting k: 31 i:6   ecm 1 j:6    ecm 1 
+Ending k: 31 Elapsed time is 0.00 seconds
+Starting k: 30 i:8   ecm 3 j:5  price 4 
+Ending k: 30 Elapsed time is 0.68 seconds
+Starting k: 29 i:7   ecm 2 j:5  price 4 
+Ending k: 29 Elapsed time is 0.36 seconds
+Starting k: 28 i:6   ecm 1 j:5  price 4 
+Ending k: 28 Elapsed time is 0.48 seconds
+Starting k: 27 i:5 price 4 j:5  price 4 
+Ending k: 27 Elapsed time is 1.34 seconds
+Starting k: 26 i:8   ecm 3 j:4  price 3 
+Ending k: 26 Elapsed time is 0.49 seconds
+Starting k: 25 i:7   ecm 2 j:4  price 3 
+Ending k: 25 Elapsed time is 0.43 seconds
+Starting k: 24 i:6   ecm 1 j:4  price 3 
+Ending k: 24 Elapsed time is 0.50 seconds
+Starting k: 23 i:5 price 4 j:4  price 3 
+Ending k: 23 Elapsed time is 1.16 seconds
+Starting k: 22 i:4 price 3 j:4  price 3 
+Ending k: 22 Elapsed time is 1.34 seconds
+Starting k: 21 i:8   ecm 3 j:3  price 2 
+Ending k: 21 Elapsed time is 0.49 seconds
+Starting k: 20 i:7   ecm 2 j:3  price 2 
+Ending k: 20 Elapsed time is 0.40 seconds
+Starting k: 19 i:6   ecm 1 j:3  price 2 
+Ending k: 19 Elapsed time is 0.48 seconds
+Starting k: 18 i:5 price 4 j:3  price 2 
+Ending k: 18 Elapsed time is 1.23 seconds
+Starting k: 17 i:4 price 3 j:3  price 2 
+Ending k: 17 Elapsed time is 1.13 seconds
+Starting k: 16 i:3 price 2 j:3  price 2 
+Ending k: 16 Elapsed time is 1.26 seconds
+Starting k: 15 i:8   ecm 3 j:2  price 1 
+Ending k: 15 Elapsed time is 0.47 seconds
+Starting k: 14 i:7   ecm 2 j:2  price 1 
+Ending k: 14 Elapsed time is 0.37 seconds
+Starting k: 13 i:6   ecm 1 j:2  price 1 
+Ending k: 13 Elapsed time is 0.49 seconds
+Starting k: 12 i:5 price 4 j:2  price 1 
+Ending k: 12 Elapsed time is 1.15 seconds
+Starting k: 11 i:4 price 3 j:2  price 1 
+Ending k: 11 Elapsed time is 1.23 seconds
+Starting k: 10 i:3 price 2 j:2  price 1 
+Ending k: 10 Elapsed time is 1.11 seconds
+Starting k:  9 i:2 price 1 j:2  price 1 
+Ending k:  9 Elapsed time is 1.31 seconds
+Across the full parfor loop, the start to finish elapsed time is 18.07 sec.
+VAR/VECM estimates for secondFactor=1
+                 dnbbPart        t  dnboPart         t   dnbbSIP        t   dnboSIP         t
+dnbbPartp0d0      -0.7296   -1.258    -0.316   -0.5153   -0.7306    -1.26   -0.3158   -0.5156
+dnbbPartp1d0      -0.2916  -0.7112  -0.03027  -0.06985   -0.2919  -0.7122  -0.02996  -0.06921
+dnboPartp0d0      -0.2037  -0.8108   0.02397   0.09029   -0.2038  -0.8117   0.02368    0.0893
+dnboPartp1d0     0.009435  0.05314    0.1143    0.6092  0.009521  0.05364    0.1146     0.611
+dnbbSIPp0d0        0.7003    1.207    0.4169    0.6798    0.7012    1.209    0.4166    0.6801
+dnbbSIPp1d0        0.2717   0.6626    0.0632    0.1458    0.2718   0.6631    0.0628    0.1451
+dnboSIPp0d0        0.2861    1.139  -0.06835   -0.2575    0.2861     1.14  -0.06833   -0.2577
+dnboSIPp1d0       0.02055   0.1157   -0.1371   -0.7305   0.02062   0.1162   -0.1371   -0.7312
+nbbPart-nboPart   -0.7578   -2.463  -0.08996   -0.2766   -0.7579   -2.465    -1.091    -3.358
+nbbPart-nbbSIP     0.1818   0.2558     1.487      1.98     1.183    1.666     1.488     1.983
+nbbPart-nboSIP     0.7295    2.372    0.1108    0.3406    0.7298    2.374     1.111     3.422
+eCov
+           dnbbPart   dnboPart    dnbbSIP    dnboSIP
+dnbbPart  4.937e-05  3.686e-05  4.934e-05  3.681e-05
+dnboPart  3.686e-05  5.517e-05  3.684e-05  5.507e-05
+dnbbSIP   4.934e-05  3.684e-05  4.932e-05  3.679e-05
+dnboSIP   3.681e-05  5.507e-05  3.679e-05  5.504e-05
+eCorr
+          dnbbPart  dnboPart  dnbbSIP  dnboSIP
+dnbbPart         1    0.7062   0.9999   0.7061
+dnboPart    0.7062         1   0.7062   0.9994
+dnbbSIP     0.9999    0.7062        1   0.7062
+dnboSIP     0.7061    0.9994   0.7062        1
+Estimation finished for IBM 20161003. secondFactor=1. Elapsed time is 00:18.78.
+starting random walk decomposition for secondFactor=1. 08-Nov-2018 06:40:26
+Random walk decomposition for secondFactor=1
+Sum of vma coefficients:
+  nbbPart  nboPart  nbbSIP   nboSIP
+    1.589    1.111  -1.093  -0.4357
+per period var_w:    0.000062 sd_w:    0.007883
+Random walk decomposition for secondFactor=1 
+ annualized var_w:  363.486961 sd_w:   19.065334
+info share bounds:
+             Min      Max
+nbbPart  0.00053  0.79587
+nboPart  0.00138  0.90151
+nbbSIP   0.00020  0.79524
+nboSIP   0.00017  0.89946
+starting grouped rw analysis.
+{Undefined function or variable 'isGroups'.
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('MVARiPartSIP01', 'C:\Active\PDL\MatlabNovember2018\MVARiPartSIP01.m', 139)" style="font-weight:bold">MVARiPartSIP01</a> (<a href="matlab: opentoline('C:\Active\PDL\MatlabNovember2018\MVARiPartSIP01.m',139,0)">line 139</a>)
+        r.isBoundsGrouped(isGroups,true);} 
+opentoline('C:\Active\PDL\MatlabNovember2018\MVARiPartSIP01.m',139,0)
+MVARiPartSIP01
+MVARiPartSIP01_IBM_20161003 starting at 08-Nov-2018 06:42:32
+
+MVARiPartSIP01_IBM_20161003 secondFactor=1
+Setting polynomials
+name=p0; deg=0; n=1; kOffset=0; vNames=p0d0.
+name=p1; deg=0; n=9; kOffset=1; vNames=p1d0.
+Reading data for secondFactor=1 (08-Nov-2018 06:42:32)
+20161003 IBM   4543 observations (3843 with nonzero price changes and 9am-5pm)
+20161003 IBM   4358 observations (3799 with nonzero price changes and 9am-5pm)
+20161003 IBM   4545 observations (3844 with nonzero price changes and 9am-5pm)
+20161003 IBM   4358 observations (3797 with nonzero price changes and 9am-5pm)
+Data read finished for IBM 20161003. secondFactor=1. Elapsed time is 5.5003 sec.
+starting estimates secondFactor=1. 08-Nov-2018 06:42:38
+(nbbPart nboPart nbbSIP nboSIP)
+setValid (computing largest possible range)
+     nbbPart            1 (00:00:01) to        64800 (18:00:00)
+     nboPart            1 (00:00:01) to        64800 (18:00:00)
+      nbbSIP            1 (00:00:01) to        64800 (18:00:00)
+      nboSIP            1 (00:00:01) to        64800 (18:00:00)
+valid range:        35100 (09:45:00) to        57600 (16:00:00)
+     nbbPart       3843 total observations,       3715 in valid range.
+     nboPart       3799 total observations,       3658 in valid range.
+      nbbSIP       3844 total observations,       3716 in valid range.
+      nboSIP       3797 total observations,       3656 in valid range.
+eVecMeans: -0.0326  1.3333e-06     -0.0326
+buildzpzSparsePDLpar (nCPU=0)
+zpzLayoutPDL s:
+     <strong>type</strong>      <strong>tIndex</strong>    <strong>first</strong>    <strong>last</strong>
+    <strong>_______</strong>    <strong>______</strong>    <strong>_____</strong>    <strong>____</strong>
+    'const'      0         1        1 
+    'price'      1         2        4 
+    'price'      2         5        7 
+    'price'      3         8       10 
+    'price'      4        11       13 
+    'ecm'        1        14       14 
+    'ecm'        2        15       15 
+    'ecm'        3        16       16 
+zpzLayoutPDL t:
+    <strong>k</strong>     <strong>i</strong>    <strong>j</strong>
+    <strong>__</strong>    <strong>_</strong>    <strong>_</strong>
+     1    1    1
+     2    2    1
+     3    3    1
+     4    4    1
+     5    5    1
+     6    6    1
+     7    7    1
+     8    8    1
+     9    2    2
+    10    3    2
+    11    4    2
+    12    5    2
+    13    6    2
+    14    7    2
+    15    8    2
+    16    3    3
+    17    4    3
+    18    5    3
+    19    6    3
+    20    7    3
+    21    8    3
+    22    4    4
+    23    5    4
+    24    6    4
+    25    7    4
+    26    8    4
+    27    5    5
+    28    6    5
+    29    7    5
+    30    8    5
+    31    6    6
+    32    7    6
+    33    8    6
+    34    7    7
+    35    8    7
+    36    8    8
+Starting k: 36 i:8   ecm 3 j:8    ecm 3 
+Ending k: 36 Elapsed time is 0.01 seconds
+Starting k: 35 i:8   ecm 3 j:7    ecm 2 
+Ending k: 35 Elapsed time is 0.01 seconds
+Starting k: 34 i:7   ecm 2 j:7    ecm 2 
+Ending k: 34 Elapsed time is 0.01 seconds
+Starting k: 33 i:8   ecm 3 j:6    ecm 1 
+Ending k: 33 Elapsed time is 0.00 seconds
+Starting k: 32 i:7   ecm 2 j:6    ecm 1 
+Ending k: 32 Elapsed time is 0.01 seconds
+Starting k: 31 i:6   ecm 1 j:6    ecm 1 
+Ending k: 31 Elapsed time is 0.00 seconds
+Starting k: 30 i:8   ecm 3 j:5  price 4 
+Ending k: 30 Elapsed time is 0.62 seconds
+Starting k: 29 i:7   ecm 2 j:5  price 4 
+Ending k: 29 Elapsed time is 0.41 seconds
+Starting k: 28 i:6   ecm 1 j:5  price 4 
+Ending k: 28 Elapsed time is 0.51 seconds
+Starting k: 27 i:5 price 4 j:5  price 4 
+Ending k: 27 Elapsed time is 1.39 seconds
+Starting k: 26 i:8   ecm 3 j:4  price 3 
+Ending k: 26 Elapsed time is 0.50 seconds
+Starting k: 25 i:7   ecm 2 j:4  price 3 
+Ending k: 25 Elapsed time is 0.51 seconds
+Starting k: 24 i:6   ecm 1 j:4  price 3 
+Ending k: 24 Elapsed time is 0.51 seconds
+Starting k: 23 i:5 price 4 j:4  price 3 
+Ending k: 23 Elapsed time is 1.20 seconds
+Starting k: 22 i:4 price 3 j:4  price 3 
+Ending k: 22 Elapsed time is 1.31 seconds
+Starting k: 21 i:8   ecm 3 j:3  price 2 
+Ending k: 21 Elapsed time is 0.48 seconds
+Starting k: 20 i:7   ecm 2 j:3  price 2 
+Ending k: 20 Elapsed time is 0.38 seconds
+Starting k: 19 i:6   ecm 1 j:3  price 2 
+Ending k: 19 Elapsed time is 0.47 seconds
+Starting k: 18 i:5 price 4 j:3  price 2 
+Ending k: 18 Elapsed time is 1.31 seconds
+Starting k: 17 i:4 price 3 j:3  price 2 
+Ending k: 17 Elapsed time is 1.22 seconds
+Starting k: 16 i:3 price 2 j:3  price 2 
+Ending k: 16 Elapsed time is 1.28 seconds
+Starting k: 15 i:8   ecm 3 j:2  price 1 
+Ending k: 15 Elapsed time is 0.49 seconds
+Starting k: 14 i:7   ecm 2 j:2  price 1 
+Ending k: 14 Elapsed time is 0.43 seconds
+Starting k: 13 i:6   ecm 1 j:2  price 1 
+Ending k: 13 Elapsed time is 0.49 seconds
+Starting k: 12 i:5 price 4 j:2  price 1 
+Ending k: 12 Elapsed time is 1.14 seconds
+Starting k: 11 i:4 price 3 j:2  price 1 
+Ending k: 11 Elapsed time is 1.29 seconds
+Starting k: 10 i:3 price 2 j:2  price 1 
+Ending k: 10 Elapsed time is 1.18 seconds
+Starting k:  9 i:2 price 1 j:2  price 1 
+Ending k:  9 Elapsed time is 1.29 seconds
+Across the full parfor loop, the start to finish elapsed time is 18.49 sec.
+VAR/VECM estimates for secondFactor=1
+                 dnbbPart        t  dnboPart         t   dnbbSIP        t   dnboSIP         t
+dnbbPartp0d0      -0.7296   -1.258    -0.316   -0.5153   -0.7306    -1.26   -0.3158   -0.5156
+dnbbPartp1d0      -0.2916  -0.7112  -0.03027  -0.06985   -0.2919  -0.7122  -0.02996  -0.06921
+dnboPartp0d0      -0.2037  -0.8108   0.02397   0.09029   -0.2038  -0.8117   0.02368    0.0893
+dnboPartp1d0     0.009435  0.05314    0.1143    0.6092  0.009521  0.05364    0.1146     0.611
+dnbbSIPp0d0        0.7003    1.207    0.4169    0.6798    0.7012    1.209    0.4166    0.6801
+dnbbSIPp1d0        0.2717   0.6626    0.0632    0.1458    0.2718   0.6631    0.0628    0.1451
+dnboSIPp0d0        0.2861    1.139  -0.06835   -0.2575    0.2861     1.14  -0.06833   -0.2577
+dnboSIPp1d0       0.02055   0.1157   -0.1371   -0.7305   0.02062   0.1162   -0.1371   -0.7312
+nbbPart-nboPart   -0.7578   -2.463  -0.08996   -0.2766   -0.7579   -2.465    -1.091    -3.358
+nbbPart-nbbSIP     0.1818   0.2558     1.487      1.98     1.183    1.666     1.488     1.983
+nbbPart-nboSIP     0.7295    2.372    0.1108    0.3406    0.7298    2.374     1.111     3.422
+eCov
+           dnbbPart   dnboPart    dnbbSIP    dnboSIP
+dnbbPart  4.937e-05  3.686e-05  4.934e-05  3.681e-05
+dnboPart  3.686e-05  5.517e-05  3.684e-05  5.507e-05
+dnbbSIP   4.934e-05  3.684e-05  4.932e-05  3.679e-05
+dnboSIP   3.681e-05  5.507e-05  3.679e-05  5.504e-05
+eCorr
+          dnbbPart  dnboPart  dnbbSIP  dnboSIP
+dnbbPart         1    0.7062   0.9999   0.7061
+dnboPart    0.7062         1   0.7062   0.9994
+dnbbSIP     0.9999    0.7062        1   0.7062
+dnboSIP     0.7061    0.9994   0.7062        1
+Estimation finished for IBM 20161003. secondFactor=1. Elapsed time is 00:19.02.
+starting random walk decomposition for secondFactor=1. 08-Nov-2018 06:42:57
+Random walk decomposition for secondFactor=1
+Sum of vma coefficients:
+  nbbPart  nboPart  nbbSIP   nboSIP
+    1.589    1.111  -1.093  -0.4357
+per period var_w:    0.000062 sd_w:    0.007883
+Random walk decomposition for secondFactor=1 
+ annualized var_w:  363.486961 sd_w:   19.065334
+info share bounds:
+             Min      Max
+nbbPart  0.00053  0.79587
+nboPart  0.00138  0.90151
+nbbSIP   0.00020  0.79524
+nboSIP   0.00017  0.89946
+starting grouped rw analysis.
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('randomWalkDecomp/isBoundsGrouped')" style="font-weight:bold">randomWalkDecomp/isBoundsGrouped</a>
+Too many input arguments.
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('MVARiPartSIP01', 'C:\Active\PDL\MatlabNovember2018\MVARiPartSIP01.m', 140)" style="font-weight:bold">MVARiPartSIP01</a> (<a href="matlab: opentoline('C:\Active\PDL\MatlabNovember2018\MVARiPartSIP01.m',140,0)">line 140</a>)
+        r.isBoundsGrouped(isGroups,true);} 
+MVARiPartSIP01
+MVARiPartSIP01_IBM_20161003 starting at 08-Nov-2018 06:46:33
+
+MVARiPartSIP01_IBM_20161003 secondFactor=1
+Setting polynomials
+name=p0; deg=0; n=1; kOffset=0; vNames=p0d0.
+name=p1; deg=0; n=9; kOffset=1; vNames=p1d0.
+Reading data for secondFactor=1 (08-Nov-2018 06:46:33)
+20161003 IBM   4543 observations (3843 with nonzero price changes and 9am-5pm)
+20161003 IBM   4358 observations (3799 with nonzero price changes and 9am-5pm)
+20161003 IBM   4545 observations (3844 with nonzero price changes and 9am-5pm)
+20161003 IBM   4358 observations (3797 with nonzero price changes and 9am-5pm)
+Data read finished for IBM 20161003. secondFactor=1. Elapsed time is 5.3683 sec.
+starting estimates secondFactor=1. 08-Nov-2018 06:46:38
+(nbbPart nboPart nbbSIP nboSIP)
+setValid (computing largest possible range)
+     nbbPart            1 (00:00:01) to        64800 (18:00:00)
+     nboPart            1 (00:00:01) to        64800 (18:00:00)
+      nbbSIP            1 (00:00:01) to        64800 (18:00:00)
+      nboSIP            1 (00:00:01) to        64800 (18:00:00)
+valid range:        35100 (09:45:00) to        57600 (16:00:00)
+     nbbPart       3843 total observations,       3715 in valid range.
+     nboPart       3799 total observations,       3658 in valid range.
+      nbbSIP       3844 total observations,       3716 in valid range.
+      nboSIP       3797 total observations,       3656 in valid range.
+eVecMeans: -0.0326  1.3333e-06     -0.0326
+buildzpzSparsePDLpar (nCPU=0)
+Across the full parfor loop, the start to finish elapsed time is 17.79 sec.
+VAR/VECM estimates for secondFactor=1
+                 dnbbPart        t  dnboPart         t   dnbbSIP        t   dnboSIP         t
+dnbbPartp0d0      -0.7296   -1.258    -0.316   -0.5153   -0.7306    -1.26   -0.3158   -0.5156
+dnbbPartp1d0      -0.2916  -0.7112  -0.03027  -0.06985   -0.2919  -0.7122  -0.02996  -0.06921
+dnboPartp0d0      -0.2037  -0.8108   0.02397   0.09029   -0.2038  -0.8117   0.02368    0.0893
+dnboPartp1d0     0.009435  0.05314    0.1143    0.6092  0.009521  0.05364    0.1146     0.611
+dnbbSIPp0d0        0.7003    1.207    0.4169    0.6798    0.7012    1.209    0.4166    0.6801
+dnbbSIPp1d0        0.2717   0.6626    0.0632    0.1458    0.2718   0.6631    0.0628    0.1451
+dnboSIPp0d0        0.2861    1.139  -0.06835   -0.2575    0.2861     1.14  -0.06833   -0.2577
+dnboSIPp1d0       0.02055   0.1157   -0.1371   -0.7305   0.02062   0.1162   -0.1371   -0.7312
+nbbPart-nboPart   -0.7578   -2.463  -0.08996   -0.2766   -0.7579   -2.465    -1.091    -3.358
+nbbPart-nbbSIP     0.1818   0.2558     1.487      1.98     1.183    1.666     1.488     1.983
+nbbPart-nboSIP     0.7295    2.372    0.1108    0.3406    0.7298    2.374     1.111     3.422
+eCov
+           dnbbPart   dnboPart    dnbbSIP    dnboSIP
+dnbbPart  4.937e-05  3.686e-05  4.934e-05  3.681e-05
+dnboPart  3.686e-05  5.517e-05  3.684e-05  5.507e-05
+dnbbSIP   4.934e-05  3.684e-05  4.932e-05  3.679e-05
+dnboSIP   3.681e-05  5.507e-05  3.679e-05  5.504e-05
+eCorr
+          dnbbPart  dnboPart  dnbbSIP  dnboSIP
+dnbbPart         1    0.7062   0.9999   0.7061
+dnboPart    0.7062         1   0.7062   0.9994
+dnbbSIP     0.9999    0.7062        1   0.7062
+dnboSIP     0.7061    0.9994   0.7062        1
+Estimation finished for IBM 20161003. secondFactor=1. Elapsed time is 00:18.21.
+starting random walk decomposition for secondFactor=1. 08-Nov-2018 06:46:56
+Random walk decomposition for secondFactor=1
+Sum of vma coefficients:
+  nbbPart  nboPart  nbbSIP   nboSIP
+    1.589    1.111  -1.093  -0.4357
+per period var_w:    0.000062 sd_w:    0.007883
+Random walk decomposition for secondFactor=1 
+ annualized var_w:  363.486961 sd_w:   19.065334
+info share bounds:
+             Min      Max
+nbbPart  0.00053  0.79587
+nboPart  0.00138  0.90151
+nbbSIP   0.00020  0.79524
+nboSIP   0.00017  0.89946
+Grouped info share bounds
+                     Min      Max
+nbbPart nboPart  0.00220  0.99959
+nbbSIP nboSIP    0.00041  0.99780
+Random-walk decomp finished for IBM 20161003. secondFactor=1. Elapsed time is 0.13231 sec.
+
+MVARiPartSIP01_IBM_20161003 secondFactor=10
+Setting polynomials
+name=p0; deg=0; n=1; kOffset=0; vNames=p0d0.
+name=p1; deg=0; n=9; kOffset=1; vNames=p1d0.
+name=p2; deg=0; n=90; kOffset=10; vNames=p2d0.
+Reading data for secondFactor=10 (08-Nov-2018 06:46:57)
+20161003 IBM   6223 observations (5555 with nonzero price changes and 9am-5pm)
+20161003 IBM   5727 observations (5222 with nonzero price changes and 9am-5pm)
+20161003 IBM   6213 observations (5551 with nonzero price changes and 9am-5pm)
+20161003 IBM   5723 observations (5222 with nonzero price changes and 9am-5pm)
+Data read finished for IBM 20161003. secondFactor=10. Elapsed time is 4.32 sec.
+starting estimates secondFactor=10. 08-Nov-2018 06:47:01
+(nbbPart nboPart nbbSIP nboSIP)
+setValid (computing largest possible range)
+     nbbPart            1 (00:00:00.1) to       648000 (18:00:00.0)
+     nboPart            1 (00:00:00.1) to       648000 (18:00:00.0)
+      nbbSIP            1 (00:00:00.1) to       648000 (18:00:00.0)
+      nboSIP            1 (00:00:00.1) to       648000 (18:00:00.0)
+valid range:       351000 (09:45:00.0) to       576000 (16:00:00.0)
+     nbbPart       5555 total observations,       5379 in valid range.
+     nboPart       5222 total observations,       5037 in valid range.
+      nbbSIP       5551 total observations,       5374 in valid range.
+      nboSIP       5222 total observations,       5038 in valid range.
+eVecMeans: -0.032586 -1.0222e-06   -0.032586
+buildzpzSparsePDLpar (nCPU=0)
+Across the full parfor loop, the start to finish elapsed time is 55.51 sec.
+VAR/VECM estimates for secondFactor=10
+                   dnbbPart        t   dnboPart        t     dnbbSIP          t    dnboSIP        t
+dnbbPartp0d0       -0.04815    -1.41    0.04315     1.19    -0.04934     -1.455    0.04226    1.172
+dnbbPartp1d0      -0.005368  -0.1926   0.003891   0.1314   -0.005391    -0.1948   0.003636   0.1235
+dnbbPartp2d0      -0.004763  -0.2417  -0.007997  -0.3822    -0.00471    -0.2408  -0.008043  -0.3865
+dnboPartp0d0       -0.05219   -1.466   -0.06182   -1.635     -0.0527     -1.491   -0.06168   -1.641
+dnboPartp1d0       -0.02136   -0.736   -0.01676  -0.5437    -0.02133    -0.7403   -0.01681  -0.5486
+dnboPartp2d0       -0.02079   -1.011   -0.02258   -1.034    -0.02076     -1.017   -0.02258    -1.04
+dnbbSIPp0d0      -0.0002147  -0.0063   0.003273  0.09044  -9.134e-05  -0.002699   0.003325  0.09239
+dnbbSIPp1d0       -0.005415  -0.1944    0.01205   0.4073   -0.005367     -0.194    0.01215   0.4129
+dnbbSIPp2d0        0.002258   0.1146    0.01237   0.5912     0.00229     0.1171    0.01242   0.5969
+dnboSIPp0d0          0.1055    2.968    0.02349   0.6225      0.1058      2.999    0.02388   0.6363
+dnboSIPp1d0         0.03829     1.32   0.007599   0.2466     0.03824      1.327   0.007668   0.2503
+dnboSIPp2d0         0.02453    1.193    0.01939   0.8882     0.02444      1.197    0.01938   0.8924
+nbbPart-nboPart     -0.4118   -10.03   -0.08333   -1.911     -0.4126     -10.12     -1.083   -24.99
+nbbPart-nbbSIP      0.02303   0.5832     0.3864    9.213       1.024      26.12     0.3872    9.282
+nbbPart-nboSIP       0.4084    9.949    0.08609    1.974      0.4093      10.04      1.086    25.05
+eCov
+           dnbbPart   dnboPart    dnbbSIP    dnboSIP
+dnbbPart  5.043e-06  2.997e-06  4.978e-06  2.971e-06
+dnboPart  2.997e-06  5.688e-06   2.96e-06  5.629e-06
+dnbbSIP   4.978e-06   2.96e-06  4.972e-06  2.945e-06
+dnboSIP   2.971e-06  5.629e-06  2.945e-06  5.625e-06
+eCorr
+          dnbbPart  dnboPart  dnbbSIP  dnboSIP
+dnbbPart         1    0.5595    0.994   0.5578
+dnboPart    0.5595         1   0.5565   0.9951
+dnbbSIP      0.994    0.5565        1   0.5569
+dnboSIP     0.5578    0.9951   0.5569        1
+Estimation finished for IBM 20161003. secondFactor=10. Elapsed time is 00:56.04.
+starting random walk decomposition for secondFactor=10. 08-Nov-2018 06:47:57
+Random walk decomposition for secondFactor=10
+Sum of vma coefficients:
+  nbbPart  nboPart   nbbSIP  nboSIP
+    0.815   0.9455  -0.2692   -0.28
+per period var_w:    0.000006 sd_w:    0.002504
+Random walk decomposition for secondFactor=10 
+ annualized var_w:  366.887495 sd_w:   19.154307
+info share bounds:
+             Min      Max
+nbbPart  0.00610  0.71993
+nboPart  0.00762  0.83190
+nbbSIP   0.00066  0.70605
+nboSIP   0.00066  0.81910
+Grouped info share bounds
+                     Min      Max
+nbbPart nboPart  0.01698  0.99866
+nbbSIP nboSIP    0.00134  0.98302
+Random-walk decomp finished for IBM 20161003. secondFactor=10. Elapsed time is 0.13052 sec.
+
+Ending IBM 20161003 analysis at 08-Nov-2018 06:47:57. Elapsed time is 01:24.35.
+
+MVARiPartSIP01_IBM_20161003 starting at 08-Nov-2018 09:14:42
+
+MVARiPartSIP01_IBM_20161003 secondFactor=1
+Setting polynomials
+name=p0; deg=0; n=1; kOffset=0; vNames=p0d0.
+name=p1; deg=0; n=9; kOffset=1; vNames=p1d0.
+Reading data for secondFactor=1 (08-Nov-2018 09:14:42)
+20161003 IBM   4543 observations (3843 with nonzero price changes and 9am-5pm)
+20161003 IBM   4358 observations (3799 with nonzero price changes and 9am-5pm)
+20161003 IBM   4545 observations (3844 with nonzero price changes and 9am-5pm)
+20161003 IBM   4358 observations (3797 with nonzero price changes and 9am-5pm)
+Data read finished for IBM 20161003. secondFactor=1. Elapsed time is 6.3657 sec.
+starting estimates secondFactor=1. 08-Nov-2018 09:14:48
+(nbbPart nboPart nbbSIP nboSIP)
+setValid (computing largest possible range)
+     nbbPart            1 (00:00:01) to        64800 (18:00:00)
+     nboPart            1 (00:00:01) to        64800 (18:00:00)
+      nbbSIP            1 (00:00:01) to        64800 (18:00:00)
+      nboSIP            1 (00:00:01) to        64800 (18:00:00)
+valid range:        35100 (09:45:00) to        57600 (16:00:00)
+     nbbPart       3843 total observations,       3715 in valid range.
+     nboPart       3799 total observations,       3658 in valid range.
+      nbbSIP       3844 total observations,       3716 in valid range.
+      nboSIP       3797 total observations,       3656 in valid range.
+eVecMeans: -0.0326  1.3333e-06     -0.0326
+buildzpzSparsePDLpar (nCPU=0)
+Across the full parfor loop, the start to finish elapsed time is 20.34 sec.
+VAR/VECM estimates for secondFactor=1
+                 dnbbPart        t  dnboPart         t   dnbbSIP        t   dnboSIP         t
+dnbbPartp0d0      -0.7296   -1.258    -0.316   -0.5153   -0.7306    -1.26   -0.3158   -0.5156
+dnbbPartp1d0      -0.2916  -0.7112  -0.03027  -0.06985   -0.2919  -0.7122  -0.02996  -0.06921
+dnboPartp0d0      -0.2037  -0.8108   0.02397   0.09029   -0.2038  -0.8117   0.02368    0.0893
+dnboPartp1d0     0.009435  0.05314    0.1143    0.6092  0.009521  0.05364    0.1146     0.611
+dnbbSIPp0d0        0.7003    1.207    0.4169    0.6798    0.7012    1.209    0.4166    0.6801
+dnbbSIPp1d0        0.2717   0.6626    0.0632    0.1458    0.2718   0.6631    0.0628    0.1451
+dnboSIPp0d0        0.2861    1.139  -0.06835   -0.2575    0.2861     1.14  -0.06833   -0.2577
+dnboSIPp1d0       0.02055   0.1157   -0.1371   -0.7305   0.02062   0.1162   -0.1371   -0.7312
+nbbPart-nboPart   -0.7578   -2.463  -0.08996   -0.2766   -0.7579   -2.465    -1.091    -3.358
+nbbPart-nbbSIP     0.1818   0.2558     1.487      1.98     1.183    1.666     1.488     1.983
+nbbPart-nboSIP     0.7295    2.372    0.1108    0.3406    0.7298    2.374     1.111     3.422
+eCov
+           dnbbPart   dnboPart    dnbbSIP    dnboSIP
+dnbbPart  4.937e-05  3.686e-05  4.934e-05  3.681e-05
+dnboPart  3.686e-05  5.517e-05  3.684e-05  5.507e-05
+dnbbSIP   4.934e-05  3.684e-05  4.932e-05  3.679e-05
+dnboSIP   3.681e-05  5.507e-05  3.679e-05  5.504e-05
+eCorr
+          dnbbPart  dnboPart  dnbbSIP  dnboSIP
+dnbbPart         1    0.7062   0.9999   0.7061
+dnboPart    0.7062         1   0.7062   0.9994
+dnbbSIP     0.9999    0.7062        1   0.7062
+dnboSIP     0.7061    0.9994   0.7062        1
+Estimation finished for IBM 20161003. secondFactor=1. Elapsed time is 00:20.92.
+starting random walk decomposition for secondFactor=1. 08-Nov-2018 09:15:09
+Random walk decomposition for secondFactor=1
+Sum of vma coefficients:
+  nbbPart  nboPart  nbbSIP   nboSIP
+    1.589    1.111  -1.093  -0.4357
+per period var_w:    0.000062 sd_w:    0.007883
+annualized var_w:  363.486961 sd_w:   19.065334
+info share bounds:
+             Min      Max
+nbbPart  0.00053  0.79587
+nboPart  0.00138  0.90151
+nbbSIP   0.00020  0.79524
+nboSIP   0.00017  0.89946
+Grouped info share bounds
+                     Min      Max
+nbbPart nboPart  0.00220  0.99959
+nbbSIP nboSIP    0.00041  0.99780
+Random-walk decomp finished for IBM 20161003. secondFactor=1. Elapsed time is 0.31031 sec.
+
+MVARiPartSIP01_IBM_20161003 secondFactor=10
+Setting polynomials
+name=p0; deg=0; n=1; kOffset=0; vNames=p0d0.
+name=p1; deg=0; n=9; kOffset=1; vNames=p1d0.
+name=p2; deg=0; n=90; kOffset=10; vNames=p2d0.
+Reading data for secondFactor=10 (08-Nov-2018 09:15:10)
+20161003 IBM   6223 observations (5555 with nonzero price changes and 9am-5pm)
+20161003 IBM   5727 observations (5222 with nonzero price changes and 9am-5pm)
+20161003 IBM   6213 observations (5551 with nonzero price changes and 9am-5pm)
+20161003 IBM   5723 observations (5222 with nonzero price changes and 9am-5pm)
+Data read finished for IBM 20161003. secondFactor=10. Elapsed time is 5.2336 sec.
+starting estimates secondFactor=10. 08-Nov-2018 09:15:15
+(nbbPart nboPart nbbSIP nboSIP)
+setValid (computing largest possible range)
+     nbbPart            1 (00:00:00.1) to       648000 (18:00:00.0)
+     nboPart            1 (00:00:00.1) to       648000 (18:00:00.0)
+      nbbSIP            1 (00:00:00.1) to       648000 (18:00:00.0)
+      nboSIP            1 (00:00:00.1) to       648000 (18:00:00.0)
+valid range:       351000 (09:45:00.0) to       576000 (16:00:00.0)
+     nbbPart       5555 total observations,       5379 in valid range.
+     nboPart       5222 total observations,       5037 in valid range.
+      nbbSIP       5551 total observations,       5374 in valid range.
+      nboSIP       5222 total observations,       5038 in valid range.
+eVecMeans: -0.032586 -1.0222e-06   -0.032586
+buildzpzSparsePDLpar (nCPU=0)
+Across the full parfor loop, the start to finish elapsed time is 64.59 sec.
+VAR/VECM estimates for secondFactor=10
+                   dnbbPart        t   dnboPart        t     dnbbSIP          t    dnboSIP        t
+dnbbPartp0d0       -0.04815    -1.41    0.04315     1.19    -0.04934     -1.455    0.04226    1.172
+dnbbPartp1d0      -0.005368  -0.1926   0.003891   0.1314   -0.005391    -0.1948   0.003636   0.1235
+dnbbPartp2d0      -0.004763  -0.2417  -0.007997  -0.3822    -0.00471    -0.2408  -0.008043  -0.3865
+dnboPartp0d0       -0.05219   -1.466   -0.06182   -1.635     -0.0527     -1.491   -0.06168   -1.641
+dnboPartp1d0       -0.02136   -0.736   -0.01676  -0.5437    -0.02133    -0.7403   -0.01681  -0.5486
+dnboPartp2d0       -0.02079   -1.011   -0.02258   -1.034    -0.02076     -1.017   -0.02258    -1.04
+dnbbSIPp0d0      -0.0002147  -0.0063   0.003273  0.09044  -9.134e-05  -0.002699   0.003325  0.09239
+dnbbSIPp1d0       -0.005415  -0.1944    0.01205   0.4073   -0.005367     -0.194    0.01215   0.4129
+dnbbSIPp2d0        0.002258   0.1146    0.01237   0.5912     0.00229     0.1171    0.01242   0.5969
+dnboSIPp0d0          0.1055    2.968    0.02349   0.6225      0.1058      2.999    0.02388   0.6363
+dnboSIPp1d0         0.03829     1.32   0.007599   0.2466     0.03824      1.327   0.007668   0.2503
+dnboSIPp2d0         0.02453    1.193    0.01939   0.8882     0.02444      1.197    0.01938   0.8924
+nbbPart-nboPart     -0.4118   -10.03   -0.08333   -1.911     -0.4126     -10.12     -1.083   -24.99
+nbbPart-nbbSIP      0.02303   0.5832     0.3864    9.213       1.024      26.12     0.3872    9.282
+nbbPart-nboSIP       0.4084    9.949    0.08609    1.974      0.4093      10.04      1.086    25.05
+eCov
+           dnbbPart   dnboPart    dnbbSIP    dnboSIP
+dnbbPart  5.043e-06  2.997e-06  4.978e-06  2.971e-06
+dnboPart  2.997e-06  5.688e-06   2.96e-06  5.629e-06
+dnbbSIP   4.978e-06   2.96e-06  4.972e-06  2.945e-06
+dnboSIP   2.971e-06  5.629e-06  2.945e-06  5.625e-06
+eCorr
+          dnbbPart  dnboPart  dnbbSIP  dnboSIP
+dnbbPart         1    0.5595    0.994   0.5578
+dnboPart    0.5595         1   0.5565   0.9951
+dnbbSIP      0.994    0.5565        1   0.5569
+dnboSIP     0.5578    0.9951   0.5569        1
+Estimation finished for IBM 20161003. secondFactor=10. Elapsed time is 01:05.40.
+starting random walk decomposition for secondFactor=10. 08-Nov-2018 09:16:20
+Random walk decomposition for secondFactor=10
+Sum of vma coefficients:
+  nbbPart  nboPart   nbbSIP  nboSIP
+    0.815   0.9455  -0.2692   -0.28
+per period var_w:    0.000006 sd_w:    0.002504
+annualized var_w:  366.887495 sd_w:   19.154307
+info share bounds:
+             Min      Max
+nbbPart  0.00610  0.71993
+nboPart  0.00762  0.83190
+nbbSIP   0.00066  0.70605
+nboSIP   0.00066  0.81910
+Grouped info share bounds
+                     Min      Max
+nbbPart nboPart  0.01698  0.99866
+nbbSIP nboSIP    0.00134  0.98302
+Random-walk decomp finished for IBM 20161003. secondFactor=10. Elapsed time is 0.19809 sec.
+
+Ending IBM 20161003 analysis at 08-Nov-2018 09:16:21. Elapsed time is 01:38.73.
+
+MVARiPartSIP01_IBM_20161003 starting at 08-Nov-2018 09:29:15
+
+MVARiPartSIP01_IBM_20161003 secondFactor=1
+Setting polynomials
+name=p0; deg=0; n=1; kOffset=0; vNames=p0d0.
+name=p1; deg=0; n=9; kOffset=1; vNames=p1d0.
+Reading data for secondFactor=1 (08-Nov-2018 09:29:16)
+{Undefined function or variable 'x'.
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('MVARiPartSIP01', 'C:\Active\PDL\MatlabNovember2018\MVARiPartSIP01.m', 95)" style="font-weight:bold">MVARiPartSIP01</a> (<a href="matlab: opentoline('C:\Active\PDL\MatlabNovember2018\MVARiPartSIP01.m',95,0)">line 95</a>)
+    t = getPrice(x,'nbb','timeMid',secondFactor,mDisplay,symbol,inDate);} 
+MVARiPartSIP01
+MVARiPartSIP01_IBM_20161003 starting at 08-Nov-2018 09:31:36
+
+MVARiPartSIP01_IBM_20161003 secondFactor=1
+Setting polynomials
+name=p0; deg=0; n=1; kOffset=0; vNames=p0d0.
+name=p1; deg=0; n=9; kOffset=1; vNames=p1d0.
+Reading data for secondFactor=1 (08-Nov-2018 09:31:36)
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('getPrice', 'C:\Active\PDL\MatlabNovember2018\mFiles\getPrice.m', 24)" style="font-weight:bold">getPrice</a> (<a href="matlab: opentoline('C:\Active\PDL\MatlabNovember2018\mFiles\getPrice.m',24,0)">line 24</a>)
+nbb not found in table.
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('MVARiPartSIP01', 'C:\Active\PDL\MatlabNovember2018\MVARiPartSIP01.m', 95)" style="font-weight:bold">MVARiPartSIP01</a> (<a href="matlab: opentoline('C:\Active\PDL\MatlabNovember2018\MVARiPartSIP01.m',95,0)">line 95</a>)
+    t = getPrice(readtable([inCsvDir 'part_nbo.csv']),'nbb','timeMid',secondFactor,mDisplay,symbol,inDate);} 
+opentoline('C:\Active\PDL\MatlabNovember2018\MVARiPartSIP01.m',95,0)
+MVARiPartSIP01
+MVARiPartSIP01_IBM_20161003 starting at 08-Nov-2018 09:31:59
+
+MVARiPartSIP01_IBM_20161003 secondFactor=1
+Setting polynomials
+name=p0; deg=0; n=1; kOffset=0; vNames=p0d0.
+name=p1; deg=0; n=9; kOffset=1; vNames=p1d0.
+Reading data for secondFactor=1 (08-Nov-2018 09:31:59)
+20161003 IBM   4543 observations (3843 with nonzero price changes and 9am-5pm)
+20161003 IBM   4358 observations (3799 with nonzero price changes and 9am-5pm)
+20161003 IBM   4545 observations (3844 with nonzero price changes and 9am-5pm)
+20161003 IBM   4358 observations (3797 with nonzero price changes and 9am-5pm)
+Data read finished for IBM 20161003. secondFactor=1. Elapsed time is 6.3095 sec.
+starting estimates secondFactor=1. 08-Nov-2018 09:32:05
+(nbbPart nboPart nbbSIP nboSIP)
+setValid (computing largest possible range)
+     nbbPart            1 (00:00:01) to        64800 (18:00:00)
+     nboPart            1 (00:00:01) to        64800 (18:00:00)
+      nbbSIP            1 (00:00:01) to        64800 (18:00:00)
+      nboSIP            1 (00:00:01) to        64800 (18:00:00)
+valid range:        35100 (09:45:00) to        57600 (16:00:00)
+     nbbPart       3843 total observations,       3715 in valid range.
+     nboPart       3799 total observations,       3658 in valid range.
+      nbbSIP       3844 total observations,       3716 in valid range.
+      nboSIP       3797 total observations,       3656 in valid range.
+eVecMeans: -0.0326  1.3333e-06     -0.0326
+buildzpzSparsePDLpar (nCPU=0)
+Across the full parfor loop, the start to finish elapsed time is 21.32 sec.
+VAR/VECM estimates for secondFactor=1
+                 dnbbPart        t  dnboPart         t   dnbbSIP        t   dnboSIP         t
+dnbbPartp0d0      -0.7296   -1.258    -0.316   -0.5153   -0.7306    -1.26   -0.3158   -0.5156
+dnbbPartp1d0      -0.2916  -0.7112  -0.03027  -0.06985   -0.2919  -0.7122  -0.02996  -0.06921
+dnboPartp0d0      -0.2037  -0.8108   0.02397   0.09029   -0.2038  -0.8117   0.02368    0.0893
+dnboPartp1d0     0.009435  0.05314    0.1143    0.6092  0.009521  0.05364    0.1146     0.611
+dnbbSIPp0d0        0.7003    1.207    0.4169    0.6798    0.7012    1.209    0.4166    0.6801
+dnbbSIPp1d0        0.2717   0.6626    0.0632    0.1458    0.2718   0.6631    0.0628    0.1451
+dnboSIPp0d0        0.2861    1.139  -0.06835   -0.2575    0.2861     1.14  -0.06833   -0.2577
+dnboSIPp1d0       0.02055   0.1157   -0.1371   -0.7305   0.02062   0.1162   -0.1371   -0.7312
+nbbPart-nboPart   -0.7578   -2.463  -0.08996   -0.2766   -0.7579   -2.465    -1.091    -3.358
+nbbPart-nbbSIP     0.1818   0.2558     1.487      1.98     1.183    1.666     1.488     1.983
+nbbPart-nboSIP     0.7295    2.372    0.1108    0.3406    0.7298    2.374     1.111     3.422
+eCov
+           dnbbPart   dnboPart    dnbbSIP    dnboSIP
+dnbbPart  4.937e-05  3.686e-05  4.934e-05  3.681e-05
+dnboPart  3.686e-05  5.517e-05  3.684e-05  5.507e-05
+dnbbSIP   4.934e-05  3.684e-05  4.932e-05  3.679e-05
+dnboSIP   3.681e-05  5.507e-05  3.679e-05  5.504e-05
+eCorr
+          dnbbPart  dnboPart  dnbbSIP  dnboSIP
+dnbbPart         1    0.7062   0.9999   0.7061
+dnboPart    0.7062         1   0.7062   0.9994
+dnbbSIP     0.9999    0.7062        1   0.7062
+dnboSIP     0.7061    0.9994   0.7062        1
+Estimation finished for IBM 20161003. secondFactor=1. Elapsed time is 00:21.99.
+starting irf computation for secondFactor=1. 08-Nov-2018 09:32:27
+irfPDLpacked (nCPU=0)
+IRF computation for shock 4. Elapsed time is 0.06 seconds.
+IRF computation for shock 3. Elapsed time is 0.03 seconds.
+IRF computation for shock 2. Elapsed time is 0.03 seconds.
+IRF computation for shock 1. Elapsed time is 0.04 seconds.
+Within parfor, total elapsed time on all threads is 0.16 seconds.
+Across the full parfor loop, the start to finish elapsed time is 0.28 sec.
+IBM 20161003 irf finished. elapsed time is 0.38 seconds.
+IRF calculation finished for IBM 20161003. secondFactor=1. Elapsed time is 0.37602 sec.
+Random walk decomposition for secondFactor=1. 08-Nov-2018 09:32:27
+Random walk decomposition for secondFactor=1
+Sum of vma coefficients:
+  nbbPart  nboPart  nbbSIP   nboSIP
+    1.589    1.111  -1.093  -0.4357
+per period var_w:    0.000062 sd_w:    0.007883
+annualized var_w:  363.486961 sd_w:   19.065334
+info share bounds:
+             Min      Max
+nbbPart  0.00053  0.79587
+nboPart  0.00138  0.90151
+nbbSIP   0.00020  0.79524
+nboSIP   0.00017  0.89946
+Grouped info share bounds
+                     Min      Max
+nbbPart nboPart  0.00220  0.99959
+nbbSIP nboSIP    0.00041  0.99780
+
+MVARiPartSIP01_IBM_20161003 secondFactor=10
+Setting polynomials
+name=p0; deg=0; n=1; kOffset=0; vNames=p0d0.
+name=p1; deg=0; n=9; kOffset=1; vNames=p1d0.
+name=p2; deg=0; n=90; kOffset=10; vNames=p2d0.
+Reading data for secondFactor=10 (08-Nov-2018 09:32:28)
+20161003 IBM   6223 observations (5555 with nonzero price changes and 9am-5pm)
+20161003 IBM   5727 observations (5222 with nonzero price changes and 9am-5pm)
+20161003 IBM   6213 observations (5551 with nonzero price changes and 9am-5pm)
+20161003 IBM   5723 observations (5222 with nonzero price changes and 9am-5pm)
+Data read finished for IBM 20161003. secondFactor=10. Elapsed time is 4.9778 sec.
+starting estimates secondFactor=10. 08-Nov-2018 09:32:33
+(nbbPart nboPart nbbSIP nboSIP)
+setValid (computing largest possible range)
+     nbbPart            1 (00:00:00.1) to       648000 (18:00:00.0)
+     nboPart            1 (00:00:00.1) to       648000 (18:00:00.0)
+      nbbSIP            1 (00:00:00.1) to       648000 (18:00:00.0)
+      nboSIP            1 (00:00:00.1) to       648000 (18:00:00.0)
+valid range:       351000 (09:45:00.0) to       576000 (16:00:00.0)
+     nbbPart       5555 total observations,       5379 in valid range.
+     nboPart       5222 total observations,       5037 in valid range.
+      nbbSIP       5551 total observations,       5374 in valid range.
+      nboSIP       5222 total observations,       5038 in valid range.
+eVecMeans: -0.032586 -1.0222e-06   -0.032586
+buildzpzSparsePDLpar (nCPU=0)
+if system_dependent('IsDebugMode')==1, dbquit; end
+MVARiPartSIP01
+MVARiPartSIP01_IBM_20161003 starting at 08-Nov-2018 09:34:07
+
+MVARiPartSIP01_IBM_20161003 secondFactor=1
+Setting polynomials
+name=p0; deg=0; n=1; kOffset=0; vNames=p0d0.
+name=p1; deg=0; n=9; kOffset=1; vNames=p1d0.
+Reading data for secondFactor=1 (08-Nov-2018 09:34:07)
+20161003 IBM   4543 observations (3843 with nonzero price changes and 9am-5pm)
+20161003 IBM   4358 observations (3799 with nonzero price changes and 9am-5pm)
+20161003 IBM   4545 observations (3844 with nonzero price changes and 9am-5pm)
+20161003 IBM   4358 observations (3797 with nonzero price changes and 9am-5pm)
+Data read finished for IBM 20161003. secondFactor=1. Elapsed time is 6.244 sec.
+MVARiPartSIP01_IBM_20161003 starting at 09-Nov-2018 11:04:24
+
+MVARiPartSIP01_IBM_20161003 secondFactor=1
+Setting polynomials
+name=p0; deg=0; n=1; kOffset=0; vNames=p0d0.
+name=p1; deg=0; n=9; kOffset=1; vNames=p1d0.
+Reading data for secondFactor=1 (09-Nov-2018 11:04:24)
+20161003 IBM   4543 observations (3843 with nonzero price changes and 9am-5pm)
+20161003 IBM   4358 observations (3799 with nonzero price changes and 9am-5pm)
+20161003 IBM   4545 observations (3844 with nonzero price changes and 9am-5pm)
+20161003 IBM   4358 observations (3797 with nonzero price changes and 9am-5pm)
+Data read finished for IBM 20161003. secondFactor=1. Elapsed time is 6.1121 sec.
+starting estimates secondFactor=1. 09-Nov-2018 11:04:30
+(nbbPart nboPart nbbSIP nboSIP)
+setValid (computing largest possible range)
+     nbbPart            1 (00:00:01) to        64800 (18:00:00)
+     nboPart            1 (00:00:01) to        64800 (18:00:00)
+      nbbSIP            1 (00:00:01) to        64800 (18:00:00)
+      nboSIP            1 (00:00:01) to        64800 (18:00:00)
+valid range:        35100 (09:45:00) to        57600 (16:00:00)
+     nbbPart       3843 total observations,       3715 in valid range.
+     nboPart       3799 total observations,       3658 in valid range.
+      nbbSIP       3844 total observations,       3716 in valid range.
+      nboSIP       3797 total observations,       3656 in valid range.
+eVecMeans: -0.0326  1.3333e-06     -0.0326
+buildzpzSparsePDLpar (nCPU=0)
+Across the full parfor loop, the start to finish elapsed time is 16.24 sec.
+VAR/VECM estimates for secondFactor=1
+                 dnbbPart        t  dnboPart         t   dnbbSIP        t   dnboSIP         t
+dnbbPartp0d0      -0.7296   -1.258    -0.316   -0.5153   -0.7306    -1.26   -0.3158   -0.5156
+dnbbPartp1d0      -0.2916  -0.7112  -0.03027  -0.06985   -0.2919  -0.7122  -0.02996  -0.06921
+dnboPartp0d0      -0.2037  -0.8108   0.02397   0.09029   -0.2038  -0.8117   0.02368    0.0893
+dnboPartp1d0     0.009435  0.05314    0.1143    0.6092  0.009521  0.05364    0.1146     0.611
+dnbbSIPp0d0        0.7003    1.207    0.4169    0.6798    0.7012    1.209    0.4166    0.6801
+dnbbSIPp1d0        0.2717   0.6626    0.0632    0.1458    0.2718   0.6631    0.0628    0.1451
+dnboSIPp0d0        0.2861    1.139  -0.06835   -0.2575    0.2861     1.14  -0.06833   -0.2577
+dnboSIPp1d0       0.02055   0.1157   -0.1371   -0.7305   0.02062   0.1162   -0.1371   -0.7312
+nbbPart-nboPart   -0.7578   -2.463  -0.08996   -0.2766   -0.7579   -2.465    -1.091    -3.358
+nbbPart-nbbSIP     0.1818   0.2558     1.487      1.98     1.183    1.666     1.488     1.983
+nbbPart-nboSIP     0.7295    2.372    0.1108    0.3406    0.7298    2.374     1.111     3.422
+eCov
+           dnbbPart   dnboPart    dnbbSIP    dnboSIP
+dnbbPart  4.937e-05  3.686e-05  4.934e-05  3.681e-05
+dnboPart  3.686e-05  5.517e-05  3.684e-05  5.507e-05
+dnbbSIP   4.934e-05  3.684e-05  4.932e-05  3.679e-05
+dnboSIP   3.681e-05  5.507e-05  3.679e-05  5.504e-05
+eCorr
+          dnbbPart  dnboPart  dnbbSIP  dnboSIP
+dnbbPart         1    0.7062   0.9999   0.7061
+dnboPart    0.7062         1   0.7062   0.9994
+dnbbSIP     0.9999    0.7062        1   0.7062
+dnboSIP     0.7061    0.9994   0.7062        1
+ans = 
+  <a href="matlab:helpPopup MVARi" style="font-weight:bold">MVARi</a> with properties:
+
+          symbol: 'IBM'
+          inDate: 20161003
+    secondFactor: 1
+          prices: [1×4 spl]
+         dPrices: [1×4 spd]
+         nPrices: 4
+       intercept: 0
+             ecm: 1
+      firstValid: 35100
+       lastValid: 57600
+           polys: [1×2 polynom]
+           kzlhs: [0 1 0 0 1 0 0 1 0 0 1 0 0 0 0 0]
+           kzrhs: [0 0 1 1 0 1 1 0 1 1 0 1 1 1 1 1]
+      priceNames: {'nbbPart'  'nboPart'  'nbbSIP'  'nboSIP'}
+          zNames: {1×16 cell}
+          xNames: {1×11 cell}
+          yNames: {'dnbbPart'  'dnboPart'  'dnbbSIP'  'dnboSIP'}
+           eVecs: [1×3 spl]
+       eVecMeans: [-0.0326 1.3333e-06 -0.0326]
+             zpz: [16×16 double]
+               b: [11×4 double]
+       bColNames: {}
+             seb: [11×4 double]
+              tb: [11×4 double]
+            eCov: [4×4 double]
+           eCorr: [4×4 double]
+            irft: []
+             irf: []
+       irfPacked: []
+           bIRFt: []
+            bIRF: []
+             rwd: [0×0 randomWalkDecomp]
+MVARiPartSIP01
+MVARiPartSIP01_IBM_20161003 starting at 09-Nov-2018 11:06:16
+
+MVARiPartSIP01_IBM_20161003 secondFactor=1
+Setting polynomials
+name=p0; deg=0; n=1; kOffset=0; vNames=p0d0.
+name=p1; deg=0; n=9; kOffset=1; vNames=p1d0.
+starting irf computation for secondFactor=1. 09-Nov-2018 11:06:16
+irfPDLpacked (nCPU=0)
+IRF computation for shock 4. Elapsed time is 0.03 seconds.
+IRF computation for shock 3. Elapsed time is 0.02 seconds.
+IRF computation for shock 2. Elapsed time is 0.02 seconds.
+IRF computation for shock 1. Elapsed time is 0.01 seconds.
+Within parfor, total elapsed time on all threads is 0.08 seconds.
+Across the full parfor loop, the start to finish elapsed time is 0.12 sec.
+ans = 
+  <a href="matlab:helpPopup MVARi" style="font-weight:bold">MVARi</a> with properties:
+
+          symbol: 'IBM'
+          inDate: 20161003
+    secondFactor: 1
+          prices: [1×4 spl]
+         dPrices: [1×4 spd]
+         nPrices: 4
+       intercept: 0
+             ecm: 1
+      firstValid: 35100
+       lastValid: 57600
+           polys: [1×2 polynom]
+           kzlhs: [0 1 0 0 1 0 0 1 0 0 1 0 0 0 0 0]
+           kzrhs: [0 0 1 1 0 1 1 0 1 1 0 1 1 1 1 1]
+      priceNames: {'nbbPart'  'nboPart'  'nbbSIP'  'nboSIP'}
+          zNames: {1×16 cell}
+          xNames: {1×11 cell}
+          yNames: {'dnbbPart'  'dnboPart'  'dnbbSIP'  'dnboSIP'}
+           eVecs: [1×3 spl]
+       eVecMeans: [-0.0326 1.3333e-06 -0.0326]
+             zpz: [16×16 double]
+               b: [11×4 double]
+       bColNames: {}
+             seb: [11×4 double]
+              tb: [11×4 double]
+            eCov: [4×4 double]
+           eCorr: [4×4 double]
+            irft: [0 1 2 3 4 5 6 7 8 9 10 20 30 40 50 60 70 80 90 100 200 300 400 500]
+             irf: []
+       irfPacked: [4×24×4 double]
+           bIRFt: []
+            bIRF: []
+             rwd: [0×0 randomWalkDecomp]
+MVARiPartSIP01
+MVARiPartSIP01_IBM_20161003 starting at 09-Nov-2018 11:15:01
+
+MVARiPartSIP01_IBM_20161003 secondFactor=1
+Setting polynomials
+name=p0; deg=0; n=1; kOffset=0; vNames=p0d0.
+name=p1; deg=0; n=9; kOffset=1; vNames=p1d0.
+Reading data for secondFactor=1 (09-Nov-2018 11:15:02)
+20161003 IBM   4543 observations (3843 with nonzero price changes and 9am-5pm)
+20161003 IBM   4358 observations (3799 with nonzero price changes and 9am-5pm)
+20161003 IBM   4545 observations (3844 with nonzero price changes and 9am-5pm)
+20161003 IBM   4358 observations (3797 with nonzero price changes and 9am-5pm)
+Data read finished for IBM 20161003. secondFactor=1. Elapsed time is 5.1408 sec.
+starting estimates secondFactor=1. 09-Nov-2018 11:15:07
+(nbbPart nboPart nbbSIP nboSIP)
+setValid (computing largest possible range)
+     nbbPart            1 (00:00:01) to        64800 (18:00:00)
+     nboPart            1 (00:00:01) to        64800 (18:00:00)
+      nbbSIP            1 (00:00:01) to        64800 (18:00:00)
+      nboSIP            1 (00:00:01) to        64800 (18:00:00)
+valid range:        35100 (09:45:00) to        57600 (16:00:00)
+     nbbPart       3843 total observations,       3715 in valid range.
+     nboPart       3799 total observations,       3658 in valid range.
+      nbbSIP       3844 total observations,       3716 in valid range.
+      nboSIP       3797 total observations,       3656 in valid range.
+eVecMeans: -0.0326  1.3333e-06     -0.0326
+buildzpzSparsePDLpar (nCPU=0)
+Across the full for/parfor loop, the start to finish elapsed time is 16.74 sec.
+VAR/VECM estimates for secondFactor=1
+                 dnbbPart        t  dnboPart         t   dnbbSIP        t   dnboSIP         t
+dnbbPartp0d0      -0.7296   -1.258    -0.316   -0.5153   -0.7306    -1.26   -0.3158   -0.5156
+dnbbPartp1d0      -0.2916  -0.7112  -0.03027  -0.06985   -0.2919  -0.7122  -0.02996  -0.06921
+dnboPartp0d0      -0.2037  -0.8108   0.02397   0.09029   -0.2038  -0.8117   0.02368    0.0893
+dnboPartp1d0     0.009435  0.05314    0.1143    0.6092  0.009521  0.05364    0.1146     0.611
+dnbbSIPp0d0        0.7003    1.207    0.4169    0.6798    0.7012    1.209    0.4166    0.6801
+dnbbSIPp1d0        0.2717   0.6626    0.0632    0.1458    0.2718   0.6631    0.0628    0.1451
+dnboSIPp0d0        0.2861    1.139  -0.06835   -0.2575    0.2861     1.14  -0.06833   -0.2577
+dnboSIPp1d0       0.02055   0.1157   -0.1371   -0.7305   0.02062   0.1162   -0.1371   -0.7312
+nbbPart-nboPart   -0.7578   -2.463  -0.08996   -0.2766   -0.7579   -2.465    -1.091    -3.358
+nbbPart-nbbSIP     0.1818   0.2558     1.487      1.98     1.183    1.666     1.488     1.983
+nbbPart-nboSIP     0.7295    2.372    0.1108    0.3406    0.7298    2.374     1.111     3.422
+eCov
+           dnbbPart   dnboPart    dnbbSIP    dnboSIP
+dnbbPart  4.937e-05  3.686e-05  4.934e-05  3.681e-05
+dnboPart  3.686e-05  5.517e-05  3.684e-05  5.507e-05
+dnbbSIP   4.934e-05  3.684e-05  4.932e-05  3.679e-05
+dnboSIP   3.681e-05  5.507e-05  3.679e-05  5.504e-05
+eCorr
+          dnbbPart  dnboPart  dnbbSIP  dnboSIP
+dnbbPart         1    0.7062   0.9999   0.7061
+dnboPart    0.7062         1   0.7062   0.9994
+dnbbSIP     0.9999    0.7062        1   0.7062
+dnboSIP     0.7061    0.9994   0.7062        1
+Estimation finished for IBM 20161003. secondFactor=1. Elapsed time is 00:17.15.
+starting irf computation for secondFactor=1. 09-Nov-2018 11:15:24
+irfPDLpacked (nCPU=0)
+IRF computation for shock 4. Elapsed time is 0.03 seconds.
+IRF computation for shock 3. Elapsed time is 0.02 seconds.
+IRF computation for shock 2. Elapsed time is 0.02 seconds.
+IRF computation for shock 1. Elapsed time is 0.02 seconds.
+Across the full for/parfor loop, the start to finish elapsed time is 0.09 sec.
+IBM 20161003 irf finished. elapsed time is 0.16 seconds.
+IRF calculation finished for IBM 20161003. secondFactor=1. Elapsed time is 0.15702 sec.
+Random walk decomposition for secondFactor=1. 09-Nov-2018 11:15:24
+Random walk decomposition for secondFactor=1
+Sum of vma coefficients:
+  nbbPart  nboPart  nbbSIP   nboSIP
+    1.589    1.111  -1.093  -0.4357
+per period var_w:    0.000062 sd_w:    0.007883
+annualized var_w:  363.486961 sd_w:   19.065334
+info share bounds:
+             Min      Max
+nbbPart  0.00053  0.79587
+nboPart  0.00138  0.90151
+nbbSIP   0.00020  0.79524
+nboSIP   0.00017  0.89946
+Grouped info share bounds
+                     Min      Max
+nbbPart nboPart  0.00220  0.99959
+nbbSIP nboSIP    0.00041  0.99780
+
+MVARiPartSIP01_IBM_20161003 secondFactor=10
+Setting polynomials
+name=p0; deg=0; n=1; kOffset=0; vNames=p0d0.
+name=p1; deg=0; n=9; kOffset=1; vNames=p1d0.
+name=p2; deg=0; n=90; kOffset=10; vNames=p2d0.
+Reading data for secondFactor=10 (09-Nov-2018 11:15:24)
+20161003 IBM   6223 observations (5555 with nonzero price changes and 9am-5pm)
+20161003 IBM   5727 observations (5222 with nonzero price changes and 9am-5pm)
+20161003 IBM   6213 observations (5551 with nonzero price changes and 9am-5pm)
+20161003 IBM   5723 observations (5222 with nonzero price changes and 9am-5pm)
+Data read finished for IBM 20161003. secondFactor=10. Elapsed time is 4.4125 sec.
+starting estimates secondFactor=10. 09-Nov-2018 11:15:29
+(nbbPart nboPart nbbSIP nboSIP)
+setValid (computing largest possible range)
+     nbbPart            1 (00:00:00.1) to       648000 (18:00:00.0)
+     nboPart            1 (00:00:00.1) to       648000 (18:00:00.0)
+      nbbSIP            1 (00:00:00.1) to       648000 (18:00:00.0)
+      nboSIP            1 (00:00:00.1) to       648000 (18:00:00.0)
+valid range:       351000 (09:45:00.0) to       576000 (16:00:00.0)
+     nbbPart       5555 total observations,       5379 in valid range.
+     nboPart       5222 total observations,       5037 in valid range.
+      nbbSIP       5551 total observations,       5374 in valid range.
+      nboSIP       5222 total observations,       5038 in valid range.
+eVecMeans: -0.032586 -1.0222e-06   -0.032586
+buildzpzSparsePDLpar (nCPU=0)
+Across the full for/parfor loop, the start to finish elapsed time is 51.50 sec.
+VAR/VECM estimates for secondFactor=10
+                   dnbbPart        t   dnboPart        t     dnbbSIP          t    dnboSIP        t
+dnbbPartp0d0       -0.04815    -1.41    0.04315     1.19    -0.04934     -1.455    0.04226    1.172
+dnbbPartp1d0      -0.005368  -0.1926   0.003891   0.1314   -0.005391    -0.1948   0.003636   0.1235
+dnbbPartp2d0      -0.004763  -0.2417  -0.007997  -0.3822    -0.00471    -0.2408  -0.008043  -0.3865
+dnboPartp0d0       -0.05219   -1.466   -0.06182   -1.635     -0.0527     -1.491   -0.06168   -1.641
+dnboPartp1d0       -0.02136   -0.736   -0.01676  -0.5437    -0.02133    -0.7403   -0.01681  -0.5486
+dnboPartp2d0       -0.02079   -1.011   -0.02258   -1.034    -0.02076     -1.017   -0.02258    -1.04
+dnbbSIPp0d0      -0.0002147  -0.0063   0.003273  0.09044  -9.134e-05  -0.002699   0.003325  0.09239
+dnbbSIPp1d0       -0.005415  -0.1944    0.01205   0.4073   -0.005367     -0.194    0.01215   0.4129
+dnbbSIPp2d0        0.002258   0.1146    0.01237   0.5912     0.00229     0.1171    0.01242   0.5969
+dnboSIPp0d0          0.1055    2.968    0.02349   0.6225      0.1058      2.999    0.02388   0.6363
+dnboSIPp1d0         0.03829     1.32   0.007599   0.2466     0.03824      1.327   0.007668   0.2503
+dnboSIPp2d0         0.02453    1.193    0.01939   0.8882     0.02444      1.197    0.01938   0.8924
+nbbPart-nboPart     -0.4118   -10.03   -0.08333   -1.911     -0.4126     -10.12     -1.083   -24.99
+nbbPart-nbbSIP      0.02303   0.5832     0.3864    9.213       1.024      26.12     0.3872    9.282
+nbbPart-nboSIP       0.4084    9.949    0.08609    1.974      0.4093      10.04      1.086    25.05
+eCov
+           dnbbPart   dnboPart    dnbbSIP    dnboSIP
+dnbbPart  5.043e-06  2.997e-06  4.978e-06  2.971e-06
+dnboPart  2.997e-06  5.688e-06   2.96e-06  5.629e-06
+dnbbSIP   4.978e-06   2.96e-06  4.972e-06  2.945e-06
+dnboSIP   2.971e-06  5.629e-06  2.945e-06  5.625e-06
+eCorr
+          dnbbPart  dnboPart  dnbbSIP  dnboSIP
+dnbbPart         1    0.5595    0.994   0.5578
+dnboPart    0.5595         1   0.5565   0.9951
+dnbbSIP      0.994    0.5565        1   0.5569
+dnboSIP     0.5578    0.9951   0.5569        1
+Estimation finished for IBM 20161003. secondFactor=10. Elapsed time is 00:52.02.
+starting irf computation for secondFactor=10. 09-Nov-2018 11:16:21
+irfPDLpacked (nCPU=0)
+IRF computation for shock 4. Elapsed time is 0.17 seconds.
+IRF computation for shock 3. Elapsed time is 0.16 seconds.
+IRF computation for shock 2. Elapsed time is 0.15 seconds.
+IRF computation for shock 1. Elapsed time is 0.15 seconds.
+Across the full for/parfor loop, the start to finish elapsed time is 0.64 sec.
+IBM 20161003 irf finished. elapsed time is 0.74 seconds.
+IRF calculation finished for IBM 20161003. secondFactor=10. Elapsed time is 0.74316 sec.
+Random walk decomposition for secondFactor=10. 09-Nov-2018 11:16:21
+Random walk decomposition for secondFactor=10
+Sum of vma coefficients:
+  nbbPart  nboPart   nbbSIP  nboSIP
+    0.815   0.9455  -0.2692   -0.28
+per period var_w:    0.000006 sd_w:    0.002504
+annualized var_w:  366.887495 sd_w:   19.154307
+info share bounds:
+             Min      Max
+nbbPart  0.00610  0.71993
+nboPart  0.00762  0.83190
+nbbSIP   0.00066  0.70605
+nboSIP   0.00066  0.81910
+Grouped info share bounds
+                     Min      Max
+nbbPart nboPart  0.01698  0.99866
+nbbSIP nboSIP    0.00134  0.98302
+
+Ending IBM 20161003 analysis at 09-Nov-2018 11:16:22. Elapsed time is 01:20.08.
+
+ans = 
+  <a href="matlab:helpPopup MVARi" style="font-weight:bold">MVARi</a> with properties:
+
+          symbol: 'IBM'
+          inDate: 20161003
+    secondFactor: 1
+          prices: [1×4 spl]
+         dPrices: [1×4 spd]
+         nPrices: 4
+       intercept: 0
+             ecm: 1
+      firstValid: 35100
+       lastValid: 57600
+           polys: [1×2 polynom]
+           kzlhs: [0 1 0 0 1 0 0 1 0 0 1 0 0 0 0 0]
+           kzrhs: [0 0 1 1 0 1 1 0 1 1 0 1 1 1 1 1]
+      priceNames: {'nbbPart'  'nboPart'  'nbbSIP'  'nboSIP'}
+          zNames: {1×16 cell}
+          xNames: {'dnbbPartp0d0'  'dnbbPartp1d0'  'dnboPartp0d0'  'dnboPartp1d0'  'dnbbSIPp0d0'  'dnbbSIPp1d0'  'dnboSIPp0d0'  'dnboSIPp1d0'  'nbbPart-nboPart'  'nbbPart-nbbSIP'  'nbbPart-nboSIP'}
+          yNames: {'dnbbPart'  'dnboPart'  'dnbbSIP'  'dnboSIP'}
+           eVecs: [1×3 spl]
+       eVecMeans: [-0.0326 1.3333e-06 -0.0326]
+             zpz: [16×16 double]
+               b: [11×4 double]
+       bColNames: {}
+             seb: [11×4 double]
+              tb: [11×4 double]
+            eCov: [4×4 double]
+           eCorr: [4×4 double]
+            irft: [0 1 2 3 4 5 6 7 8 9 10 20 30 40 50 60 70 80 90 100 200 300 400 500]
+             irf: []
+       irfPacked: [4×24×4 double]
+           bIRFt: []
+            bIRF: []
+             rwd: [1×1 randomWalkDecomp]

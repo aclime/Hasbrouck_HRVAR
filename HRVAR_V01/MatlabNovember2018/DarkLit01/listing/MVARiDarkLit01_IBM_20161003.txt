@@ -1,0 +1,2558 @@
+MVARiDarkLit01_IBM_20161003 starting at 09-Nov-2018 14:30:19
+
+MVARiDarkLit01_IBM_20161003 secondFactor=1
+Setting polynomials
+name=p0; deg=0; n=1; kOffset=0; vNames=p0d0.
+name=p1; deg=0; n=9; kOffset=1; vNames=p1d0.
+Reading data for secondFactor=1 (09-Nov-2018 14:30:19)
+20161003 IBM   4543 observations (3843 with nonzero price changes and 9am-5pm)
+20161003 IBM   4358 observations (3799 with nonzero price changes and 9am-5pm)
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('getPrice', 'C:\Active\PDL\MatlabNovember2018\mFiles\getPrice.m', 21)" style="font-weight:bold">getPrice</a> (<a href="matlab: opentoline('C:\Active\PDL\MatlabNovember2018\mFiles\getPrice.m',21,0)">line 21</a>)
+timeMid not found in table.
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('MVARiDarkLit01', 'C:\Active\PDL\MatlabNovember2018\MVARiDarkLit01.m', 94)" style="font-weight:bold">MVARiDarkLit01</a> (<a href="matlab: opentoline('C:\Active\PDL\MatlabNovember2018\MVARiDarkLit01.m',94,0)">line 94</a>)
+    t = getPrice(readtable([inCsvDir 'ctLit.csv']),'PRICE','timeMid',secondFactor,mDisplay,symbol,inDate);} 
+MVARiDarkLit01
+MVARiDarkLit01_IBM_20161003 starting at 09-Nov-2018 14:31:34
+
+MVARiDarkLit01_IBM_20161003 secondFactor=1
+Setting polynomials
+name=p0; deg=0; n=1; kOffset=0; vNames=p0d0.
+name=p1; deg=0; n=9; kOffset=1; vNames=p1d0.
+Reading data for secondFactor=1 (09-Nov-2018 14:31:34)
+20161003 IBM   4543 observations (3843 with nonzero price changes and 9am-5pm)
+20161003 IBM   4358 observations (3799 with nonzero price changes and 9am-5pm)
+20161003 IBM   4593 observations (3416 with nonzero price changes and 9am-5pm)
+20161003 IBM   3472 observations (3201 with nonzero price changes and 9am-5pm)
+Data read finished for IBM 20161003. secondFactor=1. Elapsed time is 8.0669 sec.
+starting estimates secondFactor=1. 09-Nov-2018 14:31:42
+(nbbPart nboPart nbbExl nboExl)
+setValid (computing largest possible range)
+     nbbPart            1 (00:00:01) to        64800 (18:00:00)
+     nboPart            1 (00:00:01) to        64800 (18:00:00)
+      nbbExl            1 (00:00:01) to        64800 (18:00:00)
+      nboExl            1 (00:00:01) to        64800 (18:00:00)
+valid range:        35100 (09:45:00) to        57600 (16:00:00)
+     nbbPart       3843 total observations,       3715 in valid range.
+     nboPart       3799 total observations,       3658 in valid range.
+      nbbExl       3416 total observations,       3257 in valid range.
+      nboExl       3201 total observations,       3043 in valid range.
+eVecMeans: -0.0326   -0.015676   -0.017616
+buildzpzSparsePDLpar (nCPU=0)
+Across the full for/parfor loop, the start to finish elapsed time is 15.94 sec.
+VAR/VECM estimates for secondFactor=1
+                  dnbbPart        t   dnboPart        t    dnbbExl        t    dnboExl        t
+dnbbPartp0d0      -0.04148   -4.028    0.08817    8.103     0.0515    4.133    0.02819    1.772
+dnbbPartp1d0       -0.0209    -4.12    0.02988    5.576    0.01555    2.535  0.0009059   0.1156
+dnboPartp0d0       0.06967    7.069   -0.06077   -5.836    0.03703    3.105    0.01075   0.7058
+dnboPartp1d0       0.02923     6.04   -0.02586   -5.058   0.000618   0.1056   -0.00502  -0.6717
+dnbbExlp0d0        0.02809    3.461    0.03503    4.084   -0.01027   -1.046   -0.01497   -1.194
+dnbbExlp1d0       0.004311    1.031    0.00977    2.212  -0.004959  -0.9805    0.01397    2.163
+dnboExlp0d0       0.008246    1.784   0.009425    1.929    0.01386    2.477   -0.04795   -6.714
+dnboExlp1d0      -0.004444   -2.049  -0.004363   -1.904  -0.005118   -1.951   -0.01044   -3.117
+nbbPart-nboPart   -0.01843    -4.27    0.03212    7.043   -0.05564   -10.65   -0.07768   -11.65
+nbbPart-nbbExl    -0.02134   -4.208   -0.02223   -4.149     0.1213    19.76  -0.005662  -0.7228
+nbbPart-nboExl   0.0002398  0.08318  -0.002169  -0.7119   -0.00553   -1.585     0.1491    33.47
+eCov
+           dnbbPart   dnboPart    dnbbExl    dnboExl
+dnbbPart  4.923e-05  3.667e-05  3.705e-05  1.016e-05
+dnboPart  3.667e-05  5.497e-05  3.981e-05  1.103e-05
+dnbbExl   3.705e-05  3.981e-05  7.208e-05  1.077e-05
+dnboExl   1.016e-05  1.103e-05  1.077e-05  0.0001175
+eCorr
+          dnbbPart  dnboPart  dnbbExl  dnboExl
+dnbbPart         1     0.705    0.622   0.1335
+dnboPart     0.705         1   0.6325   0.1373
+dnbbExl      0.622    0.6325        1   0.1171
+dnboExl     0.1335    0.1373   0.1171        1
+Estimation finished for IBM 20161003. secondFactor=1. Elapsed time is 00:16.37.
+starting irf computation for secondFactor=1. 09-Nov-2018 14:31:59
+irfPDLpacked (nCPU=0)
+IRF computation for shock 4. Elapsed time is 0.03 seconds.
+IRF computation for shock 3. Elapsed time is 0.02 seconds.
+IRF computation for shock 2. Elapsed time is 0.02 seconds.
+IRF computation for shock 1. Elapsed time is 0.02 seconds.
+Across the full for/parfor loop, the start to finish elapsed time is 0.10 sec.
+IBM 20161003 irf finished. elapsed time is 0.16 seconds.
+IRF calculation finished for IBM 20161003. secondFactor=1. Elapsed time is 0.1626 sec.
+Random walk decomposition for secondFactor=1. 09-Nov-2018 14:31:59
+    'trLit'
+not found in
+    'nbbPart'    'nboPart'    'nbbExl'    'nboExl'
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('randomWalkDecomp/isBoundsGrouped', 'C:\Active\PDL\MatlabNovember2018\mClasses\randomWalkDecomp.m', 89)" style="font-weight:bold">randomWalkDecomp/isBoundsGrouped</a> (<a href="matlab: opentoline('C:\Active\PDL\MatlabNovember2018\mClasses\randomWalkDecomp.m',89,0)">line 89</a>)
+isBoundsGrouped
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('MVARiDarkLit01', 'C:\Active\PDL\MatlabNovember2018\MVARiDarkLit01.m', 148)" style="font-weight:bold">MVARiDarkLit01</a> (<a href="matlab: opentoline('C:\Active\PDL\MatlabNovember2018\MVARiDarkLit01.m',148,0)">line 148</a>)
+    r.isBoundsGrouped(isGroups);} 
+MVARiDarkLit01
+MVARiDarkLit01_IBM_20161003 starting at 09-Nov-2018 14:33:30
+
+MVARiDarkLit01_IBM_20161003 secondFactor=1
+Setting polynomials
+name=p0; deg=0; n=1; kOffset=0; vNames=p0d0.
+name=p1; deg=0; n=9; kOffset=1; vNames=p1d0.
+Reading data for secondFactor=1 (09-Nov-2018 14:33:30)
+20161003 IBM   4543 observations (3843 with nonzero price changes and 9am-5pm)
+20161003 IBM   4358 observations (3799 with nonzero price changes and 9am-5pm)
+20161003 IBM   4593 observations (3416 with nonzero price changes and 9am-5pm)
+20161003 IBM   3472 observations (3201 with nonzero price changes and 9am-5pm)
+Data read finished for IBM 20161003. secondFactor=1. Elapsed time is 7.3412 sec.
+starting estimates secondFactor=1. 09-Nov-2018 14:33:38
+(nbbPart nboPart trLit trDark)
+setValid (computing largest possible range)
+     nbbPart            1 (00:00:01) to        64800 (18:00:00)
+     nboPart            1 (00:00:01) to        64800 (18:00:00)
+       trLit            1 (00:00:01) to        64800 (18:00:00)
+      trDark            1 (00:00:01) to        64800 (18:00:00)
+valid range:        35100 (09:45:00) to        57600 (16:00:00)
+     nbbPart       3843 total observations,       3715 in valid range.
+     nboPart       3799 total observations,       3658 in valid range.
+       trLit       3416 total observations,       3257 in valid range.
+      trDark       3201 total observations,       3043 in valid range.
+eVecMeans: -0.0326   -0.015676   -0.017616
+buildzpzSparsePDLpar (nCPU=0)
+Across the full for/parfor loop, the start to finish elapsed time is 14.09 sec.
+VAR/VECM estimates for secondFactor=1
+                  dnbbPart        t   dnboPart        t     dtrLit        t    dtrDark        t
+dnbbPartp0d0      -0.04148   -4.028    0.08817    8.103     0.0515    4.133    0.02819    1.772
+dnbbPartp1d0       -0.0209    -4.12    0.02988    5.576    0.01555    2.535  0.0009059   0.1156
+dnboPartp0d0       0.06967    7.069   -0.06077   -5.836    0.03703    3.105    0.01075   0.7058
+dnboPartp1d0       0.02923     6.04   -0.02586   -5.058   0.000618   0.1056   -0.00502  -0.6717
+dtrLitp0d0         0.02809    3.461    0.03503    4.084   -0.01027   -1.046   -0.01497   -1.194
+dtrLitp1d0        0.004311    1.031    0.00977    2.212  -0.004959  -0.9805    0.01397    2.163
+dtrDarkp0d0       0.008246    1.784   0.009425    1.929    0.01386    2.477   -0.04795   -6.714
+dtrDarkp1d0      -0.004444   -2.049  -0.004363   -1.904  -0.005118   -1.951   -0.01044   -3.117
+nbbPart-nboPart   -0.01843    -4.27    0.03212    7.043   -0.05564   -10.65   -0.07768   -11.65
+nbbPart-trLit     -0.02134   -4.208   -0.02223   -4.149     0.1213    19.76  -0.005662  -0.7228
+nbbPart-trDark   0.0002398  0.08318  -0.002169  -0.7119   -0.00553   -1.585     0.1491    33.47
+eCov
+           dnbbPart   dnboPart     dtrLit    dtrDark
+dnbbPart  4.923e-05  3.667e-05  3.705e-05  1.016e-05
+dnboPart  3.667e-05  5.497e-05  3.981e-05  1.103e-05
+dtrLit    3.705e-05  3.981e-05  7.208e-05  1.077e-05
+dtrDark   1.016e-05  1.103e-05  1.077e-05  0.0001175
+eCorr
+          dnbbPart  dnboPart  dtrLit  dtrDark
+dnbbPart         1     0.705   0.622   0.1335
+dnboPart     0.705         1  0.6325   0.1373
+dtrLit       0.622    0.6325       1   0.1171
+dtrDark     0.1335    0.1373  0.1171        1
+Estimation finished for IBM 20161003. secondFactor=1. Elapsed time is 00:14.50.
+starting irf computation for secondFactor=1. 09-Nov-2018 14:33:52
+irfPDLpacked (nCPU=0)
+IRF computation for shock 4. Elapsed time is 0.03 seconds.
+IRF computation for shock 3. Elapsed time is 0.02 seconds.
+IRF computation for shock 2. Elapsed time is 0.02 seconds.
+IRF computation for shock 1. Elapsed time is 0.02 seconds.
+Across the full for/parfor loop, the start to finish elapsed time is 0.10 sec.
+IBM 20161003 irf finished. elapsed time is 0.16 seconds.
+IRF calculation finished for IBM 20161003. secondFactor=1. Elapsed time is 0.15551 sec.
+Random walk decomposition for secondFactor=1. 09-Nov-2018 14:33:52
+Random walk decomposition for secondFactor=1
+Sum of vma coefficients:
+  nbbPart  nboPart   trLit   trDark
+   0.4055   0.5746  0.1774  0.01429
+per period var_w:    0.000059 sd_w:    0.007709
+annualized var_w:  347.645632 sd_w:   18.645258
+info share bounds:
+             Min      Max
+nbbPart  0.06140  0.77946
+nboPart  0.13452  0.88199
+trLit    0.02053  0.60348
+trDark   0.00039  0.02826
+Grouped info share bounds
+                     Min      Max
+nbbPart nboPart  0.39048  0.97892
+trLit            0.02053  0.60348
+trDark           0.00039  0.02826
+
+MVARiDarkLit01_IBM_20161003 secondFactor=10
+Setting polynomials
+name=p0; deg=0; n=1; kOffset=0; vNames=p0d0.
+name=p1; deg=0; n=9; kOffset=1; vNames=p1d0.
+name=p2; deg=0; n=90; kOffset=10; vNames=p2d0.
+Reading data for secondFactor=10 (09-Nov-2018 14:33:52)
+20161003 IBM   6223 observations (5555 with nonzero price changes and 9am-5pm)
+20161003 IBM   5727 observations (5222 with nonzero price changes and 9am-5pm)
+20161003 IBM   5991 observations (4169 with nonzero price changes and 9am-5pm)
+20161003 IBM   3849 observations (3523 with nonzero price changes and 9am-5pm)
+Data read finished for IBM 20161003. secondFactor=10. Elapsed time is 6.8477 sec.
+starting estimates secondFactor=10. 09-Nov-2018 14:33:59
+(nbbPart nboPart trLit trDark)
+setValid (computing largest possible range)
+     nbbPart            1 (00:00:00.1) to       648000 (18:00:00.0)
+     nboPart            1 (00:00:00.1) to       648000 (18:00:00.0)
+       trLit            1 (00:00:00.1) to       648000 (18:00:00.0)
+      trDark            1 (00:00:00.1) to       648000 (18:00:00.0)
+valid range:       351000 (09:45:00.0) to       576000 (16:00:00.0)
+     nbbPart       5555 total observations,       5379 in valid range.
+     nboPart       5222 total observations,       5037 in valid range.
+       trLit       4169 total observations,       3972 in valid range.
+      trDark       3523 total observations,       3348 in valid range.
+eVecMeans: -0.032586   -0.015655   -0.017608
+buildzpzSparsePDLpar (nCPU=0)
+Across the full for/parfor loop, the start to finish elapsed time is 37.44 sec.
+VAR/VECM estimates for secondFactor=10
+                   dnbbPart        t    dnboPart        t      dtrLit         t     dtrDark        t
+dnbbPartp0d0       -0.05605   -20.94     0.04308    15.15     0.02318     7.216     0.01293    2.987
+dnbbPartp1d0       -0.01238   -11.44     0.01427    12.41    0.008473     6.524   0.0007607   0.4348
+dnbbPartp2d0      -0.002678   -5.218    0.004107    7.535    0.001846     2.997   -0.001011   -1.219
+dnboPartp0d0        0.04792    18.79    -0.04726   -17.44     0.02129     6.955     0.01053    2.553
+dnboPartp1d0        0.01529    14.82    -0.01122   -10.24    0.005245     4.235    0.002278    1.365
+dnboPartp2d0       0.003638    7.432   -0.003418   -6.573   0.0003685    0.6272   0.0003155   0.3986
+dtrLitp0d0          0.02177    10.07     0.02323    10.11   -0.008366    -3.223    0.004859     1.39
+dtrLitp1d0         0.003768    4.409    0.004566    5.029   -0.003016     -2.94   -0.002333   -1.688
+dtrLitp2d0        0.0006107    1.442   0.0008486    1.887   -0.001004    -1.975    0.001209    1.766
+dtrDarkp0d0         0.00304    2.308    0.007078    5.058    0.006185     3.912   -0.002566   -1.205
+dtrDarkp1d0       0.0004156   0.8528  -0.0001002  -0.1936  -4.293e-05  -0.07339    0.002359    2.994
+dtrDarkp2d0      -0.0004531    -2.07  -0.0002682   -1.154  -0.0001945   -0.7406   -0.001265   -3.575
+nbbPart-nboPart   -0.002107   -4.825    0.004459    9.613   -0.005894    -11.25   -0.008495   -12.03
+nbbPart-trLit     -0.002565   -5.002   -0.003175   -5.828     0.01352     21.97  -0.0003587  -0.4326
+nbbPart-trDark   -0.0001274  -0.4386   -0.000427   -1.384  -0.0007824    -2.245     0.01653    35.21
+eCov
+           dnbbPart   dnboPart     dtrLit    dtrDark
+dnbbPart  5.044e-06  2.994e-06   2.97e-06  4.959e-07
+dnboPart  2.994e-06  5.691e-06  3.289e-06  4.912e-07
+dtrLit     2.97e-06  3.289e-06  7.265e-06  5.091e-07
+dtrDark   4.959e-07  4.912e-07  5.091e-07  1.318e-05
+eCorr
+          dnbbPart  dnboPart   dtrLit  dtrDark
+dnbbPart         1    0.5588   0.4907  0.06081
+dnboPart    0.5588         1   0.5115  0.05671
+dtrLit      0.4907    0.5115        1  0.05202
+dtrDark    0.06081   0.05671  0.05202        1
+Estimation finished for IBM 20161003. secondFactor=10. Elapsed time is 00:37.89.
+starting irf computation for secondFactor=10. 09-Nov-2018 14:34:37
+irfPDLpacked (nCPU=0)
+IRF computation for shock 4. Elapsed time is 0.17 seconds.
+IRF computation for shock 3. Elapsed time is 0.16 seconds.
+IRF computation for shock 2. Elapsed time is 0.16 seconds.
+IRF computation for shock 1. Elapsed time is 0.15 seconds.
+Across the full for/parfor loop, the start to finish elapsed time is 0.65 sec.
+IBM 20161003 irf finished. elapsed time is 0.76 seconds.
+IRF calculation finished for IBM 20161003. secondFactor=10. Elapsed time is 0.75714 sec.
+Random walk decomposition for secondFactor=10. 09-Nov-2018 14:34:38
+Random walk decomposition for secondFactor=10
+Sum of vma coefficients:
+  nbbPart  nboPart   trLit   trDark
+   0.4507   0.5512  0.2157  0.02792
+per period var_w:    0.000006 sd_w:    0.002446
+annualized var_w:  349.936533 sd_w:   18.706591
+info share bounds:
+             Min      Max
+nbbPart  0.10794  0.69456
+nboPart  0.17725  0.79708
+trLit    0.03825  0.51536
+trDark   0.00171  0.01198
+Grouped info share bounds
+                     Min      Max
+nbbPart nboPart  0.47942  0.95975
+trLit            0.03825  0.51536
+trDark           0.00171  0.01198
+
+MVARiDarkLit01_IBM_20161003 secondFactor=100
+Setting polynomials
+name=p0; deg=0; n=1; kOffset=0; vNames=p0d0.
+name=p1; deg=0; n=9; kOffset=1; vNames=p1d0.
+name=p2; deg=0; n=90; kOffset=10; vNames=p2d0.
+name=p3; deg=0; n=900; kOffset=100; vNames=p3d0.
+Reading data for secondFactor=100 (09-Nov-2018 14:34:38)
+20161003 IBM   7587 observations (6997 with nonzero price changes and 9am-5pm)
+20161003 IBM   6869 observations (6422 with nonzero price changes and 9am-5pm)
+{Operation terminated by user during <a href="matlab:matlab.internal.language.introspective.errorDocCallback('table/readTextFile>textscanReadData', 'C:\Program Files\MATLAB\R2018b\toolbox\matlab\datatypes\@table\readTextFile.m', 557)" style="font-weight:bold">table/readTextFile>textscanReadData</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2018b\toolbox\matlab\datatypes\@table\readTextFile.m',557,0)">line 557</a>)
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('table/readTextFile', 'C:\Program Files\MATLAB\R2018b\toolbox\matlab\datatypes\@table\readTextFile.m', 228)" style="font-weight:bold">table/readTextFile</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2018b\toolbox\matlab\datatypes\@table\readTextFile.m',228,0)">line 228</a>)
+        rawData = textscanReadData(fid, format, delimiter, whitespace, eol, treatAsEmpty, otherArgs);
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('table.readFromFile', 'C:\Program Files\MATLAB\R2018b\toolbox\matlab\datatypes\@table\readFromFile.m', 41)" style="font-weight:bold">table.readFromFile</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2018b\toolbox\matlab\datatypes\@table\readFromFile.m',41,0)">line 41</a>)
+        t = table.readTextFile(filename,otherArgs);
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('readtable', 'C:\Program Files\MATLAB\R2018b\toolbox\matlab\iofun\readtable.m', 216)" style="font-weight:bold">readtable</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2018b\toolbox\matlab\iofun\readtable.m',216,0)">line 216</a>)
+t = table.readFromFile(location,varargin);
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('MVARiDarkLit01', 'C:\Active\PDL\MatlabNovember2018\MVARiDarkLit01.m', 94)" style="font-weight:bold">MVARiDarkLit01</a> (<a href="matlab: opentoline('C:\Active\PDL\MatlabNovember2018\MVARiDarkLit01.m',94,0)">line 94</a>)
+    t = getPrice(readtable([inCsvDir 'ctLit.csv']),'PRICE','PART_TIME',secondFactor,mDisplay,symbol,inDate);} 
+irfGraphsPartSIP
+shockVar =
+    'nbbPart'
+impactVar =
+    'nbbSIP'
+fileNameFmt =
+    'MVARiPartSIP01_%s_20161003.mat'
+symbol =
+    'IBM'
+inFile =
+    'MVARiPartSIP01_IBM_20161003.mat'
+    'nbbPart nboPart'    'nbbSIP nboSIP'
+  resolution   sdw     min    max       min       max
+           1  19.1  0.0022      1  0.000413     0.998
+         0.1  19.2   0.017  0.999   0.00134     0.983
+        0.01  19.1   0.142  0.998   0.00225     0.858
+       0.001  19.1   0.827  0.998   0.00223     0.173
+      0.0001  19.1   0.999  0.999  0.000578  0.000832
+       1e-05  19.1   0.999  0.999   0.00064   0.00069
+irfGraphsPartSIP
+shockVar =
+    'nbbPart'
+impactVar =
+    'nbbSIP'
+fileNameFmt =
+    'MVARiPartSIP01_%s_20161003.mat'
+symbol =
+    'IBM'
+inFile =
+    'MVARiPartSIP01_IBM_20161003.mat'
+    'nbbPart nboPart'    'nbbSIP nboSIP'
+  resolution     sdw    min    max    min    max
+       1.000  19.065  0.002  1.000  0.000  0.998
+       0.100  19.154  0.017  0.999  0.001  0.983
+       0.010  19.138  0.142  0.998  0.002  0.858
+       0.001  19.121  0.827  0.998  0.002  0.173
+       0.000  19.121  0.999  0.999  0.001  0.001
+       0.000  19.124  0.999  0.999  0.001  0.001
+  resolution       sdw      min      max      min      max
+     1.00000  19.06533  0.00220  0.99959  0.00041  0.99780
+     0.10000  19.15431  0.01698  0.99866  0.00134  0.98302
+     0.01000  19.13788  0.14200  0.99775  0.00225  0.85800
+     0.00100  19.12107  0.82659  0.99777  0.00223  0.17341
+     0.00010  19.12131  0.99917  0.99942  0.00058  0.00083
+     0.00001  19.12400  0.99931  0.99936  0.00064  0.00069
+irfGraphsPartSIP
+shockVar =
+    'nbbPart'
+impactVar =
+    'nbbSIP'
+fileNameFmt =
+    'MVARiPartSIP01_%s_20161003.mat'
+symbol =
+    'IBM'
+inFile =
+    'MVARiPartSIP01_IBM_20161003.mat'
+    'nbbPart nboPart'    'nbbSIP nboSIP'
+  resolution     sdw    min    max    min    max
+       1.000  19.065  0.002  1.000  0.000  0.998
+       0.100  19.154  0.017  0.999  0.001  0.983
+       0.010  19.138  0.142  0.998  0.002  0.858
+       0.001  19.121  0.827  0.998  0.002  0.173
+       0.000  19.121  0.999  0.999  0.001  0.001
+       0.000  19.124  0.999  0.999  0.001  0.001
+  resolution       sdw      min      max      min      max
+     1.00000  19.06533  0.00220  0.99959  0.00041  0.99780
+     0.10000  19.15431  0.01698  0.99866  0.00134  0.98302
+     0.01000  19.13788  0.14200  0.99775  0.00225  0.85800
+     0.00100  19.12107  0.82659  0.99777  0.00223  0.17341
+     0.00010  19.12131  0.99917  0.99942  0.00058  0.00083
+     0.00001  19.12400  0.99931  0.99936  0.00064  0.00069
+Current plot held
+ans =
+  1×4 <a href="matlab:helpPopup cell" style="font-weight:bold">cell</a> array
+    {'nbbPart'}    {'nboPart'}    {'nbbSIP'}    {'nboSIP'}
+ans =
+     0     1     2     3     4     5     6     7     8     9    10    20    30    40    50    60    70    80    90   100   200   300   400   500
+ans =
+  Columns 1 through 23
+    1.0000    0.4239    0.9696    1.0159    1.0530    1.0866    1.1185    1.1488    1.1776    1.2052    1.2317    1.5171    1.5455    1.5559    1.5642    1.5704    1.5750    1.5785    1.5811    1.5831    1.5885    1.5888    1.5888
+         0    1.1923    1.4513    1.4710    1.4640    1.4594    1.4565    1.4553    1.4556    1.4573    1.4603    1.6198    1.6076    1.6037    1.6000    1.5971    1.5950    1.5935    1.5923    1.5914    1.5890    1.5888    1.5888
+  Column 24
+    1.5888
+    1.5888
+ans =
+     4    24     4
+ans =
+     0     0
+ans =
+  1×4 <a href="matlab:helpPopup cell" style="font-weight:bold">cell</a> array
+    {'nbbPart'}    {'nboPart'}    {'nbbSIP'}    {'nboSIP'}
+ans =
+  Columns 1 through 19
+           0           1           2           3           4           5           6           7           8           9          10          20          30          40          50          60          70          80          90
+  Columns 20 through 33
+         100         200         300         400         500         600         700         800         900        1000        2000        3000        4000        5000
+ans =
+  Columns 1 through 23
+    1.0000    0.9715    0.9886    0.9822    0.9780    0.9740    0.9703    0.9668    0.9636    0.9607    0.9581    0.9505    0.9410    0.9337    0.9282    0.9244    0.9220    0.9210    0.9212    0.9226    0.9195    0.8928    0.8728
+         0    0.4323    0.4230    0.4373    0.4498    0.4622    0.4745    0.4865    0.4983    0.5099    0.5214    0.5469    0.5768    0.6047    0.6309    0.6557    0.6792    0.7015    0.7228    0.7431    0.7588    0.7741    0.7847
+  Columns 24 through 33
+    0.8581    0.8471    0.8389    0.8328    0.8282    0.8249    0.8155    0.8150    0.8150    0.8150
+    0.7924    0.7982    0.8025    0.8057    0.8081    0.8098    0.8147    0.8150    0.8150    0.8150
+ans =
+     4    33     4
+ans =
+     0     0
+ans =
+  1×4 <a href="matlab:helpPopup cell" style="font-weight:bold">cell</a> array
+    {'nbbPart'}    {'nboPart'}    {'nbbSIP'}    {'nboSIP'}
+ans =
+  Columns 1 through 19
+           0           1           2           3           4           5           6           7           8           9          10          20          30          40          50          60          70          80          90
+  Columns 20 through 38
+         100         200         300         400         500         600         700         800         900        1000        2000        3000        4000        5000        6000        7000        8000        9000       10000
+  Columns 39 through 42
+       20000       30000       40000       50000
+ans =
+  Columns 1 through 23
+    1.0000    0.9638    0.9490    0.9450    0.9392    0.9336    0.9282    0.9229    0.9176    0.9125    0.9074    0.9025    0.8956    0.8892    0.8831    0.8774    0.8720    0.8669    0.8622    0.8577    0.8506    0.8387    0.8291
+         0    0.1990    0.2499    0.2615    0.2693    0.2756    0.2816    0.2876    0.2934    0.2992    0.3049    0.3143    0.3275    0.3403    0.3528    0.3650    0.3770    0.3888    0.4003    0.4116    0.4366    0.4662    0.4935
+  Columns 24 through 42
+    0.8216    0.8157    0.8115    0.8087    0.8072    0.8070    0.7967    0.7697    0.7494    0.7345    0.7235    0.7152    0.7091    0.7046    0.7012    0.6920    0.6916    0.6915    0.6915
+    0.5191    0.5432    0.5659    0.5874    0.6078    0.6272    0.6329    0.6486    0.6598    0.6680    0.6741    0.6786    0.6819    0.6844    0.6862    0.6913    0.6915    0.6915    0.6915
+ans =
+     4    42     4
+ans =
+     0     0
+ans =
+  1×4 <a href="matlab:helpPopup cell" style="font-weight:bold">cell</a> array
+    {'nbbPart'}    {'nboPart'}    {'nbbSIP'}    {'nboSIP'}
+ans =
+  Columns 1 through 19
+           0           1           2           3           4           5           6           7           8           9          10          20          30          40          50          60          70          80          90
+  Columns 20 through 38
+         100         200         300         400         500         600         700         800         900        1000        2000        3000        4000        5000        6000        7000        8000        9000       10000
+  Columns 39 through 51
+       20000       30000       40000       50000       60000       70000       80000       90000      100000      200000      300000      400000      500000
+ans =
+  Columns 1 through 23
+    1.0000    0.9199    0.9271    0.9225    0.9202    0.9180    0.9158    0.9136    0.9113    0.9091    0.9068    0.8940    0.8884    0.8829    0.8776    0.8725    0.8674    0.8625    0.8576    0.8529    0.8494    0.8420    0.8351
+         0    0.0852    0.1052    0.1225    0.1360    0.1469    0.1563    0.1647    0.1724    0.1797    0.1866    0.2011    0.2088    0.2162    0.2234    0.2305    0.2376    0.2446    0.2515    0.2582    0.2678    0.2804    0.2925
+  Columns 24 through 46
+    0.8286    0.8224    0.8166    0.8111    0.8059    0.8010    0.7945    0.7822    0.7722    0.7641    0.7578    0.7529    0.7495    0.7474    0.7465    0.7363    0.7097    0.6898    0.6752    0.6643    0.6562    0.6502    0.6457
+    0.3044    0.3161    0.3274    0.3386    0.3495    0.3602    0.3867    0.4154    0.4420    0.4667    0.4900    0.5119    0.5325    0.5520    0.5706    0.5752    0.5905    0.6016    0.6096    0.6156    0.6200    0.6233    0.6258
+  Columns 47 through 51
+    0.6424    0.6333    0.6328    0.6328    0.6328
+    0.6276    0.6325    0.6328    0.6328    0.6328
+ans =
+     4    51     4
+ans =
+     0     0
+ans =
+  1×4 <a href="matlab:helpPopup cell" style="font-weight:bold">cell</a> array
+    {'nbbPart'}    {'nboPart'}    {'nbbSIP'}    {'nboSIP'}
+ans =
+  Columns 1 through 19
+           0           1           2           3           4           5           6           7           8           9          10          20          30          40          50          60          70          80          90
+  Columns 20 through 38
+         100         200         300         400         500         600         700         800         900        1000        2000        3000        4000        5000        6000        7000        8000        9000       10000
+  Columns 39 through 57
+       20000       30000       40000       50000       60000       70000       80000       90000      100000      200000      300000      400000      500000      600000      700000      800000      900000     1000000     2000000
+  Columns 58 through 60
+     3000000     4000000     5000000
+ans =
+  Columns 1 through 23
+    1.0000    0.9819    0.9735    0.9659    0.9584    0.9511    0.9440    0.9371    0.9303    0.9237    0.9172    0.9036    0.8987    0.8950    0.8926    0.8909    0.8895    0.8883    0.8872    0.8863    0.8746    0.8688    0.8635
+         0    0.0248    0.0392    0.0534    0.0669    0.0798    0.0921    0.1039    0.1153    0.1262    0.1367    0.1542    0.1675    0.1786    0.1880    0.1967    0.2050    0.2130    0.2208    0.2286    0.2374    0.2448    0.2522
+  Columns 24 through 46
+    0.8583    0.8533    0.8484    0.8436    0.8390    0.8344    0.8322    0.8257    0.8198    0.8142    0.8089    0.8039    0.7992    0.7949    0.7908    0.7861    0.7757    0.7675    0.7611    0.7562    0.7527    0.7506    0.7496
+    0.2596    0.2669    0.2741    0.2812    0.2882    0.2951    0.3036    0.3155    0.3270    0.3383    0.3493    0.3601    0.3706    0.3810    0.3911    0.4156    0.4426    0.4676    0.4910    0.5131    0.5338    0.5535    0.5722
+  Columns 47 through 60
+    0.7497    0.7412    0.7172    0.6991    0.6857    0.6759    0.6685    0.6630    0.6590    0.6560    0.6478    0.6473    0.6473    0.6473
+    0.5900    0.5950    0.6090    0.6190    0.6263    0.6317    0.6357    0.6387    0.6409    0.6426    0.6471    0.6473    0.6473    0.6473
+ans =
+     4    60     4
+ans =
+     0     0
+ans =
+  1×4 <a href="matlab:helpPopup cell" style="font-weight:bold">cell</a> array
+    {'nbbPart'}    {'nboPart'}    {'nbbSIP'}    {'nboSIP'}
+ans =
+  Columns 1 through 19
+           0           1           2           3           4           5           6           7           8           9          10          20          30          40          50          60          70          80          90
+  Columns 20 through 38
+         100         200         300         400         500         600         700         800         900        1000        2000        3000        4000        5000        6000        7000        8000        9000       10000
+  Columns 39 through 57
+       20000       30000       40000       50000       60000       70000       80000       90000      100000      200000      300000      400000      500000      600000      700000      800000      900000     1000000     2000000
+  Columns 58 through 60
+     3000000     4000000     5000000
+ans =
+  Columns 1 through 23
+    1.0000    0.9950    0.9924    0.9898    0.9873    0.9848    0.9822    0.9797    0.9772    0.9748    0.9723    0.9643    0.9562    0.9484    0.9408    0.9335    0.9263    0.9193    0.9125    0.9059    0.8922    0.8863    0.8824
+         0    0.0011    0.0045    0.0077    0.0110    0.0143    0.0175    0.0207    0.0239    0.0271    0.0303    0.0452    0.0598    0.0738    0.0871    0.0999    0.1121    0.1239    0.1352    0.1461    0.1630    0.1768    0.1879
+  Columns 24 through 46
+    0.8798    0.8779    0.8765    0.8752    0.8742    0.8732    0.8622    0.8567    0.8516    0.8466    0.8418    0.8371    0.8325    0.8281    0.8237    0.8218    0.8157    0.8100    0.8047    0.7996    0.7949    0.7904    0.7863
+    0.1975    0.2063    0.2147    0.2228    0.2308    0.2387    0.2470    0.2543    0.2616    0.2689    0.2760    0.2831    0.2900    0.2969    0.3037    0.3120    0.3236    0.3348    0.3458    0.3566    0.3671    0.3774    0.3876
+  Columns 47 through 60
+    0.7824    0.7782    0.7685    0.7610    0.7550    0.7506    0.7476    0.7459    0.7452    0.7457    0.7376    0.7144    0.6970    0.6841
+    0.3975    0.4213    0.4476    0.4720    0.4948    0.5164    0.5367    0.5560    0.5743    0.5917    0.5968    0.6102    0.6198    0.6268
+ans =
+     4    60     4
+ans =
+     0     0
+ytix =
+  1×10 <a href="matlab:helpPopup cell" style="font-weight:bold">cell</a> array
+    {'$-0.20'}    {'$0.00'}    {'$0.20'}    {'$0.40'}    {'$0.60'}    {'$0.80'}    {'$1.00'}    {'$1.20'}    {'$1.40'}    {'$1.60'}
+ans = 
+  12×1 <a href="matlab:helpview ([docroot '/matlab/creating_plots/creating_plots.map'],'heterogeneous_graphics_arrays')">graphics</a> array:
+
+  Text    (10 \mus)
+  Line
+  Text    (100 \mus)
+  Line
+  Text    (1 ms)
+  Line
+  Text    (10 ms)
+  Line
+  Text    (100 ms)
+  Line
+  Text    (1 sec)
+  Line
+h = 
+  6×1 <a href="matlab:helpPopup matlab.graphics.chart.primitive.Line" style="font-weight:bold">Line</a> array:
+
+  Line
+  Line
+  Line
+  Line
+  Line
+  Line
+1 - 2.000000    
+2 : 1.800000   
+3 -- 1.600000   
+4 - 1.400000    
+5 : 1.200000   
+6 -- 1.000000   
+irfGraphsPartSIP
+shockVar =
+    'nbbPart'
+impactVar =
+    'nbbSIP'
+fileNameFmt =
+    'MVARiPartSIP01_%s_20161003.mat'
+symbol =
+    'IBM'
+inFile =
+    'MVARiPartSIP01_IBM_20161003.mat'
+    'nbbPart nboPart'    'nbbSIP nboSIP'
+  resolution     sdw    min    max    min    max
+       1.000  19.065  0.002  1.000  0.000  0.998
+       0.100  19.154  0.017  0.999  0.001  0.983
+       0.010  19.138  0.142  0.998  0.002  0.858
+       0.001  19.121  0.827  0.998  0.002  0.173
+       0.000  19.121  0.999  0.999  0.001  0.001
+       0.000  19.124  0.999  0.999  0.001  0.001
+  resolution       sdw      min      max      min      max
+     1.00000  19.06533  0.00220  0.99959  0.00041  0.99780
+     0.10000  19.15431  0.01698  0.99866  0.00134  0.98302
+     0.01000  19.13788  0.14200  0.99775  0.00225  0.85800
+     0.00100  19.12107  0.82659  0.99777  0.00223  0.17341
+     0.00010  19.12131  0.99917  0.99942  0.00058  0.00083
+     0.00001  19.12400  0.99931  0.99936  0.00064  0.00069
+Current plot held
+ans =
+     0     1     2     3     4     5     6     7     8     9    10    20    30    40    50    60    70    80    90   100   200   300   400   500
+ans =
+  Columns 1 through 23
+    1.0000    0.4239    0.9696    1.0159    1.0530    1.0866    1.1185    1.1488    1.1776    1.2052    1.2317    1.5171    1.5455    1.5559    1.5642    1.5704    1.5750    1.5785    1.5811    1.5831    1.5885    1.5888    1.5888
+         0    1.1923    1.4513    1.4710    1.4640    1.4594    1.4565    1.4553    1.4556    1.4573    1.4603    1.6198    1.6076    1.6037    1.6000    1.5971    1.5950    1.5935    1.5923    1.5914    1.5890    1.5888    1.5888
+  Column 24
+    1.5888
+    1.5888
+ans =
+     4    24     4
+ans =
+     0     0
+ans =
+  Columns 1 through 19
+           0           1           2           3           4           5           6           7           8           9          10          20          30          40          50          60          70          80          90
+  Columns 20 through 33
+         100         200         300         400         500         600         700         800         900        1000        2000        3000        4000        5000
+ans =
+  Columns 1 through 23
+    1.0000    0.9715    0.9886    0.9822    0.9780    0.9740    0.9703    0.9668    0.9636    0.9607    0.9581    0.9505    0.9410    0.9337    0.9282    0.9244    0.9220    0.9210    0.9212    0.9226    0.9195    0.8928    0.8728
+         0    0.4323    0.4230    0.4373    0.4498    0.4622    0.4745    0.4865    0.4983    0.5099    0.5214    0.5469    0.5768    0.6047    0.6309    0.6557    0.6792    0.7015    0.7228    0.7431    0.7588    0.7741    0.7847
+  Columns 24 through 33
+    0.8581    0.8471    0.8389    0.8328    0.8282    0.8249    0.8155    0.8150    0.8150    0.8150
+    0.7924    0.7982    0.8025    0.8057    0.8081    0.8098    0.8147    0.8150    0.8150    0.8150
+ans =
+     4    33     4
+ans =
+     0     0
+ans =
+  Columns 1 through 19
+           0           1           2           3           4           5           6           7           8           9          10          20          30          40          50          60          70          80          90
+  Columns 20 through 38
+         100         200         300         400         500         600         700         800         900        1000        2000        3000        4000        5000        6000        7000        8000        9000       10000
+  Columns 39 through 42
+       20000       30000       40000       50000
+ans =
+  Columns 1 through 23
+    1.0000    0.9638    0.9490    0.9450    0.9392    0.9336    0.9282    0.9229    0.9176    0.9125    0.9074    0.9025    0.8956    0.8892    0.8831    0.8774    0.8720    0.8669    0.8622    0.8577    0.8506    0.8387    0.8291
+         0    0.1990    0.2499    0.2615    0.2693    0.2756    0.2816    0.2876    0.2934    0.2992    0.3049    0.3143    0.3275    0.3403    0.3528    0.3650    0.3770    0.3888    0.4003    0.4116    0.4366    0.4662    0.4935
+  Columns 24 through 42
+    0.8216    0.8157    0.8115    0.8087    0.8072    0.8070    0.7967    0.7697    0.7494    0.7345    0.7235    0.7152    0.7091    0.7046    0.7012    0.6920    0.6916    0.6915    0.6915
+    0.5191    0.5432    0.5659    0.5874    0.6078    0.6272    0.6329    0.6486    0.6598    0.6680    0.6741    0.6786    0.6819    0.6844    0.6862    0.6913    0.6915    0.6915    0.6915
+ans =
+     4    42     4
+ans =
+     0     0
+ans =
+  Columns 1 through 19
+           0           1           2           3           4           5           6           7           8           9          10          20          30          40          50          60          70          80          90
+  Columns 20 through 38
+         100         200         300         400         500         600         700         800         900        1000        2000        3000        4000        5000        6000        7000        8000        9000       10000
+  Columns 39 through 51
+       20000       30000       40000       50000       60000       70000       80000       90000      100000      200000      300000      400000      500000
+ans =
+  Columns 1 through 23
+    1.0000    0.9199    0.9271    0.9225    0.9202    0.9180    0.9158    0.9136    0.9113    0.9091    0.9068    0.8940    0.8884    0.8829    0.8776    0.8725    0.8674    0.8625    0.8576    0.8529    0.8494    0.8420    0.8351
+         0    0.0852    0.1052    0.1225    0.1360    0.1469    0.1563    0.1647    0.1724    0.1797    0.1866    0.2011    0.2088    0.2162    0.2234    0.2305    0.2376    0.2446    0.2515    0.2582    0.2678    0.2804    0.2925
+  Columns 24 through 46
+    0.8286    0.8224    0.8166    0.8111    0.8059    0.8010    0.7945    0.7822    0.7722    0.7641    0.7578    0.7529    0.7495    0.7474    0.7465    0.7363    0.7097    0.6898    0.6752    0.6643    0.6562    0.6502    0.6457
+    0.3044    0.3161    0.3274    0.3386    0.3495    0.3602    0.3867    0.4154    0.4420    0.4667    0.4900    0.5119    0.5325    0.5520    0.5706    0.5752    0.5905    0.6016    0.6096    0.6156    0.6200    0.6233    0.6258
+  Columns 47 through 51
+    0.6424    0.6333    0.6328    0.6328    0.6328
+    0.6276    0.6325    0.6328    0.6328    0.6328
+ans =
+     4    51     4
+ans =
+     0     0
+ans =
+  Columns 1 through 19
+           0           1           2           3           4           5           6           7           8           9          10          20          30          40          50          60          70          80          90
+  Columns 20 through 38
+         100         200         300         400         500         600         700         800         900        1000        2000        3000        4000        5000        6000        7000        8000        9000       10000
+  Columns 39 through 57
+       20000       30000       40000       50000       60000       70000       80000       90000      100000      200000      300000      400000      500000      600000      700000      800000      900000     1000000     2000000
+  Columns 58 through 60
+     3000000     4000000     5000000
+ans =
+  Columns 1 through 23
+    1.0000    0.9819    0.9735    0.9659    0.9584    0.9511    0.9440    0.9371    0.9303    0.9237    0.9172    0.9036    0.8987    0.8950    0.8926    0.8909    0.8895    0.8883    0.8872    0.8863    0.8746    0.8688    0.8635
+         0    0.0248    0.0392    0.0534    0.0669    0.0798    0.0921    0.1039    0.1153    0.1262    0.1367    0.1542    0.1675    0.1786    0.1880    0.1967    0.2050    0.2130    0.2208    0.2286    0.2374    0.2448    0.2522
+  Columns 24 through 46
+    0.8583    0.8533    0.8484    0.8436    0.8390    0.8344    0.8322    0.8257    0.8198    0.8142    0.8089    0.8039    0.7992    0.7949    0.7908    0.7861    0.7757    0.7675    0.7611    0.7562    0.7527    0.7506    0.7496
+    0.2596    0.2669    0.2741    0.2812    0.2882    0.2951    0.3036    0.3155    0.3270    0.3383    0.3493    0.3601    0.3706    0.3810    0.3911    0.4156    0.4426    0.4676    0.4910    0.5131    0.5338    0.5535    0.5722
+  Columns 47 through 60
+    0.7497    0.7412    0.7172    0.6991    0.6857    0.6759    0.6685    0.6630    0.6590    0.6560    0.6478    0.6473    0.6473    0.6473
+    0.5900    0.5950    0.6090    0.6190    0.6263    0.6317    0.6357    0.6387    0.6409    0.6426    0.6471    0.6473    0.6473    0.6473
+ans =
+     4    60     4
+ans =
+     0     0
+ans =
+  Columns 1 through 19
+           0           1           2           3           4           5           6           7           8           9          10          20          30          40          50          60          70          80          90
+  Columns 20 through 38
+         100         200         300         400         500         600         700         800         900        1000        2000        3000        4000        5000        6000        7000        8000        9000       10000
+  Columns 39 through 57
+       20000       30000       40000       50000       60000       70000       80000       90000      100000      200000      300000      400000      500000      600000      700000      800000      900000     1000000     2000000
+  Columns 58 through 60
+     3000000     4000000     5000000
+ans =
+  Columns 1 through 23
+    1.0000    0.9950    0.9924    0.9898    0.9873    0.9848    0.9822    0.9797    0.9772    0.9748    0.9723    0.9643    0.9562    0.9484    0.9408    0.9335    0.9263    0.9193    0.9125    0.9059    0.8922    0.8863    0.8824
+         0    0.0011    0.0045    0.0077    0.0110    0.0143    0.0175    0.0207    0.0239    0.0271    0.0303    0.0452    0.0598    0.0738    0.0871    0.0999    0.1121    0.1239    0.1352    0.1461    0.1630    0.1768    0.1879
+  Columns 24 through 46
+    0.8798    0.8779    0.8765    0.8752    0.8742    0.8732    0.8622    0.8567    0.8516    0.8466    0.8418    0.8371    0.8325    0.8281    0.8237    0.8218    0.8157    0.8100    0.8047    0.7996    0.7949    0.7904    0.7863
+    0.1975    0.2063    0.2147    0.2228    0.2308    0.2387    0.2470    0.2543    0.2616    0.2689    0.2760    0.2831    0.2900    0.2969    0.3037    0.3120    0.3236    0.3348    0.3458    0.3566    0.3671    0.3774    0.3876
+  Columns 47 through 60
+    0.7824    0.7782    0.7685    0.7610    0.7550    0.7506    0.7476    0.7459    0.7452    0.7457    0.7376    0.7144    0.6970    0.6841
+    0.3975    0.4213    0.4476    0.4720    0.4948    0.5164    0.5367    0.5560    0.5743    0.5917    0.5968    0.6102    0.6198    0.6268
+ans =
+     4    60     4
+ans =
+     0     0
+ytix =
+  1×10 <a href="matlab:helpPopup cell" style="font-weight:bold">cell</a> array
+    {'$-0.20'}    {'$0.00'}    {'$0.20'}    {'$0.40'}    {'$0.60'}    {'$0.80'}    {'$1.00'}    {'$1.20'}    {'$1.40'}    {'$1.60'}
+ans = 
+  12×1 <a href="matlab:helpview ([docroot '/matlab/creating_plots/creating_plots.map'],'heterogeneous_graphics_arrays')">graphics</a> array:
+
+  Text    (10 \mus)
+  Line
+  Text    (100 \mus)
+  Line
+  Text    (1 ms)
+  Line
+  Text    (10 ms)
+  Line
+  Text    (100 ms)
+  Line
+  Text    (1 sec)
+  Line
+h = 
+  6×1 <a href="matlab:helpPopup matlab.graphics.chart.primitive.Line" style="font-weight:bold">Line</a> array:
+
+  Line
+  Line
+  Line
+  Line
+  Line
+  Line
+1 - 2.000000    
+2 : 1.800000   
+3 -- 1.600000   
+4 - 1.400000    
+5 : 1.200000   
+6 -- 1.000000   
+irfGraphsPartSIP
+shockVar =
+    'nbbPart'
+impactVar =
+    'nbbSIP'
+fileNameFmt =
+    'MVARiPartSIP01_%s_20161003.mat'
+symbol =
+    'IBM'
+inFile =
+    'MVARiPartSIP01_IBM_20161003.mat'
+    'nbbPart nboPart'    'nbbSIP nboSIP'
+  resolution     sdw    min    max    min    max
+       1.000  19.065  0.002  1.000  0.000  0.998
+       0.100  19.154  0.017  0.999  0.001  0.983
+       0.010  19.138  0.142  0.998  0.002  0.858
+       0.001  19.121  0.827  0.998  0.002  0.173
+       0.000  19.121  0.999  0.999  0.001  0.001
+       0.000  19.124  0.999  0.999  0.001  0.001
+  resolution       sdw      min      max      min      max
+     1.00000  19.06533  0.00220  0.99959  0.00041  0.99780
+     0.10000  19.15431  0.01698  0.99866  0.00134  0.98302
+     0.01000  19.13788  0.14200  0.99775  0.00225  0.85800
+     0.00100  19.12107  0.82659  0.99777  0.00223  0.17341
+     0.00010  19.12131  0.99917  0.99942  0.00058  0.00083
+     0.00001  19.12400  0.99931  0.99936  0.00064  0.00069
+Current plot held
+ans =
+     0     1     2     3     4     5     6     7     8     9    10    20    30    40    50    60    70    80    90   100   200   300   400   500
+ans =
+  Columns 1 through 23
+    1.0000    0.4239    0.9696    1.0159    1.0530    1.0866    1.1185    1.1488    1.1776    1.2052    1.2317    1.5171    1.5455    1.5559    1.5642    1.5704    1.5750    1.5785    1.5811    1.5831    1.5885    1.5888    1.5888
+         0    1.1923    1.4513    1.4710    1.4640    1.4594    1.4565    1.4553    1.4556    1.4573    1.4603    1.6198    1.6076    1.6037    1.6000    1.5971    1.5950    1.5935    1.5923    1.5914    1.5890    1.5888    1.5888
+  Column 24
+    1.5888
+    1.5888
+ans =
+     4    24     4
+ans =
+     0     0
+ans =
+  Columns 1 through 19
+           0           1           2           3           4           5           6           7           8           9          10          20          30          40          50          60          70          80          90
+  Columns 20 through 33
+         100         200         300         400         500         600         700         800         900        1000        2000        3000        4000        5000
+ans =
+  Columns 1 through 23
+    1.0000    0.9715    0.9886    0.9822    0.9780    0.9740    0.9703    0.9668    0.9636    0.9607    0.9581    0.9505    0.9410    0.9337    0.9282    0.9244    0.9220    0.9210    0.9212    0.9226    0.9195    0.8928    0.8728
+         0    0.4323    0.4230    0.4373    0.4498    0.4622    0.4745    0.4865    0.4983    0.5099    0.5214    0.5469    0.5768    0.6047    0.6309    0.6557    0.6792    0.7015    0.7228    0.7431    0.7588    0.7741    0.7847
+  Columns 24 through 33
+    0.8581    0.8471    0.8389    0.8328    0.8282    0.8249    0.8155    0.8150    0.8150    0.8150
+    0.7924    0.7982    0.8025    0.8057    0.8081    0.8098    0.8147    0.8150    0.8150    0.8150
+ans =
+     4    33     4
+ans =
+     0     0
+ans =
+  Columns 1 through 19
+           0           1           2           3           4           5           6           7           8           9          10          20          30          40          50          60          70          80          90
+  Columns 20 through 38
+         100         200         300         400         500         600         700         800         900        1000        2000        3000        4000        5000        6000        7000        8000        9000       10000
+  Columns 39 through 42
+       20000       30000       40000       50000
+ans =
+  Columns 1 through 23
+    1.0000    0.9638    0.9490    0.9450    0.9392    0.9336    0.9282    0.9229    0.9176    0.9125    0.9074    0.9025    0.8956    0.8892    0.8831    0.8774    0.8720    0.8669    0.8622    0.8577    0.8506    0.8387    0.8291
+         0    0.1990    0.2499    0.2615    0.2693    0.2756    0.2816    0.2876    0.2934    0.2992    0.3049    0.3143    0.3275    0.3403    0.3528    0.3650    0.3770    0.3888    0.4003    0.4116    0.4366    0.4662    0.4935
+  Columns 24 through 42
+    0.8216    0.8157    0.8115    0.8087    0.8072    0.8070    0.7967    0.7697    0.7494    0.7345    0.7235    0.7152    0.7091    0.7046    0.7012    0.6920    0.6916    0.6915    0.6915
+    0.5191    0.5432    0.5659    0.5874    0.6078    0.6272    0.6329    0.6486    0.6598    0.6680    0.6741    0.6786    0.6819    0.6844    0.6862    0.6913    0.6915    0.6915    0.6915
+ans =
+     4    42     4
+ans =
+     0     0
+ans =
+  Columns 1 through 19
+           0           1           2           3           4           5           6           7           8           9          10          20          30          40          50          60          70          80          90
+  Columns 20 through 38
+         100         200         300         400         500         600         700         800         900        1000        2000        3000        4000        5000        6000        7000        8000        9000       10000
+  Columns 39 through 51
+       20000       30000       40000       50000       60000       70000       80000       90000      100000      200000      300000      400000      500000
+ans =
+  Columns 1 through 23
+    1.0000    0.9199    0.9271    0.9225    0.9202    0.9180    0.9158    0.9136    0.9113    0.9091    0.9068    0.8940    0.8884    0.8829    0.8776    0.8725    0.8674    0.8625    0.8576    0.8529    0.8494    0.8420    0.8351
+         0    0.0852    0.1052    0.1225    0.1360    0.1469    0.1563    0.1647    0.1724    0.1797    0.1866    0.2011    0.2088    0.2162    0.2234    0.2305    0.2376    0.2446    0.2515    0.2582    0.2678    0.2804    0.2925
+  Columns 24 through 46
+    0.8286    0.8224    0.8166    0.8111    0.8059    0.8010    0.7945    0.7822    0.7722    0.7641    0.7578    0.7529    0.7495    0.7474    0.7465    0.7363    0.7097    0.6898    0.6752    0.6643    0.6562    0.6502    0.6457
+    0.3044    0.3161    0.3274    0.3386    0.3495    0.3602    0.3867    0.4154    0.4420    0.4667    0.4900    0.5119    0.5325    0.5520    0.5706    0.5752    0.5905    0.6016    0.6096    0.6156    0.6200    0.6233    0.6258
+  Columns 47 through 51
+    0.6424    0.6333    0.6328    0.6328    0.6328
+    0.6276    0.6325    0.6328    0.6328    0.6328
+ans =
+     4    51     4
+ans =
+     0     0
+ans =
+  Columns 1 through 19
+           0           1           2           3           4           5           6           7           8           9          10          20          30          40          50          60          70          80          90
+  Columns 20 through 38
+         100         200         300         400         500         600         700         800         900        1000        2000        3000        4000        5000        6000        7000        8000        9000       10000
+  Columns 39 through 57
+       20000       30000       40000       50000       60000       70000       80000       90000      100000      200000      300000      400000      500000      600000      700000      800000      900000     1000000     2000000
+  Columns 58 through 60
+     3000000     4000000     5000000
+ans =
+  Columns 1 through 23
+    1.0000    0.9819    0.9735    0.9659    0.9584    0.9511    0.9440    0.9371    0.9303    0.9237    0.9172    0.9036    0.8987    0.8950    0.8926    0.8909    0.8895    0.8883    0.8872    0.8863    0.8746    0.8688    0.8635
+         0    0.0248    0.0392    0.0534    0.0669    0.0798    0.0921    0.1039    0.1153    0.1262    0.1367    0.1542    0.1675    0.1786    0.1880    0.1967    0.2050    0.2130    0.2208    0.2286    0.2374    0.2448    0.2522
+  Columns 24 through 46
+    0.8583    0.8533    0.8484    0.8436    0.8390    0.8344    0.8322    0.8257    0.8198    0.8142    0.8089    0.8039    0.7992    0.7949    0.7908    0.7861    0.7757    0.7675    0.7611    0.7562    0.7527    0.7506    0.7496
+    0.2596    0.2669    0.2741    0.2812    0.2882    0.2951    0.3036    0.3155    0.3270    0.3383    0.3493    0.3601    0.3706    0.3810    0.3911    0.4156    0.4426    0.4676    0.4910    0.5131    0.5338    0.5535    0.5722
+  Columns 47 through 60
+    0.7497    0.7412    0.7172    0.6991    0.6857    0.6759    0.6685    0.6630    0.6590    0.6560    0.6478    0.6473    0.6473    0.6473
+    0.5900    0.5950    0.6090    0.6190    0.6263    0.6317    0.6357    0.6387    0.6409    0.6426    0.6471    0.6473    0.6473    0.6473
+ans =
+     4    60     4
+ans =
+     0     0
+ans =
+  Columns 1 through 19
+           0           1           2           3           4           5           6           7           8           9          10          20          30          40          50          60          70          80          90
+  Columns 20 through 38
+         100         200         300         400         500         600         700         800         900        1000        2000        3000        4000        5000        6000        7000        8000        9000       10000
+  Columns 39 through 57
+       20000       30000       40000       50000       60000       70000       80000       90000      100000      200000      300000      400000      500000      600000      700000      800000      900000     1000000     2000000
+  Columns 58 through 60
+     3000000     4000000     5000000
+ans =
+  Columns 1 through 23
+    1.0000    0.9950    0.9924    0.9898    0.9873    0.9848    0.9822    0.9797    0.9772    0.9748    0.9723    0.9643    0.9562    0.9484    0.9408    0.9335    0.9263    0.9193    0.9125    0.9059    0.8922    0.8863    0.8824
+         0    0.0011    0.0045    0.0077    0.0110    0.0143    0.0175    0.0207    0.0239    0.0271    0.0303    0.0452    0.0598    0.0738    0.0871    0.0999    0.1121    0.1239    0.1352    0.1461    0.1630    0.1768    0.1879
+  Columns 24 through 46
+    0.8798    0.8779    0.8765    0.8752    0.8742    0.8732    0.8622    0.8567    0.8516    0.8466    0.8418    0.8371    0.8325    0.8281    0.8237    0.8218    0.8157    0.8100    0.8047    0.7996    0.7949    0.7904    0.7863
+    0.1975    0.2063    0.2147    0.2228    0.2308    0.2387    0.2470    0.2543    0.2616    0.2689    0.2760    0.2831    0.2900    0.2969    0.3037    0.3120    0.3236    0.3348    0.3458    0.3566    0.3671    0.3774    0.3876
+  Columns 47 through 60
+    0.7824    0.7782    0.7685    0.7610    0.7550    0.7506    0.7476    0.7459    0.7452    0.7457    0.7376    0.7144    0.6970    0.6841
+    0.3975    0.4213    0.4476    0.4720    0.4948    0.5164    0.5367    0.5560    0.5743    0.5917    0.5968    0.6102    0.6198    0.6268
+ans =
+     4    60     4
+ans =
+     0     0
+ytix =
+  1×10 <a href="matlab:helpPopup cell" style="font-weight:bold">cell</a> array
+    {'$-0.20'}    {'$0.00'}    {'$0.20'}    {'$0.40'}    {'$0.60'}    {'$0.80'}    {'$1.00'}    {'$1.20'}    {'$1.40'}    {'$1.60'}
+ans = 
+  12×1 <a href="matlab:helpview ([docroot '/matlab/creating_plots/creating_plots.map'],'heterogeneous_graphics_arrays')">graphics</a> array:
+
+  Text    (10 \mus)
+  Line
+  Text    (100 \mus)
+  Line
+  Text    (1 ms)
+  Line
+  Text    (10 ms)
+  Line
+  Text    (100 ms)
+  Line
+  Text    (1 sec)
+  Line
+h = 
+  6×1 <a href="matlab:helpPopup matlab.graphics.chart.primitive.Line" style="font-weight:bold">Line</a> array:
+
+  Line
+  Line
+  Line
+  Line
+  Line
+  Line
+1 - 2.000000    
+2 : 1.800000   
+3 -- 1.600000   
+4 - 1.400000    
+5 : 1.200000   
+6 -- 1.000000   
+irfGraphsPartSIP
+shockVar =
+    'nbbPart'
+impactVar =
+    'nbbSIP'
+fileNameFmt =
+    'MVARiPartSIP01_%s_20161003.mat'
+symbol =
+    'IBM'
+inFile =
+    'MVARiPartSIP01_IBM_20161003.mat'
+    'nbbPart nboPart'    'nbbSIP nboSIP'
+  resolution     sdw    min    max    min    max
+       1.000  19.065  0.002  1.000  0.000  0.998
+       0.100  19.154  0.017  0.999  0.001  0.983
+       0.010  19.138  0.142  0.998  0.002  0.858
+       0.001  19.121  0.827  0.998  0.002  0.173
+       0.000  19.121  0.999  0.999  0.001  0.001
+       0.000  19.124  0.999  0.999  0.001  0.001
+  resolution       sdw      min      max      min      max
+     1.00000  19.06533  0.00220  0.99959  0.00041  0.99780
+     0.10000  19.15431  0.01698  0.99866  0.00134  0.98302
+     0.01000  19.13788  0.14200  0.99775  0.00225  0.85800
+     0.00100  19.12107  0.82659  0.99777  0.00223  0.17341
+     0.00010  19.12131  0.99917  0.99942  0.00058  0.00083
+     0.00001  19.12400  0.99931  0.99936  0.00064  0.00069
+Current plot held
+ans =
+     0     1     2     3     4     5     6     7     8     9    10    20    30    40    50    60    70    80    90   100   200   300   400   500
+ans =
+  Columns 1 through 23
+    1.0000    0.4239    0.9696    1.0159    1.0530    1.0866    1.1185    1.1488    1.1776    1.2052    1.2317    1.5171    1.5455    1.5559    1.5642    1.5704    1.5750    1.5785    1.5811    1.5831    1.5885    1.5888    1.5888
+         0    1.1923    1.4513    1.4710    1.4640    1.4594    1.4565    1.4553    1.4556    1.4573    1.4603    1.6198    1.6076    1.6037    1.6000    1.5971    1.5950    1.5935    1.5923    1.5914    1.5890    1.5888    1.5888
+  Column 24
+    1.5888
+    1.5888
+ans =
+     4    24     4
+ans =
+     0     0
+ans =
+  Columns 1 through 19
+           0           1           2           3           4           5           6           7           8           9          10          20          30          40          50          60          70          80          90
+  Columns 20 through 33
+         100         200         300         400         500         600         700         800         900        1000        2000        3000        4000        5000
+ans =
+  Columns 1 through 23
+    1.0000    0.9715    0.9886    0.9822    0.9780    0.9740    0.9703    0.9668    0.9636    0.9607    0.9581    0.9505    0.9410    0.9337    0.9282    0.9244    0.9220    0.9210    0.9212    0.9226    0.9195    0.8928    0.8728
+         0    0.4323    0.4230    0.4373    0.4498    0.4622    0.4745    0.4865    0.4983    0.5099    0.5214    0.5469    0.5768    0.6047    0.6309    0.6557    0.6792    0.7015    0.7228    0.7431    0.7588    0.7741    0.7847
+  Columns 24 through 33
+    0.8581    0.8471    0.8389    0.8328    0.8282    0.8249    0.8155    0.8150    0.8150    0.8150
+    0.7924    0.7982    0.8025    0.8057    0.8081    0.8098    0.8147    0.8150    0.8150    0.8150
+ans =
+     4    33     4
+ans =
+     0     0
+ans =
+  Columns 1 through 19
+           0           1           2           3           4           5           6           7           8           9          10          20          30          40          50          60          70          80          90
+  Columns 20 through 38
+         100         200         300         400         500         600         700         800         900        1000        2000        3000        4000        5000        6000        7000        8000        9000       10000
+  Columns 39 through 42
+       20000       30000       40000       50000
+ans =
+  Columns 1 through 23
+    1.0000    0.9638    0.9490    0.9450    0.9392    0.9336    0.9282    0.9229    0.9176    0.9125    0.9074    0.9025    0.8956    0.8892    0.8831    0.8774    0.8720    0.8669    0.8622    0.8577    0.8506    0.8387    0.8291
+         0    0.1990    0.2499    0.2615    0.2693    0.2756    0.2816    0.2876    0.2934    0.2992    0.3049    0.3143    0.3275    0.3403    0.3528    0.3650    0.3770    0.3888    0.4003    0.4116    0.4366    0.4662    0.4935
+  Columns 24 through 42
+    0.8216    0.8157    0.8115    0.8087    0.8072    0.8070    0.7967    0.7697    0.7494    0.7345    0.7235    0.7152    0.7091    0.7046    0.7012    0.6920    0.6916    0.6915    0.6915
+    0.5191    0.5432    0.5659    0.5874    0.6078    0.6272    0.6329    0.6486    0.6598    0.6680    0.6741    0.6786    0.6819    0.6844    0.6862    0.6913    0.6915    0.6915    0.6915
+ans =
+     4    42     4
+ans =
+     0     0
+ans =
+  Columns 1 through 19
+           0           1           2           3           4           5           6           7           8           9          10          20          30          40          50          60          70          80          90
+  Columns 20 through 38
+         100         200         300         400         500         600         700         800         900        1000        2000        3000        4000        5000        6000        7000        8000        9000       10000
+  Columns 39 through 51
+       20000       30000       40000       50000       60000       70000       80000       90000      100000      200000      300000      400000      500000
+ans =
+  Columns 1 through 23
+    1.0000    0.9199    0.9271    0.9225    0.9202    0.9180    0.9158    0.9136    0.9113    0.9091    0.9068    0.8940    0.8884    0.8829    0.8776    0.8725    0.8674    0.8625    0.8576    0.8529    0.8494    0.8420    0.8351
+         0    0.0852    0.1052    0.1225    0.1360    0.1469    0.1563    0.1647    0.1724    0.1797    0.1866    0.2011    0.2088    0.2162    0.2234    0.2305    0.2376    0.2446    0.2515    0.2582    0.2678    0.2804    0.2925
+  Columns 24 through 46
+    0.8286    0.8224    0.8166    0.8111    0.8059    0.8010    0.7945    0.7822    0.7722    0.7641    0.7578    0.7529    0.7495    0.7474    0.7465    0.7363    0.7097    0.6898    0.6752    0.6643    0.6562    0.6502    0.6457
+    0.3044    0.3161    0.3274    0.3386    0.3495    0.3602    0.3867    0.4154    0.4420    0.4667    0.4900    0.5119    0.5325    0.5520    0.5706    0.5752    0.5905    0.6016    0.6096    0.6156    0.6200    0.6233    0.6258
+  Columns 47 through 51
+    0.6424    0.6333    0.6328    0.6328    0.6328
+    0.6276    0.6325    0.6328    0.6328    0.6328
+ans =
+     4    51     4
+ans =
+     0     0
+ans =
+  Columns 1 through 19
+           0           1           2           3           4           5           6           7           8           9          10          20          30          40          50          60          70          80          90
+  Columns 20 through 38
+         100         200         300         400         500         600         700         800         900        1000        2000        3000        4000        5000        6000        7000        8000        9000       10000
+  Columns 39 through 57
+       20000       30000       40000       50000       60000       70000       80000       90000      100000      200000      300000      400000      500000      600000      700000      800000      900000     1000000     2000000
+  Columns 58 through 60
+     3000000     4000000     5000000
+ans =
+  Columns 1 through 23
+    1.0000    0.9819    0.9735    0.9659    0.9584    0.9511    0.9440    0.9371    0.9303    0.9237    0.9172    0.9036    0.8987    0.8950    0.8926    0.8909    0.8895    0.8883    0.8872    0.8863    0.8746    0.8688    0.8635
+         0    0.0248    0.0392    0.0534    0.0669    0.0798    0.0921    0.1039    0.1153    0.1262    0.1367    0.1542    0.1675    0.1786    0.1880    0.1967    0.2050    0.2130    0.2208    0.2286    0.2374    0.2448    0.2522
+  Columns 24 through 46
+    0.8583    0.8533    0.8484    0.8436    0.8390    0.8344    0.8322    0.8257    0.8198    0.8142    0.8089    0.8039    0.7992    0.7949    0.7908    0.7861    0.7757    0.7675    0.7611    0.7562    0.7527    0.7506    0.7496
+    0.2596    0.2669    0.2741    0.2812    0.2882    0.2951    0.3036    0.3155    0.3270    0.3383    0.3493    0.3601    0.3706    0.3810    0.3911    0.4156    0.4426    0.4676    0.4910    0.5131    0.5338    0.5535    0.5722
+  Columns 47 through 60
+    0.7497    0.7412    0.7172    0.6991    0.6857    0.6759    0.6685    0.6630    0.6590    0.6560    0.6478    0.6473    0.6473    0.6473
+    0.5900    0.5950    0.6090    0.6190    0.6263    0.6317    0.6357    0.6387    0.6409    0.6426    0.6471    0.6473    0.6473    0.6473
+ans =
+     4    60     4
+ans =
+     0     0
+ans =
+  Columns 1 through 19
+           0           1           2           3           4           5           6           7           8           9          10          20          30          40          50          60          70          80          90
+  Columns 20 through 38
+         100         200         300         400         500         600         700         800         900        1000        2000        3000        4000        5000        6000        7000        8000        9000       10000
+  Columns 39 through 57
+       20000       30000       40000       50000       60000       70000       80000       90000      100000      200000      300000      400000      500000      600000      700000      800000      900000     1000000     2000000
+  Columns 58 through 60
+     3000000     4000000     5000000
+ans =
+  Columns 1 through 23
+    1.0000    0.9950    0.9924    0.9898    0.9873    0.9848    0.9822    0.9797    0.9772    0.9748    0.9723    0.9643    0.9562    0.9484    0.9408    0.9335    0.9263    0.9193    0.9125    0.9059    0.8922    0.8863    0.8824
+         0    0.0011    0.0045    0.0077    0.0110    0.0143    0.0175    0.0207    0.0239    0.0271    0.0303    0.0452    0.0598    0.0738    0.0871    0.0999    0.1121    0.1239    0.1352    0.1461    0.1630    0.1768    0.1879
+  Columns 24 through 46
+    0.8798    0.8779    0.8765    0.8752    0.8742    0.8732    0.8622    0.8567    0.8516    0.8466    0.8418    0.8371    0.8325    0.8281    0.8237    0.8218    0.8157    0.8100    0.8047    0.7996    0.7949    0.7904    0.7863
+    0.1975    0.2063    0.2147    0.2228    0.2308    0.2387    0.2470    0.2543    0.2616    0.2689    0.2760    0.2831    0.2900    0.2969    0.3037    0.3120    0.3236    0.3348    0.3458    0.3566    0.3671    0.3774    0.3876
+  Columns 47 through 60
+    0.7824    0.7782    0.7685    0.7610    0.7550    0.7506    0.7476    0.7459    0.7452    0.7457    0.7376    0.7144    0.6970    0.6841
+    0.3975    0.4213    0.4476    0.4720    0.4948    0.5164    0.5367    0.5560    0.5743    0.5917    0.5968    0.6102    0.6198    0.6268
+ans =
+     4    60     4
+ans =
+     0     0
+ytix =
+  1×10 <a href="matlab:helpPopup cell" style="font-weight:bold">cell</a> array
+    {'$-0.20'}    {'$0.00'}    {'$0.20'}    {'$0.40'}    {'$0.60'}    {'$0.80'}    {'$1.00'}    {'$1.20'}    {'$1.40'}    {'$1.60'}
+ans = 
+  12×1 <a href="matlab:helpview ([docroot '/matlab/creating_plots/creating_plots.map'],'heterogeneous_graphics_arrays')">graphics</a> array:
+
+  Text    (10 \mus)
+  Line
+  Text    (100 \mus)
+  Line
+  Text    (1 ms)
+  Line
+  Text    (10 ms)
+  Line
+  Text    (100 ms)
+  Line
+  Text    (1 sec)
+  Line
+h = 
+  6×1 <a href="matlab:helpPopup matlab.graphics.chart.primitive.Line" style="font-weight:bold">Line</a> array:
+
+  Line
+  Line
+  Line
+  Line
+  Line
+  Line
+1 - 2.000000    
+2 : 1.800000   
+3 -- 1.600000   
+4 - 1.400000    
+5 : 1.200000   
+6 -- 1.000000   
+irfGraphsPartSIP
+shockVar =
+    'nbbPart'
+impactVar =
+    'nbbSIP'
+fileNameFmt =
+    'MVARiPartSIP01_%s_20161003.mat'
+symbol =
+    'IBM'
+inFile =
+    'MVARiPartSIP01_IBM_20161003.mat'
+    'nbbPart nboPart'    'nbbSIP nboSIP'
+  resolution     sdw    min    max    min    max
+       1.000  19.065  0.002  1.000  0.000  0.998
+       0.100  19.154  0.017  0.999  0.001  0.983
+       0.010  19.138  0.142  0.998  0.002  0.858
+       0.001  19.121  0.827  0.998  0.002  0.173
+       0.000  19.121  0.999  0.999  0.001  0.001
+       0.000  19.124  0.999  0.999  0.001  0.001
+  resolution       sdw      min      max      min      max
+     1.00000  19.06533  0.00220  0.99959  0.00041  0.99780
+     0.10000  19.15431  0.01698  0.99866  0.00134  0.98302
+     0.01000  19.13788  0.14200  0.99775  0.00225  0.85800
+     0.00100  19.12107  0.82659  0.99777  0.00223  0.17341
+     0.00010  19.12131  0.99917  0.99942  0.00058  0.00083
+     0.00001  19.12400  0.99931  0.99936  0.00064  0.00069
+Current plot held
+ans =
+     0     1     2     3     4     5     6     7     8     9    10    20    30    40    50    60    70    80    90   100   200   300   400   500
+ans =
+  Columns 1 through 23
+    1.0000    0.4239    0.9696    1.0159    1.0530    1.0866    1.1185    1.1488    1.1776    1.2052    1.2317    1.5171    1.5455    1.5559    1.5642    1.5704    1.5750    1.5785    1.5811    1.5831    1.5885    1.5888    1.5888
+         0    1.1923    1.4513    1.4710    1.4640    1.4594    1.4565    1.4553    1.4556    1.4573    1.4603    1.6198    1.6076    1.6037    1.6000    1.5971    1.5950    1.5935    1.5923    1.5914    1.5890    1.5888    1.5888
+  Column 24
+    1.5888
+    1.5888
+ans =
+     4    24     4
+ans =
+     0     0
+ans =
+  Columns 1 through 19
+           0           1           2           3           4           5           6           7           8           9          10          20          30          40          50          60          70          80          90
+  Columns 20 through 33
+         100         200         300         400         500         600         700         800         900        1000        2000        3000        4000        5000
+ans =
+  Columns 1 through 23
+    1.0000    0.9715    0.9886    0.9822    0.9780    0.9740    0.9703    0.9668    0.9636    0.9607    0.9581    0.9505    0.9410    0.9337    0.9282    0.9244    0.9220    0.9210    0.9212    0.9226    0.9195    0.8928    0.8728
+         0    0.4323    0.4230    0.4373    0.4498    0.4622    0.4745    0.4865    0.4983    0.5099    0.5214    0.5469    0.5768    0.6047    0.6309    0.6557    0.6792    0.7015    0.7228    0.7431    0.7588    0.7741    0.7847
+  Columns 24 through 33
+    0.8581    0.8471    0.8389    0.8328    0.8282    0.8249    0.8155    0.8150    0.8150    0.8150
+    0.7924    0.7982    0.8025    0.8057    0.8081    0.8098    0.8147    0.8150    0.8150    0.8150
+ans =
+     4    33     4
+ans =
+     0     0
+ans =
+  Columns 1 through 19
+           0           1           2           3           4           5           6           7           8           9          10          20          30          40          50          60          70          80          90
+  Columns 20 through 38
+         100         200         300         400         500         600         700         800         900        1000        2000        3000        4000        5000        6000        7000        8000        9000       10000
+  Columns 39 through 42
+       20000       30000       40000       50000
+ans =
+  Columns 1 through 23
+    1.0000    0.9638    0.9490    0.9450    0.9392    0.9336    0.9282    0.9229    0.9176    0.9125    0.9074    0.9025    0.8956    0.8892    0.8831    0.8774    0.8720    0.8669    0.8622    0.8577    0.8506    0.8387    0.8291
+         0    0.1990    0.2499    0.2615    0.2693    0.2756    0.2816    0.2876    0.2934    0.2992    0.3049    0.3143    0.3275    0.3403    0.3528    0.3650    0.3770    0.3888    0.4003    0.4116    0.4366    0.4662    0.4935
+  Columns 24 through 42
+    0.8216    0.8157    0.8115    0.8087    0.8072    0.8070    0.7967    0.7697    0.7494    0.7345    0.7235    0.7152    0.7091    0.7046    0.7012    0.6920    0.6916    0.6915    0.6915
+    0.5191    0.5432    0.5659    0.5874    0.6078    0.6272    0.6329    0.6486    0.6598    0.6680    0.6741    0.6786    0.6819    0.6844    0.6862    0.6913    0.6915    0.6915    0.6915
+ans =
+     4    42     4
+ans =
+     0     0
+ans =
+  Columns 1 through 19
+           0           1           2           3           4           5           6           7           8           9          10          20          30          40          50          60          70          80          90
+  Columns 20 through 38
+         100         200         300         400         500         600         700         800         900        1000        2000        3000        4000        5000        6000        7000        8000        9000       10000
+  Columns 39 through 51
+       20000       30000       40000       50000       60000       70000       80000       90000      100000      200000      300000      400000      500000
+ans =
+  Columns 1 through 23
+    1.0000    0.9199    0.9271    0.9225    0.9202    0.9180    0.9158    0.9136    0.9113    0.9091    0.9068    0.8940    0.8884    0.8829    0.8776    0.8725    0.8674    0.8625    0.8576    0.8529    0.8494    0.8420    0.8351
+         0    0.0852    0.1052    0.1225    0.1360    0.1469    0.1563    0.1647    0.1724    0.1797    0.1866    0.2011    0.2088    0.2162    0.2234    0.2305    0.2376    0.2446    0.2515    0.2582    0.2678    0.2804    0.2925
+  Columns 24 through 46
+    0.8286    0.8224    0.8166    0.8111    0.8059    0.8010    0.7945    0.7822    0.7722    0.7641    0.7578    0.7529    0.7495    0.7474    0.7465    0.7363    0.7097    0.6898    0.6752    0.6643    0.6562    0.6502    0.6457
+    0.3044    0.3161    0.3274    0.3386    0.3495    0.3602    0.3867    0.4154    0.4420    0.4667    0.4900    0.5119    0.5325    0.5520    0.5706    0.5752    0.5905    0.6016    0.6096    0.6156    0.6200    0.6233    0.6258
+  Columns 47 through 51
+    0.6424    0.6333    0.6328    0.6328    0.6328
+    0.6276    0.6325    0.6328    0.6328    0.6328
+ans =
+     4    51     4
+ans =
+     0     0
+ans =
+  Columns 1 through 19
+           0           1           2           3           4           5           6           7           8           9          10          20          30          40          50          60          70          80          90
+  Columns 20 through 38
+         100         200         300         400         500         600         700         800         900        1000        2000        3000        4000        5000        6000        7000        8000        9000       10000
+  Columns 39 through 57
+       20000       30000       40000       50000       60000       70000       80000       90000      100000      200000      300000      400000      500000      600000      700000      800000      900000     1000000     2000000
+  Columns 58 through 60
+     3000000     4000000     5000000
+ans =
+  Columns 1 through 23
+    1.0000    0.9819    0.9735    0.9659    0.9584    0.9511    0.9440    0.9371    0.9303    0.9237    0.9172    0.9036    0.8987    0.8950    0.8926    0.8909    0.8895    0.8883    0.8872    0.8863    0.8746    0.8688    0.8635
+         0    0.0248    0.0392    0.0534    0.0669    0.0798    0.0921    0.1039    0.1153    0.1262    0.1367    0.1542    0.1675    0.1786    0.1880    0.1967    0.2050    0.2130    0.2208    0.2286    0.2374    0.2448    0.2522
+  Columns 24 through 46
+    0.8583    0.8533    0.8484    0.8436    0.8390    0.8344    0.8322    0.8257    0.8198    0.8142    0.8089    0.8039    0.7992    0.7949    0.7908    0.7861    0.7757    0.7675    0.7611    0.7562    0.7527    0.7506    0.7496
+    0.2596    0.2669    0.2741    0.2812    0.2882    0.2951    0.3036    0.3155    0.3270    0.3383    0.3493    0.3601    0.3706    0.3810    0.3911    0.4156    0.4426    0.4676    0.4910    0.5131    0.5338    0.5535    0.5722
+  Columns 47 through 60
+    0.7497    0.7412    0.7172    0.6991    0.6857    0.6759    0.6685    0.6630    0.6590    0.6560    0.6478    0.6473    0.6473    0.6473
+    0.5900    0.5950    0.6090    0.6190    0.6263    0.6317    0.6357    0.6387    0.6409    0.6426    0.6471    0.6473    0.6473    0.6473
+ans =
+     4    60     4
+ans =
+     0     0
+ans =
+  Columns 1 through 19
+           0           1           2           3           4           5           6           7           8           9          10          20          30          40          50          60          70          80          90
+  Columns 20 through 38
+         100         200         300         400         500         600         700         800         900        1000        2000        3000        4000        5000        6000        7000        8000        9000       10000
+  Columns 39 through 57
+       20000       30000       40000       50000       60000       70000       80000       90000      100000      200000      300000      400000      500000      600000      700000      800000      900000     1000000     2000000
+  Columns 58 through 60
+     3000000     4000000     5000000
+ans =
+  Columns 1 through 23
+    1.0000    0.9950    0.9924    0.9898    0.9873    0.9848    0.9822    0.9797    0.9772    0.9748    0.9723    0.9643    0.9562    0.9484    0.9408    0.9335    0.9263    0.9193    0.9125    0.9059    0.8922    0.8863    0.8824
+         0    0.0011    0.0045    0.0077    0.0110    0.0143    0.0175    0.0207    0.0239    0.0271    0.0303    0.0452    0.0598    0.0738    0.0871    0.0999    0.1121    0.1239    0.1352    0.1461    0.1630    0.1768    0.1879
+  Columns 24 through 46
+    0.8798    0.8779    0.8765    0.8752    0.8742    0.8732    0.8622    0.8567    0.8516    0.8466    0.8418    0.8371    0.8325    0.8281    0.8237    0.8218    0.8157    0.8100    0.8047    0.7996    0.7949    0.7904    0.7863
+    0.1975    0.2063    0.2147    0.2228    0.2308    0.2387    0.2470    0.2543    0.2616    0.2689    0.2760    0.2831    0.2900    0.2969    0.3037    0.3120    0.3236    0.3348    0.3458    0.3566    0.3671    0.3774    0.3876
+  Columns 47 through 60
+    0.7824    0.7782    0.7685    0.7610    0.7550    0.7506    0.7476    0.7459    0.7452    0.7457    0.7376    0.7144    0.6970    0.6841
+    0.3975    0.4213    0.4476    0.4720    0.4948    0.5164    0.5367    0.5560    0.5743    0.5917    0.5968    0.6102    0.6198    0.6268
+ans =
+     4    60     4
+ans =
+     0     0
+ytix =
+  1×10 <a href="matlab:helpPopup cell" style="font-weight:bold">cell</a> array
+    {'$-0.20'}    {'$0.00'}    {'$0.20'}    {'$0.40'}    {'$0.60'}    {'$0.80'}    {'$1.00'}    {'$1.20'}    {'$1.40'}    {'$1.60'}
+ax = 
+  <a href="matlab:helpPopup matlab.graphics.axis.Axes" style="font-weight:bold">Axes</a> (IBM initial impulse in nbbPart; IRF for nbbSIP) with properties:
+
+             XLim: [1.0000e-06 1300]
+             YLim: [-0.2000 1.6000]
+           XScale: 'log'
+           YScale: 'linear'
+    GridLineStyle: '-'
+         Position: [0.1300 0.1150 0.7750 0.8100]
+            Units: 'normalized'
+
+  Show <a href="matlab:if exist('ax', 'var'), matlab.graphics.internal.getForDisplay('ax', ax, 'matlab.graphics.axis.Axes'), else, matlab.graphics.internal.getForDisplay('ax'), end">all properties</a>
+ax = 
+  <a href="matlab:helpPopup matlab.graphics.axis.Axes" style="font-weight:bold">Axes</a> (IBM initial impulse in nbbPart; IRF for nbbSIP) with properties:
+
+             XLim: [1.0000e-06 1300]
+             YLim: [-0.2000 1.6000]
+           XScale: 'log'
+           YScale: 'linear'
+    GridLineStyle: '-'
+         Position: [0.1300 0.1150 0.7750 0.8100]
+            Units: 'normalized'
+
+  Show <a href="matlab:if exist('ax', 'var'), matlab.graphics.internal.getForDisplay('ax', ax, 'matlab.graphics.axis.Axes'), else, matlab.graphics.internal.getForDisplay('ax'), end">all properties</a>
+ans = 
+  12×1 <a href="matlab:helpview ([docroot '/matlab/creating_plots/creating_plots.map'],'heterogeneous_graphics_arrays')">graphics</a> array:
+
+  Text    (10 \mus)
+  Line
+  Text    (100 \mus)
+  Line
+  Text    (1 ms)
+  Line
+  Text    (10 ms)
+  Line
+  Text    (100 ms)
+  Line
+  Text    (1 sec)
+  Line
+h = 
+  6×1 <a href="matlab:helpPopup matlab.graphics.chart.primitive.Line" style="font-weight:bold">Line</a> array:
+
+  Line
+  Line
+  Line
+  Line
+  Line
+  Line
+1 - 2.000000    
+2 : 1.800000   
+3 -- 1.600000   
+4 - 1.400000    
+5 : 1.200000   
+6 -- 1.000000   
+irfGraphsPartSIP
+shockVar =
+    'nbbPart'
+impactVar =
+    'nbbSIP'
+fileNameFmt =
+    'MVARiPartSIP01_%s_20161003.mat'
+symbol =
+    'IBM'
+inFile =
+    'MVARiPartSIP01_IBM_20161003.mat'
+    'nbbPart nboPart'    'nbbSIP nboSIP'
+  resolution     sdw    min    max    min    max
+       1.000  19.065  0.002  1.000  0.000  0.998
+       0.100  19.154  0.017  0.999  0.001  0.983
+       0.010  19.138  0.142  0.998  0.002  0.858
+       0.001  19.121  0.827  0.998  0.002  0.173
+       0.000  19.121  0.999  0.999  0.001  0.001
+       0.000  19.124  0.999  0.999  0.001  0.001
+  resolution       sdw      min      max      min      max
+     1.00000  19.06533  0.00220  0.99959  0.00041  0.99780
+     0.10000  19.15431  0.01698  0.99866  0.00134  0.98302
+     0.01000  19.13788  0.14200  0.99775  0.00225  0.85800
+     0.00100  19.12107  0.82659  0.99777  0.00223  0.17341
+     0.00010  19.12131  0.99917  0.99942  0.00058  0.00083
+     0.00001  19.12400  0.99931  0.99936  0.00064  0.00069
+Current plot held
+ans =
+     0     1     2     3     4     5     6     7     8     9    10    20    30    40    50    60    70    80    90   100   200   300   400   500
+ans =
+  Columns 1 through 23
+    1.0000    0.4239    0.9696    1.0159    1.0530    1.0866    1.1185    1.1488    1.1776    1.2052    1.2317    1.5171    1.5455    1.5559    1.5642    1.5704    1.5750    1.5785    1.5811    1.5831    1.5885    1.5888    1.5888
+         0    1.1923    1.4513    1.4710    1.4640    1.4594    1.4565    1.4553    1.4556    1.4573    1.4603    1.6198    1.6076    1.6037    1.6000    1.5971    1.5950    1.5935    1.5923    1.5914    1.5890    1.5888    1.5888
+  Column 24
+    1.5888
+    1.5888
+ans =
+     4    24     4
+ans =
+     0     0
+ans =
+  Columns 1 through 19
+           0           1           2           3           4           5           6           7           8           9          10          20          30          40          50          60          70          80          90
+  Columns 20 through 33
+         100         200         300         400         500         600         700         800         900        1000        2000        3000        4000        5000
+ans =
+  Columns 1 through 23
+    1.0000    0.9715    0.9886    0.9822    0.9780    0.9740    0.9703    0.9668    0.9636    0.9607    0.9581    0.9505    0.9410    0.9337    0.9282    0.9244    0.9220    0.9210    0.9212    0.9226    0.9195    0.8928    0.8728
+         0    0.4323    0.4230    0.4373    0.4498    0.4622    0.4745    0.4865    0.4983    0.5099    0.5214    0.5469    0.5768    0.6047    0.6309    0.6557    0.6792    0.7015    0.7228    0.7431    0.7588    0.7741    0.7847
+  Columns 24 through 33
+    0.8581    0.8471    0.8389    0.8328    0.8282    0.8249    0.8155    0.8150    0.8150    0.8150
+    0.7924    0.7982    0.8025    0.8057    0.8081    0.8098    0.8147    0.8150    0.8150    0.8150
+ans =
+     4    33     4
+ans =
+     0     0
+ans =
+  Columns 1 through 19
+           0           1           2           3           4           5           6           7           8           9          10          20          30          40          50          60          70          80          90
+  Columns 20 through 38
+         100         200         300         400         500         600         700         800         900        1000        2000        3000        4000        5000        6000        7000        8000        9000       10000
+  Columns 39 through 42
+       20000       30000       40000       50000
+ans =
+  Columns 1 through 23
+    1.0000    0.9638    0.9490    0.9450    0.9392    0.9336    0.9282    0.9229    0.9176    0.9125    0.9074    0.9025    0.8956    0.8892    0.8831    0.8774    0.8720    0.8669    0.8622    0.8577    0.8506    0.8387    0.8291
+         0    0.1990    0.2499    0.2615    0.2693    0.2756    0.2816    0.2876    0.2934    0.2992    0.3049    0.3143    0.3275    0.3403    0.3528    0.3650    0.3770    0.3888    0.4003    0.4116    0.4366    0.4662    0.4935
+  Columns 24 through 42
+    0.8216    0.8157    0.8115    0.8087    0.8072    0.8070    0.7967    0.7697    0.7494    0.7345    0.7235    0.7152    0.7091    0.7046    0.7012    0.6920    0.6916    0.6915    0.6915
+    0.5191    0.5432    0.5659    0.5874    0.6078    0.6272    0.6329    0.6486    0.6598    0.6680    0.6741    0.6786    0.6819    0.6844    0.6862    0.6913    0.6915    0.6915    0.6915
+ans =
+     4    42     4
+ans =
+     0     0
+ans =
+  Columns 1 through 19
+           0           1           2           3           4           5           6           7           8           9          10          20          30          40          50          60          70          80          90
+  Columns 20 through 38
+         100         200         300         400         500         600         700         800         900        1000        2000        3000        4000        5000        6000        7000        8000        9000       10000
+  Columns 39 through 51
+       20000       30000       40000       50000       60000       70000       80000       90000      100000      200000      300000      400000      500000
+ans =
+  Columns 1 through 23
+    1.0000    0.9199    0.9271    0.9225    0.9202    0.9180    0.9158    0.9136    0.9113    0.9091    0.9068    0.8940    0.8884    0.8829    0.8776    0.8725    0.8674    0.8625    0.8576    0.8529    0.8494    0.8420    0.8351
+         0    0.0852    0.1052    0.1225    0.1360    0.1469    0.1563    0.1647    0.1724    0.1797    0.1866    0.2011    0.2088    0.2162    0.2234    0.2305    0.2376    0.2446    0.2515    0.2582    0.2678    0.2804    0.2925
+  Columns 24 through 46
+    0.8286    0.8224    0.8166    0.8111    0.8059    0.8010    0.7945    0.7822    0.7722    0.7641    0.7578    0.7529    0.7495    0.7474    0.7465    0.7363    0.7097    0.6898    0.6752    0.6643    0.6562    0.6502    0.6457
+    0.3044    0.3161    0.3274    0.3386    0.3495    0.3602    0.3867    0.4154    0.4420    0.4667    0.4900    0.5119    0.5325    0.5520    0.5706    0.5752    0.5905    0.6016    0.6096    0.6156    0.6200    0.6233    0.6258
+  Columns 47 through 51
+    0.6424    0.6333    0.6328    0.6328    0.6328
+    0.6276    0.6325    0.6328    0.6328    0.6328
+ans =
+     4    51     4
+ans =
+     0     0
+ans =
+  Columns 1 through 19
+           0           1           2           3           4           5           6           7           8           9          10          20          30          40          50          60          70          80          90
+  Columns 20 through 38
+         100         200         300         400         500         600         700         800         900        1000        2000        3000        4000        5000        6000        7000        8000        9000       10000
+  Columns 39 through 57
+       20000       30000       40000       50000       60000       70000       80000       90000      100000      200000      300000      400000      500000      600000      700000      800000      900000     1000000     2000000
+  Columns 58 through 60
+     3000000     4000000     5000000
+ans =
+  Columns 1 through 23
+    1.0000    0.9819    0.9735    0.9659    0.9584    0.9511    0.9440    0.9371    0.9303    0.9237    0.9172    0.9036    0.8987    0.8950    0.8926    0.8909    0.8895    0.8883    0.8872    0.8863    0.8746    0.8688    0.8635
+         0    0.0248    0.0392    0.0534    0.0669    0.0798    0.0921    0.1039    0.1153    0.1262    0.1367    0.1542    0.1675    0.1786    0.1880    0.1967    0.2050    0.2130    0.2208    0.2286    0.2374    0.2448    0.2522
+  Columns 24 through 46
+    0.8583    0.8533    0.8484    0.8436    0.8390    0.8344    0.8322    0.8257    0.8198    0.8142    0.8089    0.8039    0.7992    0.7949    0.7908    0.7861    0.7757    0.7675    0.7611    0.7562    0.7527    0.7506    0.7496
+    0.2596    0.2669    0.2741    0.2812    0.2882    0.2951    0.3036    0.3155    0.3270    0.3383    0.3493    0.3601    0.3706    0.3810    0.3911    0.4156    0.4426    0.4676    0.4910    0.5131    0.5338    0.5535    0.5722
+  Columns 47 through 60
+    0.7497    0.7412    0.7172    0.6991    0.6857    0.6759    0.6685    0.6630    0.6590    0.6560    0.6478    0.6473    0.6473    0.6473
+    0.5900    0.5950    0.6090    0.6190    0.6263    0.6317    0.6357    0.6387    0.6409    0.6426    0.6471    0.6473    0.6473    0.6473
+ans =
+     4    60     4
+ans =
+     0     0
+ans =
+  Columns 1 through 19
+           0           1           2           3           4           5           6           7           8           9          10          20          30          40          50          60          70          80          90
+  Columns 20 through 38
+         100         200         300         400         500         600         700         800         900        1000        2000        3000        4000        5000        6000        7000        8000        9000       10000
+  Columns 39 through 57
+       20000       30000       40000       50000       60000       70000       80000       90000      100000      200000      300000      400000      500000      600000      700000      800000      900000     1000000     2000000
+  Columns 58 through 60
+     3000000     4000000     5000000
+ans =
+  Columns 1 through 23
+    1.0000    0.9950    0.9924    0.9898    0.9873    0.9848    0.9822    0.9797    0.9772    0.9748    0.9723    0.9643    0.9562    0.9484    0.9408    0.9335    0.9263    0.9193    0.9125    0.9059    0.8922    0.8863    0.8824
+         0    0.0011    0.0045    0.0077    0.0110    0.0143    0.0175    0.0207    0.0239    0.0271    0.0303    0.0452    0.0598    0.0738    0.0871    0.0999    0.1121    0.1239    0.1352    0.1461    0.1630    0.1768    0.1879
+  Columns 24 through 46
+    0.8798    0.8779    0.8765    0.8752    0.8742    0.8732    0.8622    0.8567    0.8516    0.8466    0.8418    0.8371    0.8325    0.8281    0.8237    0.8218    0.8157    0.8100    0.8047    0.7996    0.7949    0.7904    0.7863
+    0.1975    0.2063    0.2147    0.2228    0.2308    0.2387    0.2470    0.2543    0.2616    0.2689    0.2760    0.2831    0.2900    0.2969    0.3037    0.3120    0.3236    0.3348    0.3458    0.3566    0.3671    0.3774    0.3876
+  Columns 47 through 60
+    0.7824    0.7782    0.7685    0.7610    0.7550    0.7506    0.7476    0.7459    0.7452    0.7457    0.7376    0.7144    0.6970    0.6841
+    0.3975    0.4213    0.4476    0.4720    0.4948    0.5164    0.5367    0.5560    0.5743    0.5917    0.5968    0.6102    0.6198    0.6268
+ans =
+     4    60     4
+ans =
+     0     0
+ytix =
+  1×10 <a href="matlab:helpPopup cell" style="font-weight:bold">cell</a> array
+    {'$-0.20'}    {'$0.00'}    {'$0.20'}    {'$0.40'}    {'$0.60'}    {'$0.80'}    {'$1.00'}    {'$1.20'}    {'$1.40'}    {'$1.60'}
+ytix =
+  1×10 <a href="matlab:helpPopup cell" style="font-weight:bold">cell</a> array
+    {0×0 char}    {'$0.00'}    {'$0.20'}    {'$0.40'}    {'$0.60'}    {'$0.80'}    {'$1.00'}    {'$1.20'}    {'$1.40'}    {'$1.60'}
+ax = 
+  <a href="matlab:helpPopup matlab.graphics.axis.Axes" style="font-weight:bold">Axes</a> (IBM initial impulse in nbbPart; IRF for nbbSIP) with properties:
+
+             XLim: [1.0000e-06 1300]
+             YLim: [-0.2000 1.6000]
+           XScale: 'log'
+           YScale: 'linear'
+    GridLineStyle: '-'
+         Position: [0.1300 0.1150 0.7750 0.8100]
+            Units: 'normalized'
+
+  Show <a href="matlab:if exist('ax', 'var'), matlab.graphics.internal.getForDisplay('ax', ax, 'matlab.graphics.axis.Axes'), else, matlab.graphics.internal.getForDisplay('ax'), end">all properties</a>
+ax = 
+  <a href="matlab:helpPopup matlab.graphics.axis.Axes" style="font-weight:bold">Axes</a> (IBM initial impulse in nbbPart; IRF for nbbSIP) with properties:
+
+             XLim: [1.0000e-06 1300]
+             YLim: [-0.2000 1.6000]
+           XScale: 'log'
+           YScale: 'linear'
+    GridLineStyle: '-'
+         Position: [0.1300 0.1150 0.7750 0.8100]
+            Units: 'normalized'
+
+  Show <a href="matlab:if exist('ax', 'var'), matlab.graphics.internal.getForDisplay('ax', ax, 'matlab.graphics.axis.Axes'), else, matlab.graphics.internal.getForDisplay('ax'), end">all properties</a>
+ans = 
+  12×1 <a href="matlab:helpview ([docroot '/matlab/creating_plots/creating_plots.map'],'heterogeneous_graphics_arrays')">graphics</a> array:
+
+  Text    (10 \mus)
+  Line
+  Text    (100 \mus)
+  Line
+  Text    (1 ms)
+  Line
+  Text    (10 ms)
+  Line
+  Text    (100 ms)
+  Line
+  Text    (1 sec)
+  Line
+h = 
+  6×1 <a href="matlab:helpPopup matlab.graphics.chart.primitive.Line" style="font-weight:bold">Line</a> array:
+
+  Line
+  Line
+  Line
+  Line
+  Line
+  Line
+1 - 2.000000    
+2 : 1.800000   
+3 -- 1.600000   
+4 - 1.400000    
+5 : 1.200000   
+6 -- 1.000000   
+irfGraphsPartSIP
+shockVar =
+    'nbbPart'
+impactVar =
+    'nbbSIP'
+fileNameFmt =
+    'MVARiPartSIP01_%s_20161003.mat'
+symbol =
+    'IBM'
+inFile =
+    'MVARiPartSIP01_IBM_20161003.mat'
+    'nbbPart nboPart'    'nbbSIP nboSIP'
+  resolution     sdw    min    max    min    max
+       1.000  19.065  0.002  1.000  0.000  0.998
+       0.100  19.154  0.017  0.999  0.001  0.983
+       0.010  19.138  0.142  0.998  0.002  0.858
+       0.001  19.121  0.827  0.998  0.002  0.173
+       0.000  19.121  0.999  0.999  0.001  0.001
+       0.000  19.124  0.999  0.999  0.001  0.001
+  resolution       sdw      min      max      min      max
+     1.00000  19.06533  0.00220  0.99959  0.00041  0.99780
+     0.10000  19.15431  0.01698  0.99866  0.00134  0.98302
+     0.01000  19.13788  0.14200  0.99775  0.00225  0.85800
+     0.00100  19.12107  0.82659  0.99777  0.00223  0.17341
+     0.00010  19.12131  0.99917  0.99942  0.00058  0.00083
+     0.00001  19.12400  0.99931  0.99936  0.00064  0.00069
+Current plot held
+ans =
+     0     1     2     3     4     5     6     7     8     9    10    20    30    40    50    60    70    80    90   100   200   300   400   500
+ans =
+  Columns 1 through 23
+    1.0000    0.4239    0.9696    1.0159    1.0530    1.0866    1.1185    1.1488    1.1776    1.2052    1.2317    1.5171    1.5455    1.5559    1.5642    1.5704    1.5750    1.5785    1.5811    1.5831    1.5885    1.5888    1.5888
+         0    1.1923    1.4513    1.4710    1.4640    1.4594    1.4565    1.4553    1.4556    1.4573    1.4603    1.6198    1.6076    1.6037    1.6000    1.5971    1.5950    1.5935    1.5923    1.5914    1.5890    1.5888    1.5888
+  Column 24
+    1.5888
+    1.5888
+ans =
+     4    24     4
+ans =
+     0     0
+ans =
+  Columns 1 through 19
+           0           1           2           3           4           5           6           7           8           9          10          20          30          40          50          60          70          80          90
+  Columns 20 through 33
+         100         200         300         400         500         600         700         800         900        1000        2000        3000        4000        5000
+ans =
+  Columns 1 through 23
+    1.0000    0.9715    0.9886    0.9822    0.9780    0.9740    0.9703    0.9668    0.9636    0.9607    0.9581    0.9505    0.9410    0.9337    0.9282    0.9244    0.9220    0.9210    0.9212    0.9226    0.9195    0.8928    0.8728
+         0    0.4323    0.4230    0.4373    0.4498    0.4622    0.4745    0.4865    0.4983    0.5099    0.5214    0.5469    0.5768    0.6047    0.6309    0.6557    0.6792    0.7015    0.7228    0.7431    0.7588    0.7741    0.7847
+  Columns 24 through 33
+    0.8581    0.8471    0.8389    0.8328    0.8282    0.8249    0.8155    0.8150    0.8150    0.8150
+    0.7924    0.7982    0.8025    0.8057    0.8081    0.8098    0.8147    0.8150    0.8150    0.8150
+ans =
+     4    33     4
+ans =
+     0     0
+ans =
+  Columns 1 through 19
+           0           1           2           3           4           5           6           7           8           9          10          20          30          40          50          60          70          80          90
+  Columns 20 through 38
+         100         200         300         400         500         600         700         800         900        1000        2000        3000        4000        5000        6000        7000        8000        9000       10000
+  Columns 39 through 42
+       20000       30000       40000       50000
+ans =
+  Columns 1 through 23
+    1.0000    0.9638    0.9490    0.9450    0.9392    0.9336    0.9282    0.9229    0.9176    0.9125    0.9074    0.9025    0.8956    0.8892    0.8831    0.8774    0.8720    0.8669    0.8622    0.8577    0.8506    0.8387    0.8291
+         0    0.1990    0.2499    0.2615    0.2693    0.2756    0.2816    0.2876    0.2934    0.2992    0.3049    0.3143    0.3275    0.3403    0.3528    0.3650    0.3770    0.3888    0.4003    0.4116    0.4366    0.4662    0.4935
+  Columns 24 through 42
+    0.8216    0.8157    0.8115    0.8087    0.8072    0.8070    0.7967    0.7697    0.7494    0.7345    0.7235    0.7152    0.7091    0.7046    0.7012    0.6920    0.6916    0.6915    0.6915
+    0.5191    0.5432    0.5659    0.5874    0.6078    0.6272    0.6329    0.6486    0.6598    0.6680    0.6741    0.6786    0.6819    0.6844    0.6862    0.6913    0.6915    0.6915    0.6915
+ans =
+     4    42     4
+ans =
+     0     0
+ans =
+  Columns 1 through 19
+           0           1           2           3           4           5           6           7           8           9          10          20          30          40          50          60          70          80          90
+  Columns 20 through 38
+         100         200         300         400         500         600         700         800         900        1000        2000        3000        4000        5000        6000        7000        8000        9000       10000
+  Columns 39 through 51
+       20000       30000       40000       50000       60000       70000       80000       90000      100000      200000      300000      400000      500000
+ans =
+  Columns 1 through 23
+    1.0000    0.9199    0.9271    0.9225    0.9202    0.9180    0.9158    0.9136    0.9113    0.9091    0.9068    0.8940    0.8884    0.8829    0.8776    0.8725    0.8674    0.8625    0.8576    0.8529    0.8494    0.8420    0.8351
+         0    0.0852    0.1052    0.1225    0.1360    0.1469    0.1563    0.1647    0.1724    0.1797    0.1866    0.2011    0.2088    0.2162    0.2234    0.2305    0.2376    0.2446    0.2515    0.2582    0.2678    0.2804    0.2925
+  Columns 24 through 46
+    0.8286    0.8224    0.8166    0.8111    0.8059    0.8010    0.7945    0.7822    0.7722    0.7641    0.7578    0.7529    0.7495    0.7474    0.7465    0.7363    0.7097    0.6898    0.6752    0.6643    0.6562    0.6502    0.6457
+    0.3044    0.3161    0.3274    0.3386    0.3495    0.3602    0.3867    0.4154    0.4420    0.4667    0.4900    0.5119    0.5325    0.5520    0.5706    0.5752    0.5905    0.6016    0.6096    0.6156    0.6200    0.6233    0.6258
+  Columns 47 through 51
+    0.6424    0.6333    0.6328    0.6328    0.6328
+    0.6276    0.6325    0.6328    0.6328    0.6328
+ans =
+     4    51     4
+ans =
+     0     0
+ans =
+  Columns 1 through 19
+           0           1           2           3           4           5           6           7           8           9          10          20          30          40          50          60          70          80          90
+  Columns 20 through 38
+         100         200         300         400         500         600         700         800         900        1000        2000        3000        4000        5000        6000        7000        8000        9000       10000
+  Columns 39 through 57
+       20000       30000       40000       50000       60000       70000       80000       90000      100000      200000      300000      400000      500000      600000      700000      800000      900000     1000000     2000000
+  Columns 58 through 60
+     3000000     4000000     5000000
+ans =
+  Columns 1 through 23
+    1.0000    0.9819    0.9735    0.9659    0.9584    0.9511    0.9440    0.9371    0.9303    0.9237    0.9172    0.9036    0.8987    0.8950    0.8926    0.8909    0.8895    0.8883    0.8872    0.8863    0.8746    0.8688    0.8635
+         0    0.0248    0.0392    0.0534    0.0669    0.0798    0.0921    0.1039    0.1153    0.1262    0.1367    0.1542    0.1675    0.1786    0.1880    0.1967    0.2050    0.2130    0.2208    0.2286    0.2374    0.2448    0.2522
+  Columns 24 through 46
+    0.8583    0.8533    0.8484    0.8436    0.8390    0.8344    0.8322    0.8257    0.8198    0.8142    0.8089    0.8039    0.7992    0.7949    0.7908    0.7861    0.7757    0.7675    0.7611    0.7562    0.7527    0.7506    0.7496
+    0.2596    0.2669    0.2741    0.2812    0.2882    0.2951    0.3036    0.3155    0.3270    0.3383    0.3493    0.3601    0.3706    0.3810    0.3911    0.4156    0.4426    0.4676    0.4910    0.5131    0.5338    0.5535    0.5722
+  Columns 47 through 60
+    0.7497    0.7412    0.7172    0.6991    0.6857    0.6759    0.6685    0.6630    0.6590    0.6560    0.6478    0.6473    0.6473    0.6473
+    0.5900    0.5950    0.6090    0.6190    0.6263    0.6317    0.6357    0.6387    0.6409    0.6426    0.6471    0.6473    0.6473    0.6473
+ans =
+     4    60     4
+ans =
+     0     0
+ans =
+  Columns 1 through 19
+           0           1           2           3           4           5           6           7           8           9          10          20          30          40          50          60          70          80          90
+  Columns 20 through 38
+         100         200         300         400         500         600         700         800         900        1000        2000        3000        4000        5000        6000        7000        8000        9000       10000
+  Columns 39 through 57
+       20000       30000       40000       50000       60000       70000       80000       90000      100000      200000      300000      400000      500000      600000      700000      800000      900000     1000000     2000000
+  Columns 58 through 60
+     3000000     4000000     5000000
+ans =
+  Columns 1 through 23
+    1.0000    0.9950    0.9924    0.9898    0.9873    0.9848    0.9822    0.9797    0.9772    0.9748    0.9723    0.9643    0.9562    0.9484    0.9408    0.9335    0.9263    0.9193    0.9125    0.9059    0.8922    0.8863    0.8824
+         0    0.0011    0.0045    0.0077    0.0110    0.0143    0.0175    0.0207    0.0239    0.0271    0.0303    0.0452    0.0598    0.0738    0.0871    0.0999    0.1121    0.1239    0.1352    0.1461    0.1630    0.1768    0.1879
+  Columns 24 through 46
+    0.8798    0.8779    0.8765    0.8752    0.8742    0.8732    0.8622    0.8567    0.8516    0.8466    0.8418    0.8371    0.8325    0.8281    0.8237    0.8218    0.8157    0.8100    0.8047    0.7996    0.7949    0.7904    0.7863
+    0.1975    0.2063    0.2147    0.2228    0.2308    0.2387    0.2470    0.2543    0.2616    0.2689    0.2760    0.2831    0.2900    0.2969    0.3037    0.3120    0.3236    0.3348    0.3458    0.3566    0.3671    0.3774    0.3876
+  Columns 47 through 60
+    0.7824    0.7782    0.7685    0.7610    0.7550    0.7506    0.7476    0.7459    0.7452    0.7457    0.7376    0.7144    0.6970    0.6841
+    0.3975    0.4213    0.4476    0.4720    0.4948    0.5164    0.5367    0.5560    0.5743    0.5917    0.5968    0.6102    0.6198    0.6268
+ans =
+     4    60     4
+ans =
+     0     0
+ax = 
+  <a href="matlab:helpPopup matlab.graphics.axis.Axes" style="font-weight:bold">Axes</a> (IBM initial impulse in nbbPart; IRF for nbbSIP) with properties:
+
+             XLim: [1.0000e-06 1300]
+             YLim: [-0.2000 1.6000]
+           XScale: 'log'
+           YScale: 'linear'
+    GridLineStyle: '-'
+         Position: [0.1300 0.1150 0.7750 0.8100]
+            Units: 'normalized'
+
+  Show <a href="matlab:if exist('ax', 'var'), matlab.graphics.internal.getForDisplay('ax', ax, 'matlab.graphics.axis.Axes'), else, matlab.graphics.internal.getForDisplay('ax'), end">all properties</a>
+ans = 
+  12×1 <a href="matlab:helpview ([docroot '/matlab/creating_plots/creating_plots.map'],'heterogeneous_graphics_arrays')">graphics</a> array:
+
+  Text    (10 \mus)
+  Line
+  Text    (100 \mus)
+  Line
+  Text    (1 ms)
+  Line
+  Text    (10 ms)
+  Line
+  Text    (100 ms)
+  Line
+  Text    (1 sec)
+  Line
+h = 
+  6×1 <a href="matlab:helpPopup matlab.graphics.chart.primitive.Line" style="font-weight:bold">Line</a> array:
+
+  Line
+  Line
+  Line
+  Line
+  Line
+  Line
+1 - 2.000000    
+2 : 1.800000   
+3 -- 1.600000   
+4 - 1.400000    
+5 : 1.200000   
+6 -- 1.000000   
+irfGraphsPartSIP
+shockVar =
+    'nbbPart'
+impactVar =
+    'nbbSIP'
+fileNameFmt =
+    'MVARiPartSIP01_%s_20161003.mat'
+symbol =
+    'IBM'
+inFile =
+    'MVARiPartSIP01_IBM_20161003.mat'
+    'nbbPart nboPart'    'nbbSIP nboSIP'
+  resolution     sdw    min    max    min    max
+       1.000  19.065  0.002  1.000  0.000  0.998
+       0.100  19.154  0.017  0.999  0.001  0.983
+       0.010  19.138  0.142  0.998  0.002  0.858
+       0.001  19.121  0.827  0.998  0.002  0.173
+       0.000  19.121  0.999  0.999  0.001  0.001
+       0.000  19.124  0.999  0.999  0.001  0.001
+  resolution       sdw      min      max      min      max
+     1.00000  19.06533  0.00220  0.99959  0.00041  0.99780
+     0.10000  19.15431  0.01698  0.99866  0.00134  0.98302
+     0.01000  19.13788  0.14200  0.99775  0.00225  0.85800
+     0.00100  19.12107  0.82659  0.99777  0.00223  0.17341
+     0.00010  19.12131  0.99917  0.99942  0.00058  0.00083
+     0.00001  19.12400  0.99931  0.99936  0.00064  0.00069
+Current plot held
+ax = 
+  <a href="matlab:helpPopup matlab.graphics.axis.Axes" style="font-weight:bold">Axes</a> (IBM initial impulse in nbbPart; IRF for nbbSIP) with properties:
+
+             XLim: [1.0000e-06 1300]
+             YLim: [-0.2000 1.6000]
+           XScale: 'log'
+           YScale: 'linear'
+    GridLineStyle: '-'
+         Position: [0.1300 0.1150 0.7750 0.8100]
+            Units: 'normalized'
+
+  Show <a href="matlab:if exist('ax', 'var'), matlab.graphics.internal.getForDisplay('ax', ax, 'matlab.graphics.axis.Axes'), else, matlab.graphics.internal.getForDisplay('ax'), end">all properties</a>
+ans = 
+  6×1 <a href="matlab:helpPopup matlab.graphics.chart.primitive.Line" style="font-weight:bold">Line</a> array:
+
+  Line
+  Line
+  Line
+  Line
+  Line
+  Line
+h = 
+  6×1 <a href="matlab:helpPopup matlab.graphics.chart.primitive.Line" style="font-weight:bold">Line</a> array:
+
+  Line
+  Line
+  Line
+  Line
+  Line
+  Line
+1 - 2.000000    
+2 : 1.800000   
+3 -- 1.600000   
+4 - 1.400000    
+5 : 1.200000   
+6 -- 1.000000   
+irfGraphsPartSIP
+{Error: <a href="matlab: opentoline('C:\Active\PDL\MatlabNovember2018\irfGraphsPartSIP.m',15,1)">File: irfGraphsPartSIP.m Line: 15 Column: 1
+</a>At least one END is missing: the statement may begin here.} 
+irfGraphsPartSIP
+shockVar =
+    'nbbPart'
+impactVar =
+    'nbbSIP'
+fileNameFmt =
+    'MVARiPartSIP01_%s_20161003.mat'
+{Array indices must be positive integers or logical values.
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('irfGraphsPartSIP', 'C:\Active\PDL\MatlabNovember2018\irfGraphsPartSIP.m', 16)" style="font-weight:bold">irfGraphsPartSIP</a> (<a href="matlab: opentoline('C:\Active\PDL\MatlabNovember2018\irfGraphsPartSIP.m',16,0)">line 16</a>)
+    symbol = symbols{i};} 
+irfGraphsPartSIP
+shockVar =
+    'nbbPart'
+impactVar =
+    'nbbSIP'
+fileNameFmt =
+    'MVARiPartSIP01_%s_20161003.mat'
+inFile =
+    'MVARiPartSIP01_IBM_20161003.mat'
+    'nbbPart nboPart'    'nbbSIP nboSIP'
+  resolution     sdw    min    max    min    max
+       1.000  19.065  0.002  1.000  0.000  0.998
+       0.100  19.154  0.017  0.999  0.001  0.983
+       0.010  19.138  0.142  0.998  0.002  0.858
+       0.001  19.121  0.827  0.998  0.002  0.173
+       0.000  19.121  0.999  0.999  0.001  0.001
+       0.000  19.124  0.999  0.999  0.001  0.001
+  resolution       sdw      min      max      min      max
+     1.00000  19.06533  0.00220  0.99959  0.00041  0.99780
+     0.10000  19.15431  0.01698  0.99866  0.00134  0.98302
+     0.01000  19.13788  0.14200  0.99775  0.00225  0.85800
+     0.00100  19.12107  0.82659  0.99777  0.00223  0.17341
+     0.00010  19.12131  0.99917  0.99942  0.00058  0.00083
+     0.00001  19.12400  0.99931  0.99936  0.00064  0.00069
+Current plot held
+ax = 
+  <a href="matlab:helpPopup matlab.graphics.axis.Axes" style="font-weight:bold">Axes</a> (IBM initial impulse in nbbPart; IRF for nbbSIP, ) with properties:
+
+             XLim: [1.0000e-06 1300]
+             YLim: [-0.2000 1.6000]
+           XScale: 'log'
+           YScale: 'linear'
+    GridLineStyle: '-'
+         Position: [0.1300 0.1150 0.7750 0.7760]
+            Units: 'normalized'
+
+  Show <a href="matlab:if exist('ax', 'var'), matlab.graphics.internal.getForDisplay('ax', ax, 'matlab.graphics.axis.Axes'), else, matlab.graphics.internal.getForDisplay('ax'), end">all properties</a>
+ans = 
+  6×1 <a href="matlab:helpPopup matlab.graphics.chart.primitive.Line" style="font-weight:bold">Line</a> array:
+
+  Line
+  Line
+  Line
+  Line
+  Line
+  Line
+h = 
+  6×1 <a href="matlab:helpPopup matlab.graphics.chart.primitive.Line" style="font-weight:bold">Line</a> array:
+
+  Line
+  Line
+  Line
+  Line
+  Line
+  Line
+1 - 2.000000    
+2 : 1.800000   
+3 -- 1.600000   
+4 - 1.400000    
+5 : 1.200000   
+6 -- 1.000000   
+inFile =
+    'MVARiPartSIP01_NVDA_20161003.mat'
+    'nbbPart nboPart'    'nbbSIP nboSIP'
+  resolution     sdw    min    max    min    max
+       1.000  12.246  0.000  1.000  0.000  1.000
+       0.100  12.135  0.009  1.000  0.000  0.991
+       0.010  12.068  0.082  1.000  0.000  0.918
+       0.001  12.057  0.685  1.000  0.000  0.315
+       0.000  12.049  0.997  0.999  0.001  0.003
+       0.000  12.046  0.999  0.999  0.001  0.001
+  resolution       sdw      min      max      min      max
+     1.00000  12.24598  0.00028  0.99978  0.00022  0.99972
+     0.10000  12.13470  0.00918  0.99987  0.00013  0.99082
+     0.01000  12.06818  0.08168  0.99970  0.00030  0.91832
+     0.00100  12.05675  0.68545  0.99986  0.00014  0.31455
+     0.00010  12.04929  0.99730  0.99907  0.00093  0.00270
+     0.00001  12.04582  0.99850  0.99870  0.00130  0.00150
+Current plot held
+{Expected one output from a curly brace or dot indexing expression, but there were 0 results.
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('irfGraphsPartSIP', 'C:\Active\PDL\MatlabNovember2018\irfGraphsPartSIP.m', 80)" style="font-weight:bold">irfGraphsPartSIP</a> (<a href="matlab: opentoline('C:\Active\PDL\MatlabNovember2018\irfGraphsPartSIP.m',80,0)">line 80</a>)
+    ytix{ax.YTick<0}='';} 
+irfGraphsPartSIP
+shockVar =
+    'nbbPart'
+impactVar =
+    'nbbSIP'
+fileNameFmt =
+    'MVARiPartSIP01_%s_20161003.mat'
+inFile =
+    'MVARiPartSIP01_IBM_20161003.mat'
+    'nbbPart nboPart'    'nbbSIP nboSIP'
+  resolution     sdw    min    max    min    max
+       1.000  19.065  0.002  1.000  0.000  0.998
+       0.100  19.154  0.017  0.999  0.001  0.983
+       0.010  19.138  0.142  0.998  0.002  0.858
+       0.001  19.121  0.827  0.998  0.002  0.173
+       0.000  19.121  0.999  0.999  0.001  0.001
+       0.000  19.124  0.999  0.999  0.001  0.001
+  resolution       sdw      min      max      min      max
+     1.00000  19.06533  0.00220  0.99959  0.00041  0.99780
+     0.10000  19.15431  0.01698  0.99866  0.00134  0.98302
+     0.01000  19.13788  0.14200  0.99775  0.00225  0.85800
+     0.00100  19.12107  0.82659  0.99777  0.00223  0.17341
+     0.00010  19.12131  0.99917  0.99942  0.00058  0.00083
+     0.00001  19.12400  0.99931  0.99936  0.00064  0.00069
+Current plot held
+ax = 
+  <a href="matlab:helpPopup matlab.graphics.axis.Axes" style="font-weight:bold">Axes</a> (IBM initial impulse in nbbPart; IRF for nbbSIP, ) with properties:
+
+             XLim: [1.0000e-06 1300]
+             YLim: [-0.2000 1.6000]
+           XScale: 'log'
+           YScale: 'linear'
+    GridLineStyle: '-'
+         Position: [0.1300 0.1150 0.7750 0.7760]
+            Units: 'normalized'
+
+  Show <a href="matlab:if exist('ax', 'var'), matlab.graphics.internal.getForDisplay('ax', ax, 'matlab.graphics.axis.Axes'), else, matlab.graphics.internal.getForDisplay('ax'), end">all properties</a>
+ans = 
+  6×1 <a href="matlab:helpPopup matlab.graphics.chart.primitive.Line" style="font-weight:bold">Line</a> array:
+
+  Line
+  Line
+  Line
+  Line
+  Line
+  Line
+h = 
+  6×1 <a href="matlab:helpPopup matlab.graphics.chart.primitive.Line" style="font-weight:bold">Line</a> array:
+
+  Line
+  Line
+  Line
+  Line
+  Line
+  Line
+1 - 2.000000    
+2 : 1.800000   
+3 -- 1.600000   
+4 - 1.400000    
+5 : 1.200000   
+6 -- 1.000000   
+inFile =
+    'MVARiPartSIP01_NVDA_20161003.mat'
+    'nbbPart nboPart'    'nbbSIP nboSIP'
+  resolution     sdw    min    max    min    max
+       1.000  12.246  0.000  1.000  0.000  1.000
+       0.100  12.135  0.009  1.000  0.000  0.991
+       0.010  12.068  0.082  1.000  0.000  0.918
+       0.001  12.057  0.685  1.000  0.000  0.315
+       0.000  12.049  0.997  0.999  0.001  0.003
+       0.000  12.046  0.999  0.999  0.001  0.001
+  resolution       sdw      min      max      min      max
+     1.00000  12.24598  0.00028  0.99978  0.00022  0.99972
+     0.10000  12.13470  0.00918  0.99987  0.00013  0.99082
+     0.01000  12.06818  0.08168  0.99970  0.00030  0.91832
+     0.00100  12.05675  0.68545  0.99986  0.00014  0.31455
+     0.00010  12.04929  0.99730  0.99907  0.00093  0.00270
+     0.00001  12.04582  0.99850  0.99870  0.00130  0.00150
+Current plot held
+{Expected one output from a curly brace or dot indexing expression, but there were 0 results.
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('irfGraphsPartSIP', 'C:\Active\PDL\MatlabNovember2018\irfGraphsPartSIP.m', 80)" style="font-weight:bold">irfGraphsPartSIP</a> (<a href="matlab: opentoline('C:\Active\PDL\MatlabNovember2018\irfGraphsPartSIP.m',80,0)">line 80</a>)
+    ytix{ax.YTick<0}='';} 
+irfGraphsPartSIP
+shockVar =
+    'nbbPart'
+impactVar =
+    'nbbSIP'
+fileNameFmt =
+    'MVARiPartSIP01_%s_20161003.mat'
+inFile =
+    'MVARiPartSIP01_IBM_20161003.mat'
+    'nbbPart nboPart'    'nbbSIP nboSIP'
+  resolution     sdw    min    max    min    max
+       1.000  19.065  0.002  1.000  0.000  0.998
+       0.100  19.154  0.017  0.999  0.001  0.983
+       0.010  19.138  0.142  0.998  0.002  0.858
+       0.001  19.121  0.827  0.998  0.002  0.173
+       0.000  19.121  0.999  0.999  0.001  0.001
+       0.000  19.124  0.999  0.999  0.001  0.001
+  resolution       sdw      min      max      min      max
+     1.00000  19.06533  0.00220  0.99959  0.00041  0.99780
+     0.10000  19.15431  0.01698  0.99866  0.00134  0.98302
+     0.01000  19.13788  0.14200  0.99775  0.00225  0.85800
+     0.00100  19.12107  0.82659  0.99777  0.00223  0.17341
+     0.00010  19.12131  0.99917  0.99942  0.00058  0.00083
+     0.00001  19.12400  0.99931  0.99936  0.00064  0.00069
+Current plot held
+ax = 
+  <a href="matlab:helpPopup matlab.graphics.axis.Axes" style="font-weight:bold">Axes</a> (IBM initial impulse in nbbPart; IRF for nbbSIP, ) with properties:
+
+             XLim: [1.0000e-06 1300]
+             YLim: [-0.2000 1.6000]
+           XScale: 'log'
+           YScale: 'linear'
+    GridLineStyle: '-'
+         Position: [0.1300 0.1150 0.7750 0.7760]
+            Units: 'normalized'
+
+  Show <a href="matlab:if exist('ax', 'var'), matlab.graphics.internal.getForDisplay('ax', ax, 'matlab.graphics.axis.Axes'), else, matlab.graphics.internal.getForDisplay('ax'), end">all properties</a>
+ans = 
+  6×1 <a href="matlab:helpPopup matlab.graphics.chart.primitive.Line" style="font-weight:bold">Line</a> array:
+
+  Line
+  Line
+  Line
+  Line
+  Line
+  Line
+h = 
+  6×1 <a href="matlab:helpPopup matlab.graphics.chart.primitive.Line" style="font-weight:bold">Line</a> array:
+
+  Line
+  Line
+  Line
+  Line
+  Line
+  Line
+1 - 2.000000    
+2 : 1.800000   
+3 -- 1.600000   
+4 - 1.400000    
+5 : 1.200000   
+6 -- 1.000000   
+{Undefined function or variable 'releast'.
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('irfGraphsPartSIP', 'C:\Active\PDL\MatlabNovember2018\irfGraphsPartSIP.m', 102)" style="font-weight:bold">irfGraphsPartSIP</a> (<a href="matlab: opentoline('C:\Active\PDL\MatlabNovember2018\irfGraphsPartSIP.m',102,0)">line 102</a>)
+    releast} 
+irfGraphsPartSIP
+shockVar =
+    'nbbPart'
+impactVar =
+    'nbbSIP'
+fileNameFmt =
+    'MVARiPartSIP01_%s_20161003.mat'
+inFile =
+    'MVARiPartSIP01_IBM_20161003.mat'
+    'nbbPart nboPart'    'nbbSIP nboSIP'
+  resolution     sdw    min    max    min    max
+       1.000  19.065  0.002  1.000  0.000  0.998
+       0.100  19.154  0.017  0.999  0.001  0.983
+       0.010  19.138  0.142  0.998  0.002  0.858
+       0.001  19.121  0.827  0.998  0.002  0.173
+       0.000  19.121  0.999  0.999  0.001  0.001
+       0.000  19.124  0.999  0.999  0.001  0.001
+  resolution       sdw      min      max      min      max
+     1.00000  19.06533  0.00220  0.99959  0.00041  0.99780
+     0.10000  19.15431  0.01698  0.99866  0.00134  0.98302
+     0.01000  19.13788  0.14200  0.99775  0.00225  0.85800
+     0.00100  19.12107  0.82659  0.99777  0.00223  0.17341
+     0.00010  19.12131  0.99917  0.99942  0.00058  0.00083
+     0.00001  19.12400  0.99931  0.99936  0.00064  0.00069
+Current plot held
+ax = 
+  <a href="matlab:helpPopup matlab.graphics.axis.Axes" style="font-weight:bold">Axes</a> (IBM initial impulse in nbbPart; IRF for nbbSIP, ) with properties:
+
+             XLim: [1.0000e-06 1300]
+             YLim: [-0.2000 1.6000]
+           XScale: 'log'
+           YScale: 'linear'
+    GridLineStyle: '-'
+         Position: [0.1300 0.1150 0.7750 0.7760]
+            Units: 'normalized'
+
+  Show <a href="matlab:if exist('ax', 'var'), matlab.graphics.internal.getForDisplay('ax', ax, 'matlab.graphics.axis.Axes'), else, matlab.graphics.internal.getForDisplay('ax'), end">all properties</a>
+ans = 
+  6×1 <a href="matlab:helpPopup matlab.graphics.chart.primitive.Line" style="font-weight:bold">Line</a> array:
+
+  Line
+  Line
+  Line
+  Line
+  Line
+  Line
+h = 
+  6×1 <a href="matlab:helpPopup matlab.graphics.chart.primitive.Line" style="font-weight:bold">Line</a> array:
+
+  Line
+  Line
+  Line
+  Line
+  Line
+  Line
+1 - 2.000000    
+2 : 1.800000   
+3 -- 1.600000   
+4 - 1.400000    
+5 : 1.200000   
+6 -- 1.000000   
+inFile =
+    'MVARiPartSIP01_NVDA_20161003.mat'
+    'nbbPart nboPart'    'nbbSIP nboSIP'
+  resolution     sdw    min    max    min    max
+       1.000  12.246  0.000  1.000  0.000  1.000
+       0.100  12.135  0.009  1.000  0.000  0.991
+       0.010  12.068  0.082  1.000  0.000  0.918
+       0.001  12.057  0.685  1.000  0.000  0.315
+       0.000  12.049  0.997  0.999  0.001  0.003
+       0.000  12.046  0.999  0.999  0.001  0.001
+  resolution       sdw      min      max      min      max
+     1.00000  12.24598  0.00028  0.99978  0.00022  0.99972
+     0.10000  12.13470  0.00918  0.99987  0.00013  0.99082
+     0.01000  12.06818  0.08168  0.99970  0.00030  0.91832
+     0.00100  12.05675  0.68545  0.99986  0.00014  0.31455
+     0.00010  12.04929  0.99730  0.99907  0.00093  0.00270
+     0.00001  12.04582  0.99850  0.99870  0.00130  0.00150
+Current plot held
+{Expected one output from a curly brace or dot indexing expression, but there were 0 results.
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('irfGraphsPartSIP', 'C:\Active\PDL\MatlabNovember2018\irfGraphsPartSIP.m', 79)" style="font-weight:bold">irfGraphsPartSIP</a> (<a href="matlab: opentoline('C:\Active\PDL\MatlabNovember2018\irfGraphsPartSIP.m',79,0)">line 79</a>)
+    ytix{ax.YTick<0}='';} 
+irfGraphsPartSIP
+shockVar =
+    'nbbPart'
+impactVar =
+    'nbbSIP'
+fileNameFmt =
+    'MVARiPartSIP01_%s_20161003.mat'
+inFile =
+    'MVARiPartSIP01_IBM_20161003.mat'
+    'nbbPart nboPart'    'nbbSIP nboSIP'
+  resolution     sdw    min    max    min    max
+       1.000  19.065  0.002  1.000  0.000  0.998
+       0.100  19.154  0.017  0.999  0.001  0.983
+       0.010  19.138  0.142  0.998  0.002  0.858
+       0.001  19.121  0.827  0.998  0.002  0.173
+       0.000  19.121  0.999  0.999  0.001  0.001
+       0.000  19.124  0.999  0.999  0.001  0.001
+  resolution       sdw      min      max      min      max
+     1.00000  19.06533  0.00220  0.99959  0.00041  0.99780
+     0.10000  19.15431  0.01698  0.99866  0.00134  0.98302
+     0.01000  19.13788  0.14200  0.99775  0.00225  0.85800
+     0.00100  19.12107  0.82659  0.99777  0.00223  0.17341
+     0.00010  19.12131  0.99917  0.99942  0.00058  0.00083
+     0.00001  19.12400  0.99931  0.99936  0.00064  0.00069
+Current plot held
+ax = 
+  <a href="matlab:helpPopup matlab.graphics.axis.Axes" style="font-weight:bold">Axes</a> (IBM initial impulse in nbbPart; IRF for nbbSIP, ) with properties:
+
+             XLim: [1.0000e-06 1300]
+             YLim: [-0.2000 1.6000]
+           XScale: 'log'
+           YScale: 'linear'
+    GridLineStyle: '-'
+         Position: [0.1300 0.1150 0.7750 0.7760]
+            Units: 'normalized'
+
+  Show <a href="matlab:if exist('ax', 'var'), matlab.graphics.internal.getForDisplay('ax', ax, 'matlab.graphics.axis.Axes'), else, matlab.graphics.internal.getForDisplay('ax'), end">all properties</a>
+ans = 
+  6×1 <a href="matlab:helpPopup matlab.graphics.chart.primitive.Line" style="font-weight:bold">Line</a> array:
+
+  Line
+  Line
+  Line
+  Line
+  Line
+  Line
+h = 
+  6×1 <a href="matlab:helpPopup matlab.graphics.chart.primitive.Line" style="font-weight:bold">Line</a> array:
+
+  Line
+  Line
+  Line
+  Line
+  Line
+  Line
+1 - 2.000000    
+2 : 1.800000   
+3 -- 1.600000   
+4 - 1.400000    
+5 : 1.200000   
+6 -- 1.000000   
+inFile =
+    'MVARiPartSIP01_NVDA_20161003.mat'
+    'nbbPart nboPart'    'nbbSIP nboSIP'
+  resolution     sdw    min    max    min    max
+       1.000  12.246  0.000  1.000  0.000  1.000
+       0.100  12.135  0.009  1.000  0.000  0.991
+       0.010  12.068  0.082  1.000  0.000  0.918
+       0.001  12.057  0.685  1.000  0.000  0.315
+       0.000  12.049  0.997  0.999  0.001  0.003
+       0.000  12.046  0.999  0.999  0.001  0.001
+  resolution       sdw      min      max      min      max
+     1.00000  12.24598  0.00028  0.99978  0.00022  0.99972
+     0.10000  12.13470  0.00918  0.99987  0.00013  0.99082
+     0.01000  12.06818  0.08168  0.99970  0.00030  0.91832
+     0.00100  12.05675  0.68545  0.99986  0.00014  0.31455
+     0.00010  12.04929  0.99730  0.99907  0.00093  0.00270
+     0.00001  12.04582  0.99850  0.99870  0.00130  0.00150
+Current plot held
+{Expected one output from a curly brace or dot indexing expression, but there were 0 results.
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('irfGraphsPartSIP', 'C:\Active\PDL\MatlabNovember2018\irfGraphsPartSIP.m', 79)" style="font-weight:bold">irfGraphsPartSIP</a> (<a href="matlab: opentoline('C:\Active\PDL\MatlabNovember2018\irfGraphsPartSIP.m',79,0)">line 79</a>)
+    ytix{ax.YTick<0}='';} 
+irfGraphsPartSIP
+shockVar =
+    'nbbPart'
+impactVar =
+    'nbbSIP'
+fileNameFmt =
+    'MVARiPartSIP01_%s_20161003.mat'
+inFile =
+    'MVARiPartSIP01_IBM_20161003.mat'
+    'nbbPart nboPart'    'nbbSIP nboSIP'
+  resolution     sdw    min    max    min    max
+       1.000  19.065  0.002  1.000  0.000  0.998
+       0.100  19.154  0.017  0.999  0.001  0.983
+       0.010  19.138  0.142  0.998  0.002  0.858
+       0.001  19.121  0.827  0.998  0.002  0.173
+       0.000  19.121  0.999  0.999  0.001  0.001
+       0.000  19.124  0.999  0.999  0.001  0.001
+  resolution       sdw      min      max      min      max
+     1.00000  19.06533  0.00220  0.99959  0.00041  0.99780
+     0.10000  19.15431  0.01698  0.99866  0.00134  0.98302
+     0.01000  19.13788  0.14200  0.99775  0.00225  0.85800
+     0.00100  19.12107  0.82659  0.99777  0.00223  0.17341
+     0.00010  19.12131  0.99917  0.99942  0.00058  0.00083
+     0.00001  19.12400  0.99931  0.99936  0.00064  0.00069
+Current plot held
+ax = 
+  <a href="matlab:helpPopup matlab.graphics.axis.Axes" style="font-weight:bold">Axes</a> (IBM initial impulse in nbbPart; IRF for nbbSIP, ) with properties:
+
+             XLim: [1.0000e-06 1300]
+             YLim: [-0.2000 1.6000]
+           XScale: 'log'
+           YScale: 'linear'
+    GridLineStyle: '-'
+         Position: [0.1300 0.1150 0.7750 0.7760]
+            Units: 'normalized'
+
+  Show <a href="matlab:if exist('ax', 'var'), matlab.graphics.internal.getForDisplay('ax', ax, 'matlab.graphics.axis.Axes'), else, matlab.graphics.internal.getForDisplay('ax'), end">all properties</a>
+ans = 
+  6×1 <a href="matlab:helpPopup matlab.graphics.chart.primitive.Line" style="font-weight:bold">Line</a> array:
+
+  Line
+  Line
+  Line
+  Line
+  Line
+  Line
+h = 
+  6×1 <a href="matlab:helpPopup matlab.graphics.chart.primitive.Line" style="font-weight:bold">Line</a> array:
+
+  Line
+  Line
+  Line
+  Line
+  Line
+  Line
+1 - 2.000000    
+2 : 1.800000   
+3 -- 1.600000   
+4 - 1.400000    
+5 : 1.200000   
+6 -- 1.000000   
+{Undefined function or variable 'replaceall'.
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('irfGraphsPartSIP', 'C:\Active\PDL\MatlabNovember2018\irfGraphsPartSIP.m', 102)" style="font-weight:bold">irfGraphsPartSIP</a> (<a href="matlab: opentoline('C:\Active\PDL\MatlabNovember2018\irfGraphsPartSIP.m',102,0)">line 102</a>)
+    replaceall} 
+irfGraphsPartSIP
+shockVar =
+    'nbbPart'
+impactVar =
+    'nbbSIP'
+fileNameFmt =
+    'MVARiPartSIP01_%s_20161003.mat'
+inFile =
+    'MVARiPartSIP01_IBM_20161003.mat'
+    'nbbPart nboPart'    'nbbSIP nboSIP'
+  resolution     sdw    min    max    min    max
+       1.000  19.065  0.002  1.000  0.000  0.998
+       0.100  19.154  0.017  0.999  0.001  0.983
+       0.010  19.138  0.142  0.998  0.002  0.858
+       0.001  19.121  0.827  0.998  0.002  0.173
+       0.000  19.121  0.999  0.999  0.001  0.001
+       0.000  19.124  0.999  0.999  0.001  0.001
+  resolution       sdw      min      max      min      max
+     1.00000  19.06533  0.00220  0.99959  0.00041  0.99780
+     0.10000  19.15431  0.01698  0.99866  0.00134  0.98302
+     0.01000  19.13788  0.14200  0.99775  0.00225  0.85800
+     0.00100  19.12107  0.82659  0.99777  0.00223  0.17341
+     0.00010  19.12131  0.99917  0.99942  0.00058  0.00083
+     0.00001  19.12400  0.99931  0.99936  0.00064  0.00069
+Current plot held
+ax = 
+  <a href="matlab:helpPopup matlab.graphics.axis.Axes" style="font-weight:bold">Axes</a> (IBM initial impulse in nbbPart; IRF for nbbSIP, ) with properties:
+
+             XLim: [1.0000e-06 1300]
+             YLim: [-0.2000 1.6000]
+           XScale: 'log'
+           YScale: 'linear'
+    GridLineStyle: '-'
+         Position: [0.1300 0.1150 0.7750 0.7760]
+            Units: 'normalized'
+
+  Show <a href="matlab:if exist('ax', 'var'), matlab.graphics.internal.getForDisplay('ax', ax, 'matlab.graphics.axis.Axes'), else, matlab.graphics.internal.getForDisplay('ax'), end">all properties</a>
+ans = 
+  6×1 <a href="matlab:helpPopup matlab.graphics.chart.primitive.Line" style="font-weight:bold">Line</a> array:
+
+  Line
+  Line
+  Line
+  Line
+  Line
+  Line
+h = 
+  6×1 <a href="matlab:helpPopup matlab.graphics.chart.primitive.Line" style="font-weight:bold">Line</a> array:
+
+  Line
+  Line
+  Line
+  Line
+  Line
+  Line
+1 - 2.000000    
+2 : 1.800000   
+3 -- 1.600000   
+4 - 1.400000    
+5 : 1.200000   
+6 -- 1.000000   
+inFile =
+    'MVARiPartSIP01_NVDA_20161003.mat'
+    'nbbPart nboPart'    'nbbSIP nboSIP'
+  resolution     sdw    min    max    min    max
+       1.000  12.246  0.000  1.000  0.000  1.000
+       0.100  12.135  0.009  1.000  0.000  0.991
+       0.010  12.068  0.082  1.000  0.000  0.918
+       0.001  12.057  0.685  1.000  0.000  0.315
+       0.000  12.049  0.997  0.999  0.001  0.003
+       0.000  12.046  0.999  0.999  0.001  0.001
+  resolution       sdw      min      max      min      max
+     1.00000  12.24598  0.00028  0.99978  0.00022  0.99972
+     0.10000  12.13470  0.00918  0.99987  0.00013  0.99082
+     0.01000  12.06818  0.08168  0.99970  0.00030  0.91832
+     0.00100  12.05675  0.68545  0.99986  0.00014  0.31455
+     0.00010  12.04929  0.99730  0.99907  0.00093  0.00270
+     0.00001  12.04582  0.99850  0.99870  0.00130  0.00150
+Current plot held
+{Expected one output from a curly brace or dot indexing expression, but there were 0 results.
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('irfGraphsPartSIP', 'C:\Active\PDL\MatlabNovember2018\irfGraphsPartSIP.m', 79)" style="font-weight:bold">irfGraphsPartSIP</a> (<a href="matlab: opentoline('C:\Active\PDL\MatlabNovember2018\irfGraphsPartSIP.m',79,0)">line 79</a>)
+    ytix{ax.YTick<0}='';} 
+irfGraphsPartSIP
+shockVar =
+    'nbbPart'
+impactVar =
+    'nbbSIP'
+fileNameFmt =
+    'MVARiPartSIP01_%s_20161003.mat'
+inFile =
+    'MVARiPartSIP01_IBM_20161003.mat'
+    'nbbPart nboPart'    'nbbSIP nboSIP'
+  resolution     sdw    min    max    min    max
+       1.000  19.065  0.002  1.000  0.000  0.998
+       0.100  19.154  0.017  0.999  0.001  0.983
+       0.010  19.138  0.142  0.998  0.002  0.858
+       0.001  19.121  0.827  0.998  0.002  0.173
+       0.000  19.121  0.999  0.999  0.001  0.001
+       0.000  19.124  0.999  0.999  0.001  0.001
+  resolution       sdw      min      max      min      max
+     1.00000  19.06533  0.00220  0.99959  0.00041  0.99780
+     0.10000  19.15431  0.01698  0.99866  0.00134  0.98302
+     0.01000  19.13788  0.14200  0.99775  0.00225  0.85800
+     0.00100  19.12107  0.82659  0.99777  0.00223  0.17341
+     0.00010  19.12131  0.99917  0.99942  0.00058  0.00083
+     0.00001  19.12400  0.99931  0.99936  0.00064  0.00069
+Current plot held
+ax = 
+  <a href="matlab:helpPopup matlab.graphics.axis.Axes" style="font-weight:bold">Axes</a> (IBM initial impulse in nbbPart; IRF for nbbSIP, ) with properties:
+
+             XLim: [1.0000e-06 1300]
+             YLim: [-0.2000 1.6000]
+           XScale: 'log'
+           YScale: 'linear'
+    GridLineStyle: '-'
+         Position: [0.1300 0.1150 0.7750 0.7760]
+            Units: 'normalized'
+
+  Show <a href="matlab:if exist('ax', 'var'), matlab.graphics.internal.getForDisplay('ax', ax, 'matlab.graphics.axis.Axes'), else, matlab.graphics.internal.getForDisplay('ax'), end">all properties</a>
+ans = 
+  6×1 <a href="matlab:helpPopup matlab.graphics.chart.primitive.Line" style="font-weight:bold">Line</a> array:
+
+  Line
+  Line
+  Line
+  Line
+  Line
+  Line
+h = 
+  6×1 <a href="matlab:helpPopup matlab.graphics.chart.primitive.Line" style="font-weight:bold">Line</a> array:
+
+  Line
+  Line
+  Line
+  Line
+  Line
+  Line
+1 - 2.000000    
+2 : 1.800000   
+3 -- 1.600000   
+4 - 1.400000    
+5 : 1.200000   
+6 -- 1.000000   
+inFile =
+    'MVARiPartSIP01_NVDA_20161003.mat'
+    'nbbPart nboPart'    'nbbSIP nboSIP'
+  resolution     sdw    min    max    min    max
+       1.000  12.246  0.000  1.000  0.000  1.000
+       0.100  12.135  0.009  1.000  0.000  0.991
+       0.010  12.068  0.082  1.000  0.000  0.918
+       0.001  12.057  0.685  1.000  0.000  0.315
+       0.000  12.049  0.997  0.999  0.001  0.003
+       0.000  12.046  0.999  0.999  0.001  0.001
+  resolution       sdw      min      max      min      max
+     1.00000  12.24598  0.00028  0.99978  0.00022  0.99972
+     0.10000  12.13470  0.00918  0.99987  0.00013  0.99082
+     0.01000  12.06818  0.08168  0.99970  0.00030  0.91832
+     0.00100  12.05675  0.68545  0.99986  0.00014  0.31455
+     0.00010  12.04929  0.99730  0.99907  0.00093  0.00270
+     0.00001  12.04582  0.99850  0.99870  0.00130  0.00150
+Current plot held
+{Expected one output from a curly brace or dot indexing expression, but there were 0 results.
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('irfGraphsPartSIP', 'C:\Active\PDL\MatlabNovember2018\irfGraphsPartSIP.m', 79)" style="font-weight:bold">irfGraphsPartSIP</a> (<a href="matlab: opentoline('C:\Active\PDL\MatlabNovember2018\irfGraphsPartSIP.m',79,0)">line 79</a>)
+    ytix{ax.YTick<0}='';} 
+irfGraphsPartSIP
+shockVar =
+    'nbbPart'
+impactVar =
+    'nbbSIP'
+fileNameFmt =
+    'MVARiPartSIP01_%s_20161003.mat'
+inFile =
+    'MVARiPartSIP01_IBM_20161003.mat'
+    'nbbPart nboPart'    'nbbSIP nboSIP'
+  resolution     sdw    min    max    min    max
+       1.000  19.065  0.002  1.000  0.000  0.998
+       0.100  19.154  0.017  0.999  0.001  0.983
+       0.010  19.138  0.142  0.998  0.002  0.858
+       0.001  19.121  0.827  0.998  0.002  0.173
+       0.000  19.121  0.999  0.999  0.001  0.001
+       0.000  19.124  0.999  0.999  0.001  0.001
+  resolution       sdw      min      max      min      max
+     1.00000  19.06533  0.00220  0.99959  0.00041  0.99780
+     0.10000  19.15431  0.01698  0.99866  0.00134  0.98302
+     0.01000  19.13788  0.14200  0.99775  0.00225  0.85800
+     0.00100  19.12107  0.82659  0.99777  0.00223  0.17341
+     0.00010  19.12131  0.99917  0.99942  0.00058  0.00083
+     0.00001  19.12400  0.99931  0.99936  0.00064  0.00069
+ax = 
+  <a href="matlab:helpPopup matlab.graphics.axis.Axes" style="font-weight:bold">Axes</a> with properties:
+
+             XLim: [0 1]
+             YLim: [0 1]
+           XScale: 'linear'
+           YScale: 'linear'
+    GridLineStyle: '-'
+         Position: [0.1300 0.1100 0.7750 0.8150]
+            Units: 'normalized'
+
+  Show <a href="matlab:if exist('ax', 'var'), matlab.graphics.internal.getForDisplay('ax', ax, 'matlab.graphics.axis.Axes'), else, matlab.graphics.internal.getForDisplay('ax'), end">all properties</a>
+Current plot held
+ax = 
+  <a href="matlab:helpPopup matlab.graphics.axis.Axes" style="font-weight:bold">Axes</a> (IBM initial impulse in nbbPart; IRF for nbbSIP, ) with properties:
+
+             XLim: [1.0000e-06 1300]
+             YLim: [-0.2000 1.6000]
+           XScale: 'log'
+           YScale: 'linear'
+    GridLineStyle: '-'
+         Position: [0.1300 0.1150 0.7750 0.7760]
+            Units: 'normalized'
+
+  Show <a href="matlab:if exist('ax', 'var'), matlab.graphics.internal.getForDisplay('ax', ax, 'matlab.graphics.axis.Axes'), else, matlab.graphics.internal.getForDisplay('ax'), end">all properties</a>
+ans = 
+  6×1 <a href="matlab:helpPopup matlab.graphics.chart.primitive.Line" style="font-weight:bold">Line</a> array:
+
+  Line
+  Line
+  Line
+  Line
+  Line
+  Line
+h = 
+  6×1 <a href="matlab:helpPopup matlab.graphics.chart.primitive.Line" style="font-weight:bold">Line</a> array:
+
+  Line
+  Line
+  Line
+  Line
+  Line
+  Line
+1 - 2.000000    
+2 : 1.800000   
+3 -- 1.600000   
+4 - 1.400000    
+5 : 1.200000   
+6 -- 1.000000   
+inFile =
+    'MVARiPartSIP01_NVDA_20161003.mat'
+    'nbbPart nboPart'    'nbbSIP nboSIP'
+  resolution     sdw    min    max    min    max
+       1.000  12.246  0.000  1.000  0.000  1.000
+       0.100  12.135  0.009  1.000  0.000  0.991
+       0.010  12.068  0.082  1.000  0.000  0.918
+       0.001  12.057  0.685  1.000  0.000  0.315
+       0.000  12.049  0.997  0.999  0.001  0.003
+       0.000  12.046  0.999  0.999  0.001  0.001
+  resolution       sdw      min      max      min      max
+     1.00000  12.24598  0.00028  0.99978  0.00022  0.99972
+     0.10000  12.13470  0.00918  0.99987  0.00013  0.99082
+     0.01000  12.06818  0.08168  0.99970  0.00030  0.91832
+     0.00100  12.05675  0.68545  0.99986  0.00014  0.31455
+     0.00010  12.04929  0.99730  0.99907  0.00093  0.00270
+     0.00001  12.04582  0.99850  0.99870  0.00130  0.00150
+ax = 
+  <a href="matlab:helpPopup matlab.graphics.axis.Axes" style="font-weight:bold">Axes</a> with properties:
+
+             XLim: [0 1]
+             YLim: [0 1]
+           XScale: 'linear'
+           YScale: 'linear'
+    GridLineStyle: '-'
+         Position: [0.1300 0.1100 0.7750 0.8150]
+            Units: 'normalized'
+
+  Show <a href="matlab:if exist('ax', 'var'), matlab.graphics.internal.getForDisplay('ax', ax, 'matlab.graphics.axis.Axes'), else, matlab.graphics.internal.getForDisplay('ax'), end">all properties</a>
+Current plot held
+{Expected one output from a curly brace or dot indexing expression, but there were 0 results.
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('irfGraphsPartSIP', 'C:\Active\PDL\MatlabNovember2018\irfGraphsPartSIP.m', 79)" style="font-weight:bold">irfGraphsPartSIP</a> (<a href="matlab: opentoline('C:\Active\PDL\MatlabNovember2018\irfGraphsPartSIP.m',79,0)">line 79</a>)
+    ytix{ax.YTick<0}='';} 
+irfGraphsPartSIP
+shockVar =
+    'nbbPart'
+impactVar =
+    'nbbSIP'
+fileNameFmt =
+    'MVARiPartSIP01_%s_20161003.mat'
+inFile =
+    'MVARiPartSIP01_IBM_20161003.mat'
+    'nbbPart nboPart'    'nbbSIP nboSIP'
+  resolution     sdw    min    max    min    max
+       1.000  19.065  0.002  1.000  0.000  0.998
+       0.100  19.154  0.017  0.999  0.001  0.983
+       0.010  19.138  0.142  0.998  0.002  0.858
+       0.001  19.121  0.827  0.998  0.002  0.173
+       0.000  19.121  0.999  0.999  0.001  0.001
+       0.000  19.124  0.999  0.999  0.001  0.001
+  resolution       sdw      min      max      min      max
+     1.00000  19.06533  0.00220  0.99959  0.00041  0.99780
+     0.10000  19.15431  0.01698  0.99866  0.00134  0.98302
+     0.01000  19.13788  0.14200  0.99775  0.00225  0.85800
+     0.00100  19.12107  0.82659  0.99777  0.00223  0.17341
+     0.00010  19.12131  0.99917  0.99942  0.00058  0.00083
+     0.00001  19.12400  0.99931  0.99936  0.00064  0.00069
+ax = 
+  <a href="matlab:helpPopup matlab.graphics.axis.Axes" style="font-weight:bold">Axes</a> with properties:
+
+             XLim: [0 1]
+             YLim: [0 1]
+           XScale: 'linear'
+           YScale: 'linear'
+    GridLineStyle: '-'
+         Position: [0.1300 0.1100 0.7750 0.8150]
+            Units: 'normalized'
+
+  Show <a href="matlab:if exist('ax', 'var'), matlab.graphics.internal.getForDisplay('ax', ax, 'matlab.graphics.axis.Axes'), else, matlab.graphics.internal.getForDisplay('ax'), end">all properties</a>
+Current plot held
+ax = 
+  <a href="matlab:helpPopup matlab.graphics.axis.Axes" style="font-weight:bold">Axes</a> (IBM initial impulse in nbbPart; IRF for nbbSIP, ) with properties:
+
+             XLim: [1.0000e-06 1300]
+             YLim: [-0.2000 1.6000]
+           XScale: 'log'
+           YScale: 'linear'
+    GridLineStyle: '-'
+         Position: [0.1300 0.1150 0.7750 0.7760]
+            Units: 'normalized'
+
+  Show <a href="matlab:if exist('ax', 'var'), matlab.graphics.internal.getForDisplay('ax', ax, 'matlab.graphics.axis.Axes'), else, matlab.graphics.internal.getForDisplay('ax'), end">all properties</a>
+ans = 
+  6×1 <a href="matlab:helpPopup matlab.graphics.chart.primitive.Line" style="font-weight:bold">Line</a> array:
+
+  Line
+  Line
+  Line
+  Line
+  Line
+  Line
+h = 
+  6×1 <a href="matlab:helpPopup matlab.graphics.chart.primitive.Line" style="font-weight:bold">Line</a> array:
+
+  Line
+  Line
+  Line
+  Line
+  Line
+  Line
+1 - 2.000000    
+2 : 1.800000   
+3 -- 1.600000   
+4 - 1.400000    
+5 : 1.200000   
+6 -- 1.000000   
+inFile =
+    'MVARiPartSIP01_NVDA_20161003.mat'
+    'nbbPart nboPart'    'nbbSIP nboSIP'
+  resolution     sdw    min    max    min    max
+       1.000  12.246  0.000  1.000  0.000  1.000
+       0.100  12.135  0.009  1.000  0.000  0.991
+       0.010  12.068  0.082  1.000  0.000  0.918
+       0.001  12.057  0.685  1.000  0.000  0.315
+       0.000  12.049  0.997  0.999  0.001  0.003
+       0.000  12.046  0.999  0.999  0.001  0.001
+  resolution       sdw      min      max      min      max
+     1.00000  12.24598  0.00028  0.99978  0.00022  0.99972
+     0.10000  12.13470  0.00918  0.99987  0.00013  0.99082
+     0.01000  12.06818  0.08168  0.99970  0.00030  0.91832
+     0.00100  12.05675  0.68545  0.99986  0.00014  0.31455
+     0.00010  12.04929  0.99730  0.99907  0.00093  0.00270
+     0.00001  12.04582  0.99850  0.99870  0.00130  0.00150
+ax = 
+  <a href="matlab:helpPopup matlab.graphics.axis.Axes" style="font-weight:bold">Axes</a> with properties:
+
+             XLim: [0 1]
+             YLim: [0 1]
+           XScale: 'linear'
+           YScale: 'linear'
+    GridLineStyle: '-'
+         Position: [0.1300 0.1100 0.7750 0.8150]
+            Units: 'normalized'
+
+  Show <a href="matlab:if exist('ax', 'var'), matlab.graphics.internal.getForDisplay('ax', ax, 'matlab.graphics.axis.Axes'), else, matlab.graphics.internal.getForDisplay('ax'), end">all properties</a>
+Current plot held
+ax = 
+  <a href="matlab:helpPopup matlab.graphics.axis.Axes" style="font-weight:bold">Axes</a> (NVDA initial impulse in nbbPart; IRF for nbbSIP, ) with properties:
+
+             XLim: [1.0000e-06 1300]
+             YLim: [-0.0500 0.9000]
+           XScale: 'log'
+           YScale: 'linear'
+    GridLineStyle: '-'
+         Position: [0.1300 0.1150 0.7750 0.7760]
+            Units: 'normalized'
+
+  Show <a href="matlab:if exist('ax', 'var'), matlab.graphics.internal.getForDisplay('ax', ax, 'matlab.graphics.axis.Axes'), else, matlab.graphics.internal.getForDisplay('ax'), end">all properties</a>
+ans = 
+  6×1 <a href="matlab:helpPopup matlab.graphics.chart.primitive.Line" style="font-weight:bold">Line</a> array:
+
+  Line
+  Line
+  Line
+  Line
+  Line
+  Line
+h = 
+  6×1 <a href="matlab:helpPopup matlab.graphics.chart.primitive.Line" style="font-weight:bold">Line</a> array:
+
+  Line
+  Line
+  Line
+  Line
+  Line
+  Line
+1 - 2.000000    
+2 : 1.800000   
+3 -- 1.600000   
+4 - 1.400000    
+5 : 1.200000   
+6 -- 1.000000   
+irfGraphs
+shockVar =
+    'nbbPart'
+impactVar =
+    'nbbSIP'
+fileNameFmt =
+    'MVARiPartSIP01_%s_20161003.mat'
