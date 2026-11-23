@@ -1,0 +1,151 @@
+MVARiPartSIP01_NVDA_20161003 starting at 08-Nov-2018 06:47:57
+
+MVARiPartSIP01_NVDA_20161003 secondFactor=1
+Setting polynomials
+name=p0; deg=0; n=1; kOffset=0; vNames=p0d0.
+name=p1; deg=0; n=9; kOffset=1; vNames=p1d0.
+Reading data for secondFactor=1 (08-Nov-2018 06:47:57)
+20161003 NVDA   5977 observations (4544 with nonzero price changes and 9am-5pm)
+20161003 NVDA   5641 observations (4063 with nonzero price changes and 9am-5pm)
+20161003 NVDA   5963 observations (4538 with nonzero price changes and 9am-5pm)
+20161003 NVDA   5627 observations (4061 with nonzero price changes and 9am-5pm)
+Data read finished for NVDA 20161003. secondFactor=1. Elapsed time is 4.1446 sec.
+starting estimates secondFactor=1. 08-Nov-2018 06:48:01
+(nbbPart nboPart nbbSIP nboSIP)
+setValid (computing largest possible range)
+     nbbPart            1 (00:00:01) to        64800 (18:00:00)
+     nboPart            1 (00:00:01) to        64800 (18:00:00)
+      nbbSIP            1 (00:00:01) to        64800 (18:00:00)
+      nboSIP            1 (00:00:01) to        64800 (18:00:00)
+valid range:        35100 (09:45:00) to        57600 (16:00:00)
+     nbbPart       4544 total observations,       4145 in valid range.
+     nboPart       4063 total observations,       3820 in valid range.
+      nbbSIP       4538 total observations,       4139 in valid range.
+      nboSIP       4061 total observations,       3818 in valid range.
+eVecMeans: -0.013393  1.8947e-18   -0.013393
+buildzpzSparsePDLpar (nCPU=0)
+Across the full parfor loop, the start to finish elapsed time is 19.88 sec.
+VAR/VECM estimates for secondFactor=1
+                 dnbbPart        t  dnboPart        t   dnbbSIP        t   dnboSIP        t
+dnbbPartp0d0     -0.09942  -0.3751   0.08229   0.3228  -0.09924  -0.3745   0.08212    0.322
+dnbbPartp1d0     -0.09727   -0.519  -0.04154  -0.2305  -0.09707  -0.5182  -0.04146    -0.23
+dnboPartp0d0       0.5425    1.772    0.4576    1.554    0.5423    1.772    0.4577    1.554
+dnboPartp1d0       0.5689    2.629    0.4369    2.099    0.5686    2.628    0.4369    2.098
+dnbbSIPp0d0      -0.06079  -0.2292    0.0199    0.078  -0.05989  -0.2259   0.02006  0.07863
+dnbbSIPp1d0       0.03705   0.1976   0.07296   0.4046    0.0373   0.1991   0.07327   0.4063
+dnboSIPp0d0       -0.3893   -1.272   -0.5723   -1.944   -0.3898   -1.274   -0.5722   -1.943
+dnboSIPp1d0       -0.5028   -2.323   -0.4614   -2.216   -0.5029   -2.324   -0.4617   -2.217
+nbbPart-nboPart   -0.1419  -0.3786    0.8077     2.24   -0.1421  -0.3793   -0.1924  -0.5336
+nbbPart-nbbSIP     -0.331   -1.019    0.2595   0.8305    0.6696    2.062      0.26    0.832
+nbbPart-nboSIP    0.06372     0.17    -0.756   -2.097    0.0636   0.1698    0.2441   0.6769
+eCov
+           dnbbPart   dnboPart    dnbbSIP    dnboSIP
+dnbbPart  2.751e-05  2.008e-05  2.748e-05  2.008e-05
+dnboPart  2.008e-05  2.545e-05  2.007e-05  2.544e-05
+dnbbSIP   2.748e-05  2.007e-05  2.748e-05  2.008e-05
+dnboSIP   2.008e-05  2.544e-05  2.008e-05  2.546e-05
+eCorr
+          dnbbPart  dnboPart  dnbbSIP  dnboSIP
+dnbbPart         1    0.7588   0.9994    0.759
+dnboPart    0.7588         1    0.759   0.9995
+dnbbSIP     0.9994     0.759        1   0.7591
+dnboSIP      0.759    0.9995   0.7591        1
+Estimation finished for NVDA 20161003. secondFactor=1. Elapsed time is 00:20.22.
+starting random walk decomposition for secondFactor=1. 08-Nov-2018 06:48:22
+Random walk decomposition for secondFactor=1
+Sum of vma coefficients:
+  nbbPart  nboPart    nbbSIP  nboSIP
+   0.4443   0.1811  -0.02593  0.4516
+per period var_w:    0.000026 sd_w:    0.005063
+Random walk decomposition for secondFactor=1 
+ annualized var_w:  149.963925 sd_w:   12.245976
+info share bounds:
+             Min      Max
+nbbPart  0.00025  0.83153
+nboPart  0.00001  0.91985
+nbbSIP   0.00000  0.83114
+nboSIP   0.00021  0.92030
+Grouped info share bounds
+                     Min      Max
+nbbPart nboPart  0.00028  0.99978
+nbbSIP nboSIP    0.00022  0.99972
+Random-walk decomp finished for NVDA 20161003. secondFactor=1. Elapsed time is 0.13061 sec.
+
+MVARiPartSIP01_NVDA_20161003 secondFactor=10
+Setting polynomials
+name=p0; deg=0; n=1; kOffset=0; vNames=p0d0.
+name=p1; deg=0; n=9; kOffset=1; vNames=p1d0.
+name=p2; deg=0; n=90; kOffset=10; vNames=p2d0.
+Reading data for secondFactor=10 (08-Nov-2018 06:48:22)
+20161003 NVDA   8257 observations (6698 with nonzero price changes and 9am-5pm)
+20161003 NVDA   8008 observations (6141 with nonzero price changes and 9am-5pm)
+20161003 NVDA   8219 observations (6687 with nonzero price changes and 9am-5pm)
+20161003 NVDA   7968 observations (6138 with nonzero price changes and 9am-5pm)
+Data read finished for NVDA 20161003. secondFactor=10. Elapsed time is 4.314 sec.
+starting estimates secondFactor=10. 08-Nov-2018 06:48:26
+(nbbPart nboPart nbbSIP nboSIP)
+setValid (computing largest possible range)
+     nbbPart            1 (00:00:00.1) to       648000 (18:00:00.0)
+     nboPart            1 (00:00:00.1) to       648000 (18:00:00.0)
+      nbbSIP            1 (00:00:00.1) to       648000 (18:00:00.0)
+      nboSIP            1 (00:00:00.1) to       648000 (18:00:00.0)
+valid range:       351000 (09:45:00.0) to       576000 (16:00:00.0)
+     nbbPart       6698 total observations,       6168 in valid range.
+     nboPart       6141 total observations,       5785 in valid range.
+      nbbSIP       6687 total observations,       6153 in valid range.
+      nboSIP       6138 total observations,       5781 in valid range.
+eVecMeans: -0.013394      -4e-07   -0.013393
+buildzpzSparsePDLpar (nCPU=0)
+Across the full parfor loop, the start to finish elapsed time is 69.65 sec.
+VAR/VECM estimates for secondFactor=10
+                  dnbbPart        t   dnboPart         t    dnbbSIP        t    dnboSIP         t
+dnbbPartp0d0      -0.01665  -0.4599    0.04776     1.373   -0.01653  -0.4582    0.04771     1.377
+dnbbPartp1d0      -0.03237   -1.096  -0.001449  -0.05104   -0.03237     -1.1  -0.001453  -0.05139
+dnbbPartp2d0     -0.004593  -0.2198  -0.007119   -0.3544  -0.004582    -0.22  -0.007093   -0.3546
+dnboPartp0d0       0.09411    2.516  -0.002525  -0.07023    0.09412    2.524  -0.002618  -0.07311
+dnboPartp1d0       0.08797    2.876    0.05385     1.831    0.08803    2.887    0.05389     1.841
+dnboPartp2d0       0.04182    1.921    0.02632     1.258    0.04185    1.929    0.02633     1.263
+dnbbSIPp0d0       -0.05833   -1.612  -0.003183  -0.09153   -0.05824   -1.615  -0.003302  -0.09535
+dnbbSIPp1d0       0.003275   0.1109    0.02109    0.7428   0.003271   0.1111    0.02095    0.7411
+dnbbSIPp2d0      -0.004666  -0.2232    0.01349    0.6713  -0.004659  -0.2236    0.01344    0.6719
+dnboSIPp0d0       -0.05555   -1.486   -0.08968    -2.495   -0.05569   -1.494   -0.08958    -2.503
+dnboSIPp1d0       -0.05983   -1.956   -0.07753    -2.637   -0.05987   -1.964    -0.0774    -2.644
+dnboSIPp2d0       -0.03211   -1.475   -0.03207    -1.532   -0.03213    -1.48   -0.03203    -1.537
+nbbPart-nboPart    -0.1597   -3.703     0.2809     6.779    -0.1596   -3.713    -0.7192    -17.42
+nbbPart-nbbSIP     -0.2023   -4.843     0.2471     6.157     0.7977    19.16     0.2471      6.18
+nbbPart-nboSIP      0.1475    3.421    -0.2726    -6.576     0.1475    3.431     0.7276     17.63
+eCov
+           dnbbPart   dnboPart    dnbbSIP    dnboSIP
+dnbbPart  3.407e-06  1.954e-06  3.376e-06  1.937e-06
+dnboPart  1.954e-06  3.147e-06  1.939e-06  3.116e-06
+dnbbSIP   3.376e-06  1.939e-06  3.384e-06  1.936e-06
+dnboSIP   1.937e-06  3.116e-06  1.936e-06  3.121e-06
+eCorr
+          dnbbPart  dnboPart  dnbbSIP  dnboSIP
+dnbbPart         1    0.5968   0.9942   0.5941
+dnboPart    0.5968         1   0.5942   0.9941
+dnbbSIP     0.9942    0.5942        1   0.5955
+dnboSIP     0.5941    0.9941   0.5955        1
+Estimation finished for NVDA 20161003. secondFactor=10. Elapsed time is 01:10.23.
+starting random walk decomposition for secondFactor=10. 08-Nov-2018 06:49:36
+Random walk decomposition for secondFactor=10
+Sum of vma coefficients:
+  nbbPart  nboPart    nbbSIP   nboSIP
+   0.4637   0.4813  -0.06213  0.09884
+per period var_w:    0.000003 sd_w:    0.001587
+Random walk decomposition for secondFactor=10 
+ annualized var_w:  147.250961 sd_w:   12.134701
+info share bounds:
+             Min      Max
+nbbPart  0.00290  0.73006
+nboPart  0.00302  0.85881
+nbbSIP   0.00000  0.72184
+nboSIP   0.00006  0.85121
+Grouped info share bounds
+                     Min      Max
+nbbPart nboPart  0.00918  0.99987
+nbbSIP nboSIP    0.00013  0.99082
+Random-walk decomp finished for NVDA 20161003. secondFactor=10. Elapsed time is 0.12348 sec.
+
+Ending NVDA 20161003 analysis at 08-Nov-2018 06:49:36. Elapsed time is 03:03.56.
+

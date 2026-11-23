@@ -1,0 +1,132 @@
+Decomposition with simulated data                                                                21:03 Wednesday, April 25, 2007   1
+
+The CORR Procedure
+
+   3  Variables:    p1       p2       p3       
+
+
+               Covariance Matrix, DF = 99
+ 
+                  p1                p2                p3
+
+p1      0.8227367506      0.8084056933      0.8060388671
+p2      0.8084056933      0.8048833241      0.8024633816
+p3      0.8060388671      0.8024633816      0.8084445458
+
+
+                                    Simple Statistics
+ 
+Variable           N          Mean       Std Dev           Sum       Minimum       Maximum
+
+p1               100      -0.06299       0.90705      -6.29920      -2.69931       2.31673
+p2               100      -0.06989       0.89715      -6.98907      -2.53114       2.29323
+p3               100      -0.07705       0.89914      -7.70453      -2.49383       2.30202
+
+
+ Pearson Correlation Coefficients, N = 100 
+         Prob > |r| under H0: Rho=0
+ 
+              p1            p2            p3
+
+p1       1.00000       0.99342       0.98833
+                        <.0001        <.0001
+
+p2       0.99342       1.00000       0.99480
+          <.0001                      <.0001
+
+p3       0.98833       0.99480       1.00000
+          <.0001        <.0001              
+Decomposition with simulated data                                                                21:03 Wednesday, April 25, 2007   2
+
+Obs    _TYPE_    _NAME_       p1         p2         p3
+
+ 1      COV        p1      0.82274    0.80841    0.80604
+ 2      COV        p2      0.80841    0.80488    0.80246
+ 3      COV        p3      0.80604    0.80246    0.80844
+Decomposition with simulated data                                                                21:03 Wednesday, April 25, 2007   3
+
+Random walk analysis
+
+
+       Coefficient matrix
+          p1        p2        p3
+
+p1       0.4       0.8       0.2
+p2       0.4       0.8      0.25
+
+
+Warning: Coefficient matrix not square.
+
+
+ Disturbance covariance matrix
+          p1        p2        p3
+
+p1 0.8227368 0.8084057 0.8060389
+p2 0.8084057 0.8048833 0.8024634
+p3 0.8060389 0.8024634 0.8084445
+
+
+Random walk analysis for row   1 Variable: p1
+
+
+         Coefficients
+       p1        p2        p3
+
+      0.4       0.8       0.2
+
+
+VarRandWalk
+
+  1.5822351
+
+
+         InfoShareMin
+       p1        p2        p3
+
+0.0010914 0.0019104 0.0002122
+
+
+        Info Share Max
+       p1        p2        p3
+
+0.9931381 0.9986899 0.9913192
+
+
+Random walk analysis for row   2 Variable: p2
+
+
+         Coefficients
+       p1        p2        p3
+
+      0.4       0.8      0.25
+
+
+Decomposition with simulated data                                                                21:03 Wednesday, April 25, 2007   4
+
+VarRandWalk
+
+  1.6968638
+
+
+         InfoShareMin
+       p1        p2        p3
+
+0.0010177 0.0017814 0.0003092
+
+
+        Info Share Max
+       p1        p2        p3
+
+0.9928595 0.9986656 0.9919056
+Decomposition with simulated data                                                                21:03 Wednesday, April 25, 2007   5
+
+                                   Var
+       Coeff                       Rand
+Obs    RowVar        Type          Walk        p1         p2         p3
+
+ 1       p1      VarRandWalk     1.58224     .          .          .     
+ 2       p1      InfoShareMin     .         0.00109    0.00191    0.00021
+ 3       p1      InfoShareMax     .         0.99314    0.99869    0.99132
+ 4       p2      VarRandWalk     1.69686     .          .          .     
+ 5       p2      InfoShareMin     .         0.00102    0.00178    0.00031
+ 6       p2      InfoShareMax     .         0.99286    0.99867    0.99191

@@ -1,0 +1,298 @@
+
+==================================================
+Results for .\DarkLit03\save\MVARiDarkLit03_IBM_20161003.mat
+
+------------------------------
+Random walk decomposition for secondFactor=100000
+Sum of vma coefficients:
+  nbbPart  nboPart   trLit    trDark
+   0.3808   0.4363  0.5001  -0.05495
+per period var_w:    0.000000 sd_w:    0.000021
+annualized var_w:  248.068463 sd_w:   15.750189
+info share bounds:
+             Min      Max
+nbbPart  0.21644  0.24259
+nboPart  0.28782  0.32721
+trLit    0.42278  0.48504
+trDark   0.00961  0.00972
+Grouped info share bounds
+                     Min      Max
+nbbPart nboPart  0.50530  0.56756
+trLit            0.42278  0.48504
+trDark           0.00961  0.00972
+
+------------------------------
+Random walk decomposition for secondFactor=10000
+Sum of vma coefficients:
+  nbbPart  nboPart   trLit    trDark
+   0.4075   0.4672  0.4875  -0.04496
+per period var_w:    0.000000 sd_w:    0.000067
+annualized var_w:  263.458112 sd_w:   16.231393
+info share bounds:
+             Min      Max
+nbbPart  0.22444  0.27108
+nboPart  0.30184  0.36787
+trLit    0.37197  0.45442
+trDark   0.00591  0.00650
+Grouped info share bounds
+                     Min      Max
+nbbPart nboPart  0.53945  0.62173
+trLit            0.37197  0.45442
+trDark           0.00591  0.00650
+
+------------------------------
+Random walk decomposition for secondFactor=1000
+Sum of vma coefficients:
+  nbbPart  nboPart   trLit    trDark
+   0.4328   0.4991  0.4111  -0.02298
+per period var_w:    0.000000 sd_w:    0.000224
+annualized var_w:  294.369879 sd_w:   17.157211
+info share bounds:
+             Min      Max
+nbbPart  0.19570  0.40964
+nboPart  0.27232  0.51811
+trLit    0.21644  0.44329
+trDark   0.00115  0.00151
+Grouped info share bounds
+                     Min      Max
+nbbPart nboPart  0.55536  0.78230
+trLit            0.21644  0.44329
+trDark           0.00115  0.00151
+
+------------------------------
+Random walk decomposition for secondFactor=100
+Sum of vma coefficients:
+  nbbPart  nboPart   trLit   trDark
+    0.457   0.5501  0.2938  0.03174
+per period var_w:    0.000001 sd_w:    0.000773
+annualized var_w:  349.931796 sd_w:   18.706464
+info share bounds:
+             Min      Max
+nbbPart  0.14038  0.59302
+nboPart  0.22097  0.69935
+trLit    0.08146  0.47125
+trDark   0.00218  0.00565
+Grouped info share bounds
+                     Min      Max
+nbbPart nboPart  0.52544  0.91579
+trLit            0.08146  0.47125
+trDark           0.00218  0.00565
+
+------------------------------
+Random walk decomposition for secondFactor=10
+Sum of vma coefficients:
+  nbbPart  nboPart   trLit   trDark
+   0.4507   0.5512  0.2157  0.02792
+per period var_w:    0.000006 sd_w:    0.002446
+annualized var_w:  349.936533 sd_w:   18.706591
+info share bounds:
+             Min      Max
+nbbPart  0.10794  0.69456
+nboPart  0.17725  0.79708
+trLit    0.03825  0.51536
+trDark   0.00171  0.01198
+Grouped info share bounds
+                     Min      Max
+nbbPart nboPart  0.47942  0.95975
+trLit            0.03825  0.51536
+trDark           0.00171  0.01198
+
+------------------------------
+Random walk decomposition for secondFactor=1
+Sum of vma coefficients:
+  nbbPart  nboPart   trLit   trDark
+   0.4055   0.5746  0.1774  0.01429
+per period var_w:    0.000059 sd_w:    0.007709
+annualized var_w:  347.645632 sd_w:   18.645258
+info share bounds:
+             Min      Max
+nbbPart  0.06140  0.77946
+nboPart  0.13452  0.88199
+trLit    0.02053  0.60348
+trDark   0.00039  0.02826
+Grouped info share bounds
+                     Min      Max
+nbbPart nboPart  0.39048  0.97892
+trLit            0.02053  0.60348
+trDark           0.00039  0.02826
+IBM Bridged IRF starting at secondFactor=100000
+--------------------------------------------------
+ISEC=2 secondFactor=10000
+--------------------------------------------------
+ISEC=3 secondFactor=1000
+--------------------------------------------------
+ISEC=4 secondFactor=100
+--------------------------------------------------
+ISEC=5 secondFactor=10
+
+--------------------------------------------------
+Bridged random walk decomposition for IBM
+vma1 =
+    0.4794    0.5550    0.5343    0.0292
+Random walk decomposition for secondFactor=100000
+Sum of vma coefficients:
+  nbbPart  nboPart   trLit   trDark
+   0.4794    0.555  0.5343  0.02924
+per period var_w:    0.000000 sd_w:    0.000024
+annualized var_w:  342.447433 sd_w:   18.505335
+info share bounds:
+             Min      Max
+nbbPart  0.24850  0.27431
+nboPart  0.33751  0.37660
+trLit    0.34964  0.41077
+trDark   0.00199  0.00204
+Grouped info share bounds
+                     Min      Max
+nbbPart nboPart  0.58721  0.64835
+trLit            0.34964  0.41077
+trDark           0.00199  0.00204
+Current plot held
+
+==================================================
+Results for .\DarkLit03\save\MVARiDarkLit03_NVDA_20161003.mat
+
+------------------------------
+Random walk decomposition for secondFactor=100000
+Sum of vma coefficients:
+  nbbPart  nboPart   trLit   trDark
+   0.3358   0.3337  0.4736  0.04546
+per period var_w:    0.000000 sd_w:    0.000015
+annualized var_w:  126.680560 sd_w:   11.255246
+info share bounds:
+             Min      Max
+nbbPart  0.29782  0.32351
+nboPart  0.32113  0.34483
+trLit    0.33078  0.36876
+trDark   0.00699  0.00703
+Grouped info share bounds
+                     Min      Max
+nbbPart nboPart  0.62421  0.66223
+trLit            0.33078  0.36876
+trDark           0.00699  0.00703
+
+------------------------------
+Random walk decomposition for secondFactor=10000
+Sum of vma coefficients:
+  nbbPart  nboPart   trLit   trDark
+   0.3271   0.3476  0.4215  0.02593
+per period var_w:    0.000000 sd_w:    0.000046
+annualized var_w:  122.145486 sd_w:   11.051945
+info share bounds:
+             Min      Max
+nbbPart  0.27996  0.36274
+nboPart  0.34303  0.42676
+trLit    0.26542  0.32321
+trDark   0.00236  0.00243
+Grouped info share bounds
+                     Min      Max
+nbbPart nboPart  0.67439  0.73220
+trLit            0.26542  0.32321
+trDark           0.00236  0.00243
+
+------------------------------
+Random walk decomposition for secondFactor=1000
+Sum of vma coefficients:
+  nbbPart  nboPart   trLit   trDark
+   0.3191   0.3898  0.2944  0.02803
+per period var_w:    0.000000 sd_w:    0.000147
+annualized var_w:  125.654443 sd_w:   11.209569
+info share bounds:
+             Min      Max
+nbbPart  0.18277  0.55038
+nboPart  0.27391  0.65754
+trLit    0.11369  0.30274
+trDark   0.00268  0.00368
+Grouped info share bounds
+                     Min      Max
+nbbPart nboPart  0.69410  0.88339
+trLit            0.11369  0.30274
+trDark           0.00268  0.00368
+
+------------------------------
+Random walk decomposition for secondFactor=100
+Sum of vma coefficients:
+  nbbPart  nboPart   trLit  trDark
+   0.3508   0.4448  0.2386  0.0172
+per period var_w:    0.000000 sd_w:    0.000508
+annualized var_w:  151.200674 sd_w:   12.296368
+info share bounds:
+             Min      Max
+nbbPart  0.13369  0.66741
+nboPart  0.21065  0.76436
+trLit    0.05773  0.36293
+trDark   0.00082  0.00447
+Grouped info share bounds
+                     Min      Max
+nbbPart nboPart  0.63526  0.94098
+trLit            0.05773  0.36293
+trDark           0.00082  0.00447
+
+------------------------------
+Random walk decomposition for secondFactor=10
+Sum of vma coefficients:
+  nbbPart  nboPart   trLit   trDark
+   0.3514   0.5197  0.2005  0.01561
+per period var_w:    0.000003 sd_w:    0.001613
+annualized var_w:  152.245561 sd_w:   12.338783
+info share bounds:
+             Min      Max
+nbbPart  0.09833  0.70289
+nboPart  0.19741  0.82505
+trLit    0.03649  0.41641
+trDark   0.00065  0.01243
+Grouped info share bounds
+                     Min      Max
+nbbPart nboPart  0.58030  0.96223
+trLit            0.03649  0.41641
+trDark           0.00065  0.01243
+
+------------------------------
+Random walk decomposition for secondFactor=1
+Sum of vma coefficients:
+  nbbPart  nboPart   trLit   trDark
+   0.3655   0.5757  0.1581  0.02773
+per period var_w:    0.000026 sd_w:    0.005145
+annualized var_w:  154.861292 sd_w:   12.444328
+info share bounds:
+             Min      Max
+nbbPart  0.05452  0.81488
+nboPart  0.12341  0.90388
+trLit    0.01565  0.54078
+trDark   0.00145  0.04807
+Grouped info share bounds
+                     Min      Max
+nbbPart nboPart  0.44954  0.98212
+trLit            0.01565  0.54078
+trDark           0.00145  0.04807
+NVDA Bridged IRF starting at secondFactor=100000
+--------------------------------------------------
+ISEC=2 secondFactor=10000
+--------------------------------------------------
+ISEC=3 secondFactor=1000
+--------------------------------------------------
+ISEC=4 secondFactor=100
+--------------------------------------------------
+ISEC=5 secondFactor=10
+
+--------------------------------------------------
+Bridged random walk decomposition for NVDA
+vma1 =
+    0.3750    0.4093    0.4375    0.0266
+Random walk decomposition for secondFactor=100000
+Sum of vma coefficients:
+  nbbPart  nboPart   trLit   trDark
+    0.375   0.4093  0.4375  0.02659
+per period var_w:    0.000000 sd_w:    0.000016
+annualized var_w:  150.444451 sd_w:   12.265580
+info share bounds:
+             Min      Max
+nbbPart  0.31278  0.33675
+nboPart  0.40677  0.43052
+trLit    0.23768  0.27235
+trDark   0.00201  0.00203
+Grouped info share bounds
+                     Min      Max
+nbbPart nboPart  0.72562  0.76031
+trLit            0.23768  0.27235
+trDark           0.00201  0.00203
+Current plot held

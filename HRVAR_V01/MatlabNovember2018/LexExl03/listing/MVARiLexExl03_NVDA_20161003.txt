@@ -1,0 +1,629 @@
+fprintf('%s starting at %s\n',fileRoot,datetime);
+MVARiLexExl03_NVDA_20161003 starting at 20-Nov-2018 14:33:21
+
+%%  secondFactor loop (analyze at multiple time resolutions)
+for iSec=1:nSecondFactors
+    %%   secondFactor loop initializations
+    secondFactor = secondFactors(iSec);
+    fprintf('\n%s secondFactor=%d\n',fileRoot,secondFactor)
+    mv = mva(iSec);
+    fprintf('Setting polynomials\n')
+    
+    lagPDLmax = 10^3;
+    nAheadMax = 500*10^3;
+    mv.polys = polynom(0,1,'p0',0);
+    for i=0:min([log10(secondFactor) log10(lagPDLmax)-1])
+        newPoly = polynom(0,9*10^i,['p' int2str(i+1)],10^i);
+        mv.polys = horzcat(mv.polys, newPoly);
+    end
+    for i=1:length(mv.polys); fprintf('%s\n', mv.polys(i).toString()); end
+    mv.symbol = symbol;
+    mv.inDate = inDate;
+    mv.secondFactor = secondFactor;
+    T=18*3600*secondFactor;
+    spd.setgetMax(T);
+    
+    %%  read data
+    fprintf('Reading data for secondFactor=%d (%s)\n',secondFactor,datetime);
+    iTimer=tic;
+    % inFile = [inCsvDir 'part_nbb.csv'];
+    % opts = detectImportOptions(inFile);
+    % x = readtable(inFile);
+    mDisplay = true;
+    t = getPrice(readtable([inCsvDir 'lex_nbb.csv']),'nbb','timeMid',secondFactor,mDisplay,symbol,inDate);
+    prices(1)=spl(t.time2, t.price,[],[],'nbbLex');
+    t = getPrice(readtable([inCsvDir 'lex_nbo.csv']),'nbo','timeMid',secondFactor,mDisplay,symbol,inDate);
+    prices(2)=spl(t.time2, t.price,[],[],'nboLex');
+    t = getPrice(readtable([inCsvDir 'exl_nbb.csv']),'nbb','timeMid',secondFactor,mDisplay,symbol,inDate);
+    prices(3) = spl(t.time2, t.price, [], [], 'nbbExl');
+    t = getPrice(readtable([inCsvDir 'exl_nbo.csv']),'nbo','timeMid',secondFactor,mDisplay,symbol,inDate);
+    prices(4) = spl(t.time2, t.price, [], [], 'nboExl');
+    isGroups = {{'nbbLex','nboLex'},{'nbbExl','nboExl'}};    
+    mv.prices = copy(prices);
+    mv.priceNames = cellstr( arrayfun(@(x) x.name,mv.prices,'UniformOutput',false) );
+    save(saveFile,'mva');
+    et = etDuration(toc(iTimer));
+    fprintf('Data read finished for %s %d. secondFactor=%d. Elapsed time is %s.\n',symbol,inDate,secondFactor,et);
+    % mv.pricePlot;
+    
+    %%  Estimate
+    iTimer = tic;
+    load(saveFile);
+    mv = mva(iSec);
+    fprintf('starting estimates secondFactor=%d. %s\n(%s)\n',secondFactor,datetime,strjoin(mv.priceNames));
+    mv.intercept = false;
+    mv.ecm = true;
+    spd.setgetMax(mv.prices(1).maxSize);
+    mv.setup;
+    mv.setNamesPDL();
+    mv.zpzLayoutPDL();
+    mv.setValid(mv.polys.maxLength,duration(9,45,0),duration(16,0,0),true);
+    mv.eVecDemean(true);
+    zpzDisplay = 1;
+    mv.buildzpzSparsePDLpar(zpzDisplay,nCPU);
+    mv.estimateSparse();
+    mv.dispEstimates
+    save(saveFile,'mva');
+    et = etDuration(toc(iTimer));
+    fprintf('Estimation finished for %s %d. secondFactor=%d. Elapsed time is %s.\n',symbol,inDate,secondFactor,et);
+    
+    %% Impulse response functions
+    iTimer = tic;
+    load(saveFile);
+    mv = mva(iSec);
+    fprintf('starting irf computation for secondFactor=%d. %s\n',mv.secondFactor,datetime);
+    nAhead = min(500*secondFactor,500*10^4);
+    irfDisplayLevel = 2;
+    mv.irfPDLpacked(nAhead, irfDisplayLevel, nCPU);
+    save(saveFile,'mva')
+    et = toc(iTimer);
+    fprintf('%s %d irf finished. elapsed time is %3.2f seconds.\n',symbol,inDate,et);
+    et = etDuration(toc(iTimer));
+    fprintf('IRF calculation finished for %s %d. secondFactor=%d. Elapsed time is %s.\n',symbol,inDate,secondFactor,et);
+    
+    %% Random-walk decompositions
+    load(saveFile);
+    mv = mva(iSec);
+    fprintf('Random walk decomposition for secondFactor=%d. %s\n',mv.secondFactor,datetime);
+    mv.rwd = randomWalkDecomp;
+    r = mv.rwd;
+    r.init(mv);
+    r.isBoundsGrouped(isGroups);
+    r.rDisplay;
+    r.isBounds(true);
+    save(saveFile,'mva');
+end
+
+MVARiLexExl03_NVDA_20161003 secondFactor=1
+Setting polynomials
+name=p0; deg=0; n=1; kOffset=0; vNames=p0d0.
+name=p1; deg=0; n=9; kOffset=1; vNames=p1d0.
+Reading data for secondFactor=1 (20-Nov-2018 14:33:21)
+20161003 NVDA   6334 observations (4850 with nonzero price changes and 9am-5pm)
+20161003 NVDA   6132 observations (4578 with nonzero price changes and 9am-5pm)
+20161003 NVDA   6555 observations (4866 with nonzero price changes and 9am-5pm)
+20161003 NVDA   6217 observations (4424 with nonzero price changes and 9am-5pm)
+Data read finished for NVDA 20161003. secondFactor=1. Elapsed time is 00:10.17.
+starting estimates secondFactor=1. 20-Nov-2018 14:33:32
+(nbbLex nboLex nbbExl nboExl)
+setValid (computing largest possible range)
+      nbbLex            1 (00:00:01) to        64800 (18:00:00)
+      nboLex            1 (00:00:01) to        64800 (18:00:00)
+      nbbExl            1 (00:00:01) to        64800 (18:00:00)
+      nboExl            1 (00:00:01) to        64800 (18:00:00)
+valid range:        35100 (09:45:00) to        57600 (16:00:00)
+      nbbLex       4850 total observations,       4432 in valid range.
+      nboLex       4578 total observations,       4239 in valid range.
+      nbbExl       4866 total observations,       4481 in valid range.
+      nboExl       4424 total observations,       4161 in valid range.
+eVecMeans: -0.015394  7.1997e-05   -0.014931
+buildzpzSparsePDLpar (nCPU=8)
+Starting parallel pool (parpool) using the 'local' profile ...
+connected to 8 workers.
+Within parfor, total elapsed time on all threads is 75.23 sec.
+Across the full for/parfor loop, the start to finish elapsed time is 50.33 sec.
+VAR/VECM estimates for secondFactor=1
+                dnbbLex        t   dnboLex       t    dnbbExl       t   dnboExl       t
+dnbbLexp0d0     -0.1149   -8.472   0.08155   6.116  -0.002202  -0.162    0.0602   4.652
+dnbbLexp1d0    -0.03885   -4.394   0.03492   4.017   -0.01625  -1.834   0.01486   1.761
+dnboLexp0d0     0.08444     6.18   -0.1293  -9.621    0.06083   4.442  0.007063  0.5418
+dnboLexp1d0     0.01505    1.685  -0.05592  -6.369   0.009382   1.048  -0.01237  -1.451
+dnbbExlp0d0    -0.03295   -2.438   0.04952   3.726    -0.1373  -10.13   0.05059   3.923
+dnbbExlp1d0    -0.01642   -1.848   0.01506   1.724   -0.03688  -4.143   0.02386   2.815
+dnboExlp0d0     0.07641    5.211  0.007728   0.536    0.09309   6.335   -0.1127  -8.058
+dnboExlp1d0     0.04655    4.816   0.01455   1.531    0.04891   5.048  -0.01913  -2.074
+nbbLex-nboLex  -0.01114  -0.9146    0.2082   17.38   -0.02694  -2.206     -0.18  -15.48
+nbbLex-nbbExl   -0.2033    -16.2  -0.04189  -3.395     0.2392   19.02  -0.04732  -3.952
+nbbLex-nboExl  -0.04295   -3.189   -0.1836  -13.87   -0.03205  -2.375    0.2402   18.69
+eCov
+           dnbbLex    dnboLex    dnbbExl    dnboExl
+dnbbLex  2.949e-05  1.965e-05  2.209e-05  1.938e-05
+dnboLex  1.965e-05  2.852e-05  1.926e-05  2.105e-05
+dnbbExl  2.209e-05  1.926e-05  2.962e-05  1.943e-05
+dnboExl  1.938e-05  2.105e-05  1.943e-05  2.685e-05
+eCorr
+         dnbbLex  dnboLex  dnbbExl  dnboExl
+dnbbLex        1   0.6778   0.7473   0.6888
+dnboLex   0.6778        1   0.6628   0.7606
+dnbbExl   0.7473   0.6628        1   0.6887
+dnboExl   0.6888   0.7606   0.6887        1
+Estimation finished for NVDA 20161003. secondFactor=1. Elapsed time is 01:16.48.
+starting irf computation for secondFactor=1. 20-Nov-2018 14:34:48
+irfPDLpacked (nCPU=8)
+IRF computation for shock 1. Elapsed time is 0.20 seconds.
+IRF computation for shock 2. Elapsed time is 0.20 seconds.
+IRF computation for shock 3. Elapsed time is 0.20 seconds.
+IRF computation for shock 4. Elapsed time is 0.20 seconds.
+Within parfor, total elapsed time on all threads is 0.81 seconds.
+Across the full for/parfor loop, the start to finish elapsed time is 0.29 sec.
+NVDA 20161003 irf finished. elapsed time is 0.35 seconds.
+IRF calculation finished for NVDA 20161003. secondFactor=1. Elapsed time is 0.35396 sec.
+Random walk decomposition for secondFactor=1. 20-Nov-2018 14:34:48
+Random walk decomposition for secondFactor=1
+Sum of vma coefficients:
+  nbbLex  nboLex  nbbExl  nboExl
+  0.1859  0.3113  0.2734  0.3077
+per period var_w:    0.000026 sd_w:    0.005085
+annualized var_w:  151.266469 sd_w:   12.299043
+info share bounds:
+            Min      Max
+nbbLex  0.01444  0.73063
+nboLex  0.03927  0.79917
+nbbExl  0.03208  0.76327
+nboExl  0.03402  0.81097
+Grouped info share bounds
+                   Min      Max
+nbbLex nboLex  0.06686  0.91374
+nbbExl nboExl  0.08626  0.93314
+
+MVARiLexExl03_NVDA_20161003 secondFactor=10
+Setting polynomials
+name=p0; deg=0; n=1; kOffset=0; vNames=p0d0.
+name=p1; deg=0; n=9; kOffset=1; vNames=p1d0.
+name=p2; deg=0; n=90; kOffset=10; vNames=p2d0.
+Reading data for secondFactor=10 (20-Nov-2018 14:34:49)
+20161003 NVDA   8865 observations (7553 with nonzero price changes and 9am-5pm)
+20161003 NVDA   8536 observations (7028 with nonzero price changes and 9am-5pm)
+20161003 NVDA   9482 observations (7695 with nonzero price changes and 9am-5pm)
+20161003 NVDA   9149 observations (7086 with nonzero price changes and 9am-5pm)
+Data read finished for NVDA 20161003. secondFactor=10. Elapsed time is 3.7269 sec.
+starting estimates secondFactor=10. 20-Nov-2018 14:34:52
+(nbbLex nboLex nbbExl nboExl)
+setValid (computing largest possible range)
+      nbbLex            1 (00:00:00.1) to       648000 (18:00:00.0)
+      nboLex            1 (00:00:00.1) to       648000 (18:00:00.0)
+      nbbExl            1 (00:00:00.1) to       648000 (18:00:00.0)
+      nboExl            1 (00:00:00.1) to       648000 (18:00:00.0)
+valid range:       351000 (09:45:00.0) to       576000 (16:00:00.0)
+      nbbLex       7553 total observations,       6980 in valid range.
+      nboLex       7028 total observations,       6567 in valid range.
+      nbbExl       7695 total observations,       7173 in valid range.
+      nboExl       7086 total observations,       6671 in valid range.
+eVecMeans: -0.015372  6.9066e-05   -0.014924
+buildzpzSparsePDLpar (nCPU=8)
+Within parfor, total elapsed time on all threads is 40.36 sec.
+Across the full for/parfor loop, the start to finish elapsed time is 171.87 sec.
+VAR/VECM estimates for secondFactor=10
+                  dnbbLex        t    dnboLex        t    dnbbExl       t    dnboExl       t
+dnbbLexp0d0      -0.08164   -27.61    0.01418    4.969    0.00566   1.919     0.0181   6.418
+dnbbLexp1d0      -0.02677   -16.66    0.00992    6.394   0.001871   1.167    0.01313    8.57
+dnbbLexp2d0       -0.0058   -5.616   0.004991    5.006  -0.002063  -2.003   0.004149   4.212
+dnboLexp0d0       0.02089    6.898   -0.08029   -27.45    0.02285   7.563   0.008285   2.868
+dnboLexp1d0       0.01662    10.21   -0.02322   -14.78    0.01344   8.275   0.005236   3.372
+dnboLexp2d0      0.004406    4.229  -0.006058   -6.024   0.003634   3.497  -0.001425  -1.435
+dnbbExlp0d0      0.009793    3.344    0.01694    5.991   -0.08889  -30.42    0.02524   9.035
+dnbbExlp1d0    -0.0004469  -0.2773   0.008723    5.606    -0.0277  -17.23   0.008827   5.743
+dnbbExlp2d0     -0.002935   -2.834   0.001915    1.915  -0.006526  -6.317   0.002319   2.348
+dnboExlp0d0       0.02651    8.555     0.0133    4.446     0.0193   6.242   -0.09645  -32.63
+dnboExlp1d0       0.01186    6.809   0.004539      2.7    0.01418   8.165   -0.02866  -17.26
+dnboExlp2d0      0.004723    4.186  6.462e-05  0.05931   0.005417   4.812  -0.004405  -4.093
+nbbLex-nboLex   0.0002684   0.1869    0.03642    26.28  -0.002595  -1.812   -0.03292  -24.04
+nbbLex-nbbExl     -0.0334    -22.8  -0.005909   -4.178    0.03978   27.22  -0.009368  -6.704
+nbbLex-nboExl   -0.008938   -5.664   -0.03309   -21.72  -0.006273  -3.985    0.04301   28.58
+eCov
+           dnbbLex    dnboLex    dnbbExl    dnboExl
+dnbbLex  3.979e-06  1.951e-06  2.196e-06  1.868e-06
+dnboLex  1.951e-06  3.709e-06  1.834e-06  2.038e-06
+dnbbExl  2.196e-06  1.834e-06   3.96e-06  1.857e-06
+dnboExl  1.868e-06  2.038e-06  1.857e-06   3.62e-06
+eCorr
+         dnbbLex  dnboLex  dnbbExl  dnboExl
+dnbbLex        1   0.5078   0.5532   0.4921
+dnboLex   0.5078        1   0.4784   0.5562
+dnbbExl   0.5532   0.4784        1   0.4904
+dnboExl   0.4921   0.5562   0.4904        1
+Estimation finished for NVDA 20161003. secondFactor=10. Elapsed time is 00:41.73.
+starting irf computation for secondFactor=10. 20-Nov-2018 14:35:34
+irfPDLpacked (nCPU=8)
+IRF computation for shock 3. Elapsed time is 0.41 seconds.
+IRF computation for shock 1. Elapsed time is 0.41 seconds.
+IRF computation for shock 4. Elapsed time is 0.42 seconds.
+IRF computation for shock 2. Elapsed time is 0.49 seconds.
+Within parfor, total elapsed time on all threads is 1.73 seconds.
+Across the full for/parfor loop, the start to finish elapsed time is 0.54 sec.
+NVDA 20161003 irf finished. elapsed time is 0.77 seconds.
+IRF calculation finished for NVDA 20161003. secondFactor=10. Elapsed time is 0.77312 sec.
+Random walk decomposition for secondFactor=10. 20-Nov-2018 14:35:35
+Random walk decomposition for secondFactor=10
+Sum of vma coefficients:
+  nbbLex  nboLex  nbbExl  nboExl
+  0.1813  0.2829  0.2634  0.2937
+per period var_w:    0.000003 sd_w:    0.001588
+annualized var_w:  147.549763 sd_w:   12.147006
+info share bounds:
+            Min      Max
+nbbLex  0.03082  0.57396
+nboLex  0.07052  0.65972
+nbbExl  0.06664  0.62829
+nboExl  0.07456  0.66671
+Grouped info share bounds
+                   Min      Max
+nbbLex nboLex  0.13073  0.82024
+nbbExl nboExl  0.17976  0.86927
+
+MVARiLexExl03_NVDA_20161003 secondFactor=100
+Setting polynomials
+name=p0; deg=0; n=1; kOffset=0; vNames=p0d0.
+name=p1; deg=0; n=9; kOffset=1; vNames=p1d0.
+name=p2; deg=0; n=90; kOffset=10; vNames=p2d0.
+name=p3; deg=0; n=900; kOffset=100; vNames=p3d0.
+Reading data for secondFactor=100 (20-Nov-2018 14:35:35)
+20161003 NVDA  10379 observations (9459 with nonzero price changes and 9am-5pm)
+20161003 NVDA  10066 observations (9085 with nonzero price changes and 9am-5pm)
+20161003 NVDA  11615 observations (10158 with nonzero price changes and 9am-5pm)
+20161003 NVDA  11466 observations (9782 with nonzero price changes and 9am-5pm)
+Data read finished for NVDA 20161003. secondFactor=100. Elapsed time is 3.3622 sec.
+starting estimates secondFactor=100. 20-Nov-2018 14:35:38
+(nbbLex nboLex nbbExl nboExl)
+setValid (computing largest possible range)
+      nbbLex            1 (00:00:00.01) to      6480000 (18:00:00.00)
+      nboLex            1 (00:00:00.01) to      6480000 (18:00:00.00)
+      nbbExl            1 (00:00:00.01) to      6480000 (18:00:00.00)
+      nboExl            1 (00:00:00.01) to      6480000 (18:00:00.00)
+valid range:      3510000 (09:45:00.00) to      5760000 (16:00:00.00)
+      nbbLex       9459 total observations,       8784 in valid range.
+      nboLex       9085 total observations,       8540 in valid range.
+      nbbExl      10158 total observations,       9532 in valid range.
+      nboExl       9782 total observations,       9261 in valid range.
+eVecMeans: -0.015372  7.0649e-05   -0.014924
+buildzpzSparsePDLpar (nCPU=8)
+Within parfor, total elapsed time on all threads is 94.63 sec.
+Across the full for/parfor loop, the start to finish elapsed time is 389.25 sec.
+VAR/VECM estimates for secondFactor=100
+                  dnbbLex        t     dnboLex        t     dnbbExl       t     dnboExl        t
+dnbbLexp0d0      -0.05043   -61.55     0.01876    23.15       0.026   30.72     0.02179    26.43
+dnbbLexp1d0      -0.01365    -40.8    0.002352    7.109    0.001753   5.072    0.003315    9.846
+dnbbLexp2d0     -0.003442   -19.68    0.001129    6.529   0.0001656  0.9166     0.00152    8.639
+dnbbLexp3d0    -0.0007392    -6.58   0.0005332      4.8  -0.0003208  -2.764   0.0004567     4.04
+dnboLexp0d0       0.01347    16.27    -0.06493   -79.33     0.01538   17.99     0.01944    23.34
+dnboLexp1d0      0.002894    8.487    -0.01536   -45.54    0.003012    8.55    0.001445    4.211
+dnboLexp2d0      0.002004    11.34   -0.002977   -17.04     0.00169   9.256   0.0007839    4.407
+dnboLexp3d0      0.000492     4.35  -0.0007279   -6.507   0.0004331   3.706  -0.0001072  -0.9419
+dnbbExlp0d0       0.02047    26.02     0.01286    16.53    -0.06942  -85.39     0.01307     16.5
+dnbbExlp1d0       0.00138    4.173    0.002664    8.146    -0.01703  -49.87    0.002746    8.253
+dnbbExlp2d0     5.965e-05   0.3401    0.001184    6.826   -0.003468  -19.14    0.001313    7.441
+dnbbExlp3d0    -0.0002626   -2.331   0.0003518    3.158  -0.0006945  -5.967   0.0003743    3.302
+dnboExlp0d0       0.01715    21.06     0.01622    20.15     0.01244    14.8     -0.0769   -93.88
+dnboExlp1d0      0.002107    6.043    0.001037    3.009    0.001597   4.434    -0.02031   -57.88
+dnboExlp2d0      0.001443     7.63   0.0004906    2.622     0.00169   8.649   -0.003976   -20.89
+dnboExlp3d0     0.0005508    4.494  -5.812e-05  -0.4795   0.0006233   4.922  -0.0006543   -5.305
+nbbLex-nboLex  -1.847e-05  -0.1184    0.004402    28.54  -0.0003969  -2.464   -0.004163   -26.53
+nbbLex-nbbExl   -0.003921   -24.61  -0.0005943   -3.772    0.005021    30.5   -0.001047    -6.53
+nbbLex-nboExl   -0.000966   -5.636      -0.004    -23.6  -0.0006327  -3.573    0.005446    31.58
+eCov
+           dnbbLex    dnboLex    dnbbExl    dnboExl
+dnbbLex  4.704e-07  2.055e-07  2.323e-07  1.989e-07
+dnboLex  2.055e-07    4.6e-07  1.975e-07  2.265e-07
+dnbbExl  2.323e-07  1.975e-07  5.021e-07  2.092e-07
+dnboExl  1.989e-07  2.265e-07  2.092e-07  4.763e-07
+eCorr
+         dnbbLex  dnboLex  dnbbExl  dnboExl
+dnbbLex        1   0.4418    0.478   0.4202
+dnboLex   0.4418        1   0.4109   0.4838
+dnbbExl    0.478   0.4109        1   0.4278
+dnboExl   0.4202   0.4838   0.4278        1
+Estimation finished for NVDA 20161003. secondFactor=100. Elapsed time is 01:36.92.
+starting irf computation for secondFactor=100. 20-Nov-2018 14:37:15
+irfPDLpacked (nCPU=8)
+IRF computation for shock 2. Elapsed time is 4.49 seconds.
+IRF computation for shock 4. Elapsed time is 4.52 seconds.
+IRF computation for shock 1. Elapsed time is 4.55 seconds.
+IRF computation for shock 3. Elapsed time is 4.73 seconds.
+Within parfor, total elapsed time on all threads is 18.29 seconds.
+Across the full for/parfor loop, the start to finish elapsed time is 4.78 sec.
+NVDA 20161003 irf finished. elapsed time is 5.06 seconds.
+IRF calculation finished for NVDA 20161003. secondFactor=100. Elapsed time is 5.0617 sec.
+Random walk decomposition for secondFactor=100. 20-Nov-2018 14:37:20
+Random walk decomposition for secondFactor=100
+Sum of vma coefficients:
+  nbbLex  nboLex  nbbExl  nboExl
+  0.1932  0.2627   0.235  0.2545
+per period var_w:    0.000000 sd_w:    0.000499
+annualized var_w:  145.679253 sd_w:   12.069766
+info share bounds:
+            Min      Max
+nbbLex  0.04771  0.53372
+nboLex  0.08633  0.61099
+nbbExl  0.07672  0.57431
+nboExl  0.08429  0.60677
+Grouped info share bounds
+                   Min      Max
+nbbLex nboLex  0.17259  0.79539
+nbbExl nboExl  0.20461  0.82741
+
+MVARiLexExl03_NVDA_20161003 secondFactor=1000
+Setting polynomials
+name=p0; deg=0; n=1; kOffset=0; vNames=p0d0.
+name=p1; deg=0; n=9; kOffset=1; vNames=p1d0.
+name=p2; deg=0; n=90; kOffset=10; vNames=p2d0.
+name=p3; deg=0; n=900; kOffset=100; vNames=p3d0.
+Reading data for secondFactor=1000 (20-Nov-2018 14:37:21)
+20161003 NVDA  11696 observations (11197 with nonzero price changes and 9am-5pm)
+20161003 NVDA  11293 observations (10652 with nonzero price changes and 9am-5pm)
+20161003 NVDA  13636 observations (12489 with nonzero price changes and 9am-5pm)
+20161003 NVDA  13601 observations (12282 with nonzero price changes and 9am-5pm)
+Data read finished for NVDA 20161003. secondFactor=1000. Elapsed time is 3.4262 sec.
+starting estimates secondFactor=1000. 20-Nov-2018 14:37:24
+(nbbLex nboLex nbbExl nboExl)
+setValid (computing largest possible range)
+      nbbLex            1 (00:00:00.001) to     64800000 (18:00:00.000)
+      nboLex            1 (00:00:00.001) to     64800000 (18:00:00.000)
+      nbbExl            1 (00:00:00.001) to     64800000 (18:00:00.000)
+      nboExl            1 (00:00:00.001) to     64800000 (18:00:00.000)
+valid range:     35100000 (09:45:00.000) to     57600000 (16:00:00.000)
+      nbbLex      11197 total observations,      10378 in valid range.
+      nboLex      10652 total observations,      10014 in valid range.
+      nbbExl      12489 total observations,      11714 in valid range.
+      nboExl      12282 total observations,      11637 in valid range.
+eVecMeans: -0.015372  7.0706e-05   -0.014924
+buildzpzSparsePDLpar (nCPU=8)
+Within parfor, total elapsed time on all threads is 59.47 sec.
+Across the full for/parfor loop, the start to finish elapsed time is 261.80 sec.
+VAR/VECM estimates for secondFactor=1000
+                  dnbbLex       t     dnboLex       t     dnbbExl       t     dnboExl       t
+dnbbLexp0d0      -0.06201  -269.9     0.04041     178      0.0821   342.3     0.05845   245.9
+dnbbLexp1d0      -0.00906  -102.5    0.002715   31.07    0.006332   68.58    0.004044   44.21
+dnbbLexp2d0     -0.001727  -52.02   0.0003186   9.717   0.0004145   11.96   0.0004637   13.51
+dnbbLexp3d0    -0.0003288  -22.31   9.044e-05    6.21   5.967e-05   3.877   0.0001535   10.07
+dnboLexp0d0       0.03989     171    -0.06575  -285.2      0.0572   234.8     0.06991   289.6
+dnboLexp1d0      0.002941   32.69    -0.01014  -114.1     0.00227   24.17     0.00437   46.95
+dnboLexp2d0     0.0003438   10.13   -0.001881  -56.07   0.0004265   12.03   0.0003661   10.42
+dnboLexp3d0     0.0001866   12.47  -0.0002935  -19.86   0.0001595   10.21   9.083e-05   5.869
+dnbbExlp0d0       0.03968   182.9     0.04026   187.9    -0.08727  -385.4      0.0401   178.7
+dnbbExlp1d0      0.003915    46.1    0.002462   29.34    -0.01197    -135    0.002577   29.33
+dnbbExlp2d0     0.0003633    11.1   0.0003871   11.97   -0.002147  -62.83   0.0003659   10.81
+dnbbExlp3d0     2.231e-05   1.516   0.0001182   8.133   -0.000357  -23.24    0.000136   8.934
+dnboExlp0d0       0.04123   186.9     0.04588   210.5     0.04454   193.4    -0.09982  -437.3
+dnboExlp1d0      0.002507   28.45    0.003685   42.32    0.002259   24.55    -0.01297  -142.2
+dnboExlp2d0     0.0003658   10.61   0.0002312   6.788   0.0001971   5.477   -0.002578  -72.28
+dnboExlp3d0     0.0001295   8.138   6.803e-05   4.326   0.0001457   8.769  -0.0004253  -25.83
+nbbLex-nboLex  -2.444e-05  -1.881   0.0005744   44.75  -6.751e-05  -4.977  -0.0005373  -39.98
+nbbLex-nbbExl  -0.0004651  -35.51  -7.847e-05  -6.064   0.0006782   49.59  -0.0001257  -9.274
+nbbLex-nboExl  -0.0001326  -9.302  -0.0004906  -34.84  -9.561e-05  -6.425   0.0007379   50.05
+eCov
+           dnbbLex    dnboLex    dnbbExl    dnboExl
+dnbbLex  5.092e-08  1.549e-08  1.595e-08  1.358e-08
+dnboLex  1.549e-08   4.97e-08  1.304e-08  1.664e-08
+dnbbExl  1.595e-08  1.304e-08  5.551e-08  1.496e-08
+dnboExl  1.358e-08  1.664e-08  1.496e-08  5.449e-08
+eCorr
+         dnbbLex  dnboLex  dnbbExl  dnboExl
+dnbbLex        1   0.3079   0.3001   0.2578
+dnboLex   0.3079        1   0.2482   0.3198
+dnbbExl   0.3001   0.2482        1    0.272
+dnboExl   0.2578   0.3198    0.272        1
+Estimation finished for NVDA 20161003. secondFactor=1000. Elapsed time is 01:02.26.
+starting irf computation for secondFactor=1000. 20-Nov-2018 14:38:26
+irfPDLpacked (nCPU=8)
+IRF computation for shock 1. Elapsed time is 46.10 seconds.
+IRF computation for shock 2. Elapsed time is 46.34 seconds.
+IRF computation for shock 4. Elapsed time is 47.58 seconds.
+IRF computation for shock 3. Elapsed time is 48.25 seconds.
+Within parfor, total elapsed time on all threads is 188.27 seconds.
+Across the full for/parfor loop, the start to finish elapsed time is 48.28 sec.
+NVDA 20161003 irf finished. elapsed time is 48.59 seconds.
+IRF calculation finished for NVDA 20161003. secondFactor=1000. Elapsed time is 00:48.58.
+Random walk decomposition for secondFactor=1000. 20-Nov-2018 14:39:15
+Random walk decomposition for secondFactor=1000
+Sum of vma coefficients:
+  nbbLex  nboLex  nbbExl  nboExl
+  0.2201  0.2662  0.2273  0.2459
+per period var_w:    0.000000 sd_w:    0.000150
+annualized var_w:  131.406243 sd_w:   11.463256
+info share bounds:
+            Min      Max
+nbbLex  0.09192  0.43460
+nboLex  0.13017  0.50290
+nbbExl  0.10930  0.43459
+nboExl  0.12371  0.47932
+Grouped info share bounds
+                   Min      Max
+nbbLex nboLex  0.28122  0.71767
+nbbExl nboExl  0.28233  0.71878
+
+MVARiLexExl03_NVDA_20161003 secondFactor=10000
+Setting polynomials
+name=p0; deg=0; n=1; kOffset=0; vNames=p0d0.
+name=p1; deg=0; n=9; kOffset=1; vNames=p1d0.
+name=p2; deg=0; n=90; kOffset=10; vNames=p2d0.
+name=p3; deg=0; n=900; kOffset=100; vNames=p3d0.
+Reading data for secondFactor=10000 (20-Nov-2018 14:39:15)
+20161003 NVDA  12413 observations (12256 with nonzero price changes and 9am-5pm)
+20161003 NVDA  12285 observations (12044 with nonzero price changes and 9am-5pm)
+20161003 NVDA  15732 observations (15394 with nonzero price changes and 9am-5pm)
+20161003 NVDA  16095 observations (15766 with nonzero price changes and 9am-5pm)
+Data read finished for NVDA 20161003. secondFactor=10000. Elapsed time is 3.6232 sec.
+starting estimates secondFactor=10000. 20-Nov-2018 14:39:19
+(nbbLex nboLex nbbExl nboExl)
+setValid (computing largest possible range)
+      nbbLex            1 (00:00:00.0001) to    648000000 (18:00:00.0000)
+      nboLex            1 (00:00:00.0001) to    648000000 (18:00:00.0000)
+      nbbExl            1 (00:00:00.0001) to    648000000 (18:00:00.0000)
+      nboExl            1 (00:00:00.0001) to    648000000 (18:00:00.0000)
+valid range:    351000000 (09:45:00.0000) to    576000000 (16:00:00.0000)
+      nbbLex      12256 total observations,      11340 in valid range.
+      nboLex      12044 total observations,      11300 in valid range.
+      nbbExl      15394 total observations,      14517 in valid range.
+      nboExl      15766 total observations,      15002 in valid range.
+eVecMeans: -0.015372  7.0707e-05   -0.014924
+buildzpzSparsePDLpar (nCPU=8)
+Within parfor, total elapsed time on all threads is 65.93 sec.
+Across the full for/parfor loop, the start to finish elapsed time is 285.74 sec.
+VAR/VECM estimates for secondFactor=10000
+                  dnbbLex       t     dnboLex       t     dnbbExl       t     dnboExl       t
+dnbbLexp0d0      -0.02509    -374     0.05607   836.5     0.06137   823.5     0.03857   511.5
+dnbbLexp1d0       -0.0129  -522.5    0.006065   245.8     0.01758   640.7     0.01393   501.7
+dnbbLexp2d0     -0.001338  -148.3   0.0002752   30.53       0.001   99.79   0.0005255   51.82
+dnbbLexp3d0    -0.0001837  -55.69   3.774e-05   11.45   6.246e-05   17.04   5.764e-05   15.54
+dnboLexp0d0       0.05528   823.2    -0.03277  -488.3     0.02974   398.6     0.06587   872.5
+dnboLexp1d0      0.005073   202.5    -0.01418  -566.6     0.01316   472.8     0.01729   614.2
+dnboLexp2d0     0.0003245   35.36   -0.001501  -163.7   0.0004387   43.03    0.000884   85.69
+dnboLexp3d0     3.772e-05   11.16  -0.0002009   -59.5     5.5e-05   14.65   5.357e-05    14.1
+dnbbExlp0d0       0.04312     718     0.01263   210.4    -0.03251  -487.3     0.04305   637.8
+dnbbExlp1d0      0.008894   382.3     0.01075   462.4    -0.02475  -957.5     0.01181   451.6
+dnbbExlp2d0     0.0006145   70.98   0.0004525    52.3   -0.001844  -191.7   0.0004842   49.75
+dnbbExlp3d0     5.221e-05   16.08    4.67e-05   14.39  -0.0002495  -69.17   5.456e-05   14.95
+dnboExlp0d0       0.01776   299.3     0.04648   783.8     0.03795   575.6    -0.03643  -546.1
+dnboExlp1d0       0.01092   461.3     0.01053   445.3     0.01178   447.9    -0.03034   -1141
+dnboExlp2d0     0.0004886   54.39   0.0006442   71.76   0.0003862   38.69   -0.002065  -204.5
+dnboExlp3d0     5.067e-05   14.86   3.904e-05   11.46   3.411e-05   9.008  -0.0002996  -78.17
+nbbLex-nboLex  -4.744e-06  -3.991     8.2e-05   69.02  -1.046e-05  -7.921  -8.562e-05  -64.06
+nbbLex-nbbExl  -6.243e-05  -52.23   -1.19e-05  -9.965   0.0001043   78.53  -1.998e-05  -14.87
+nbbLex-nboExl  -1.828e-05  -14.06  -6.926e-05   -53.3  -1.491e-05  -10.32   0.0001198   81.98
+eCov
+           dnbbLex    dnboLex    dnbbExl    dnboExl
+dnbbLex  5.334e-09  6.225e-10  2.768e-10  1.283e-10
+dnboLex  6.225e-10  5.326e-09  1.249e-10  3.282e-10
+dnbbExl  2.768e-10  1.249e-10  6.582e-09  1.902e-10
+dnboExl  1.283e-10  3.282e-10  1.902e-10   6.74e-09
+eCorr
+         dnbbLex  dnboLex  dnbbExl  dnboExl
+dnbbLex        1   0.1168  0.04672  0.02141
+dnboLex   0.1168        1   0.0211  0.05478
+dnbbExl  0.04672   0.0211        1  0.02855
+dnboExl  0.02141  0.05478  0.02855        1
+Estimation finished for NVDA 20161003. secondFactor=10000. Elapsed time is 01:09.28.
+starting irf computation for secondFactor=10000. 20-Nov-2018 14:40:28
+irfPDLpacked (nCPU=8)
+IRF computation for shock 4. Elapsed time is 588.15 seconds.
+IRF computation for shock 2. Elapsed time is 610.71 seconds.
+IRF computation for shock 1. Elapsed time is 633.37 seconds.
+IRF computation for shock 3. Elapsed time is 644.22 seconds.
+Within parfor, total elapsed time on all threads is 2476.45 seconds.
+Across the full for/parfor loop, the start to finish elapsed time is 644.26 sec.
+NVDA 20161003 irf finished. elapsed time is 644.70 seconds.
+IRF calculation finished for NVDA 20161003. secondFactor=10000. Elapsed time is 10:44.
+Random walk decomposition for secondFactor=10000. 20-Nov-2018 14:51:13
+Random walk decomposition for secondFactor=10000
+Sum of vma coefficients:
+  nbbLex  nboLex  nbbExl  nboExl
+  0.2921  0.3315  0.2642   0.269
+per period var_w:    0.000000 sd_w:    0.000048
+annualized var_w:  133.287986 sd_w:   11.545042
+info share bounds:
+            Min      Max
+nbbLex  0.19657  0.28835
+nboLex  0.25260  0.35263
+nbbExl  0.20106  0.24393
+nboExl  0.21321  0.26298
+Grouped info share bounds
+                   Min      Max
+nbbLex nboLex  0.50716  0.57432
+nbbExl nboExl  0.42568  0.49284
+
+MVARiLexExl03_NVDA_20161003 secondFactor=100000
+Setting polynomials
+name=p0; deg=0; n=1; kOffset=0; vNames=p0d0.
+name=p1; deg=0; n=9; kOffset=1; vNames=p1d0.
+name=p2; deg=0; n=90; kOffset=10; vNames=p2d0.
+name=p3; deg=0; n=900; kOffset=100; vNames=p3d0.
+Reading data for secondFactor=100000 (20-Nov-2018 14:51:13)
+20161003 NVDA  12579 observations (12516 with nonzero price changes and 9am-5pm)
+20161003 NVDA  12517 observations (12420 with nonzero price changes and 9am-5pm)
+20161003 NVDA  16036 observations (15952 with nonzero price changes and 9am-5pm)
+20161003 NVDA  16350 observations (16232 with nonzero price changes and 9am-5pm)
+Data read finished for NVDA 20161003. secondFactor=100000. Elapsed time is 3.7491 sec.
+starting estimates secondFactor=100000. 20-Nov-2018 14:51:17
+(nbbLex nboLex nbbExl nboExl)
+setValid (computing largest possible range)
+      nbbLex            1 (00:00:00.00001) to   6480000000 (18:00:00.00000)
+      nboLex            1 (00:00:00.00001) to   6480000000 (18:00:00.00000)
+      nbbExl            1 (00:00:00.00001) to   6480000000 (18:00:00.00000)
+      nboExl            1 (00:00:00.00001) to   6480000000 (18:00:00.00000)
+valid range:   3510000000 (09:45:00.00000) to   5760000000 (16:00:00.00000)
+      nbbLex      12516 total observations,      11558 in valid range.
+      nboLex      12420 total observations,      11618 in valid range.
+      nbbExl      15952 total observations,      15043 in valid range.
+      nboExl      16232 total observations,      15449 in valid range.
+eVecMeans: -0.015372  7.0709e-05   -0.014924
+buildzpzSparsePDLpar (nCPU=8)
+Within parfor, total elapsed time on all threads is 61.48 sec.
+Across the full for/parfor loop, the start to finish elapsed time is 289.08 sec.
+VAR/VECM estimates for secondFactor=100000
+                  dnbbLex       t     dnboLex       t     dnbbExl       t     dnboExl       t
+dnbbLexp0d0     -0.002626  -124.5    0.006237   295.8    0.005934   250.9    0.001032   43.14
+dnbbLexp1d0     -0.004208  -588.7     0.01176    1645    0.005136   640.5    0.003349   413.1
+dnbbLexp2d0     -0.001418  -567.2   0.0007689   307.5     0.00217   773.7     0.00158   557.3
+dnbbLexp3d0    -0.0001398  -153.5   3.721e-05   40.87   0.0001082   105.9   5.187e-05   50.24
+dnboLexp0d0      0.005906   280.2   -0.003883  -184.2    0.001405   59.44    0.005815   243.3
+dnboLexp1d0      0.009412    1317   -0.004894  -684.5    0.003007     375    0.006141   757.5
+dnboLexp2d0     0.0006753   266.5   -0.001601  -631.5    0.001427   501.8    0.002216     771
+dnboLexp3d0     3.951e-05   42.67  -0.0001576  -170.2   4.398e-05   42.34   9.818e-05   93.49
+dnbbExlp0d0      0.003365   179.1    0.001071   56.99   -0.006692  -317.4    0.002092   98.17
+dnbbExlp1d0      0.004847   758.2   0.0009988   156.2   -0.004086  -569.7    0.003426   472.6
+dnbbExlp2d0      0.001042   442.5     0.00105   445.8     -0.0027   -1022    0.001381   517.4
+dnbbExlp3d0     6.278e-05   71.92   4.106e-05   47.02  -0.0001955  -199.7   4.955e-05   50.05
+dnboExlp0d0       0.00158      85    0.002653   142.7    0.002421   116.1   -0.007286  -345.6
+dnboExlp1d0      0.001401   221.9    0.005129   812.1    0.003192   450.7   -0.003785  -528.6
+dnboExlp2d0        0.0011   459.3    0.001218   508.5    0.001378     513   -0.003361   -1237
+dnboExlp3d0      4.55e-05   50.26   6.599e-05   72.87   4.228e-05   41.63  -0.0002173  -211.6
+nbbLex-nboLex  -8.714e-07  -7.385   9.738e-06    82.5   -1.24e-06   -9.37  -1.049e-05  -78.38
+nbbLex-nbbExl  -7.361e-06  -62.06  -9.074e-07  -7.648   1.254e-05   94.22  -2.333e-06  -17.34
+nbbLex-nboExl  -1.799e-06  -13.96  -8.104e-06  -62.86   -1.77e-06  -12.24   1.464e-05   100.1
+eCov
+           dnbbLex    dnboLex    dnbbExl    dnboExl
+dnbbLex  5.464e-10  4.302e-12  2.281e-12  4.974e-13
+dnboLex  4.302e-12  5.467e-10  8.731e-13  2.704e-12
+dnbbExl  2.281e-12  8.731e-13  6.876e-10  4.225e-12
+dnboExl  4.974e-13  2.704e-12  4.225e-12  7.028e-10
+eCorr
+           dnbbLex   dnboLex   dnbbExl    dnboExl
+dnbbLex          1  0.007871  0.003722  0.0008026
+dnboLex   0.007871         1  0.001424   0.004363
+dnbbExl   0.003722  0.001424         1   0.006078
+dnboExl  0.0008026  0.004363  0.006078          1
+Estimation finished for NVDA 20161003. secondFactor=100000. Elapsed time is 01:05.12.
+starting irf computation for secondFactor=100000. 20-Nov-2018 14:52:22
+irfPDLpacked (nCPU=8)
+IRF computation for shock 4. Elapsed time is 600.83 seconds.
+IRF computation for shock 2. Elapsed time is 613.37 seconds.
+IRF computation for shock 1. Elapsed time is 621.05 seconds.
+IRF computation for shock 3. Elapsed time is 629.00 seconds.
+Within parfor, total elapsed time on all threads is 2464.25 seconds.
+Across the full for/parfor loop, the start to finish elapsed time is 629.03 sec.
+NVDA 20161003 irf finished. elapsed time is 629.62 seconds.
+IRF calculation finished for NVDA 20161003. secondFactor=100000. Elapsed time is 10:29.
+Random walk decomposition for secondFactor=100000. 20-Nov-2018 15:02:52
+Random walk decomposition for secondFactor=100000
+Sum of vma coefficients:
+  nbbLex  nboLex  nbbExl  nboExl
+  0.3586  0.3839  0.2926   0.292
+per period var_w:    0.000000 sd_w:    0.000017
+annualized var_w:  159.641647 sd_w:   12.634938
+info share bounds:
+            Min      Max
+nbbLex  0.25737  0.26391
+nboLex  0.29519  0.30254
+nbbExl  0.21576  0.22092
+nboExl  0.21955  0.22484
+Grouped info share bounds
+                   Min      Max
+nbbLex nboLex  0.55693  0.56203
+nbbExl nboExl  0.43797  0.44307
+   
+et = etDuration(toc(sdTimer));
+fprintf('\nEnding %s %d analysis at %s. Elapsed time is %s.\n\n',symbol, inDate, datetime, et)
+
+Ending NVDA 20161003 analysis at 20-Nov-2018 15:02:53. Elapsed time is 29:31.
+
+diary off

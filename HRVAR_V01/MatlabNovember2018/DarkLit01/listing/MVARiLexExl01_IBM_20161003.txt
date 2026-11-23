@@ -1,0 +1,70 @@
+MVARiLexExl01_IBM_20161003 starting at 09-Nov-2018 12:42:46
+
+MVARiLexExl01_IBM_20161003 secondFactor=1
+Setting polynomials
+name=p0; deg=0; n=1; kOffset=0; vNames=p0d0.
+name=p1; deg=0; n=9; kOffset=1; vNames=p1d0.
+Reading data for secondFactor=1 (09-Nov-2018 12:42:46)
+20161003 IBM   5427 observations (4558 with nonzero price changes and 9am-5pm)
+20161003 IBM   5270 observations (4443 with nonzero price changes and 9am-5pm)
+20161003 IBM   4760 observations (4029 with nonzero price changes and 9am-5pm)
+20161003 IBM   4717 observations (4092 with nonzero price changes and 9am-5pm)
+Data read finished for IBM 20161003. secondFactor=1. Elapsed time is 6.0982 sec.
+starting estimates secondFactor=1. 09-Nov-2018 12:42:52
+(nbbLex nboLex nbbExl nboExl)
+setValid (computing largest possible range)
+      nbbLex            1 (00:00:01) to        64800 (18:00:00)
+      nboLex            1 (00:00:01) to        64800 (18:00:00)
+      nbbExl            1 (00:00:01) to        64800 (18:00:00)
+      nboExl            1 (00:00:01) to        64800 (18:00:00)
+valid range:        35100 (09:45:00) to        57600 (16:00:00)
+      nbbLex       4558 total observations,       4405 in valid range.
+      nboLex       4443 total observations,       4297 in valid range.
+      nbbExl       4029 total observations,       3847 in valid range.
+      nboExl       4092 total observations,       3936 in valid range.
+eVecMeans: -0.037384  -0.0012488   -0.036546
+buildzpzSparsePDLpar (nCPU=0)
+Across the full for/parfor loop, the start to finish elapsed time is 20.89 sec.
+VAR/VECM estimates for secondFactor=1
+                 dnbbLex       t   dnboLex       t   dnbbExl       t    dnboExl        t
+dnbbLexp0d0     -0.09393   -7.78   0.09847    7.77     0.037   3.306    0.03838    3.029
+dnbbLexp1d0     -0.02924  -4.036   0.04963   6.525    0.0182    2.71     0.0171    2.249
+dnboLexp0d0      0.05385    5.05   -0.1549  -13.83   0.02377   2.404    0.02628    2.348
+dnboLexp1d0      0.02533   3.875  -0.05756  -8.387   0.00356  0.5873  -0.002932  -0.4274
+dnbbExlp0d0      0.05287   4.082   0.03151   2.317  -0.07129  -5.936    0.08432    6.203
+dnbbExlp1d0     0.001651  0.2192  0.002026  0.2562  -0.03452  -4.945    0.01819    2.302
+dnboExlp0d0      0.03876   3.654   0.06607   5.933   0.06372   6.479   -0.07512   -6.748
+dnboExlp1d0      0.01112   1.764   0.01404   2.122    0.0221   3.782   -0.02469   -3.733
+nbbLex-nboLex  -0.009315  -1.219    0.1004   12.52  -0.03376  -4.766    -0.1343   -16.75
+nbbLex-nbbExl     -0.121  -12.56  -0.02389  -2.362     0.136   15.23   0.005204   0.5147
+nbbLex-nboExl  -0.009897  -1.264  -0.08576  -10.43  0.007165  0.9869     0.1549    18.84
+eCov
+           dnbbLex    dnboLex    dnbbExl    dnboExl
+dnbbLex  6.296e-05  4.062e-05  4.258e-05  3.955e-05
+dnboLex  4.062e-05  6.938e-05  3.779e-05   4.71e-05
+dnbbExl  4.258e-05  3.779e-05  5.412e-05   3.83e-05
+dnboExl  3.955e-05   4.71e-05   3.83e-05  6.933e-05
+eCorr
+         dnbbLex  dnboLex  dnbbExl  dnboExl
+dnbbLex        1   0.6145   0.7295   0.5985
+dnboLex   0.6145        1   0.6168   0.6792
+dnbbExl   0.7295   0.6168        1   0.6253
+dnboExl   0.5985   0.6792   0.6253        1
+Estimation finished for IBM 20161003. secondFactor=1. Elapsed time is 00:21.61.
+starting irf computation for secondFactor=1. 09-Nov-2018 12:43:14
+irfPDLpacked (nCPU=0)
+IRF computation for shock 4. Elapsed time is 0.03 seconds.
+IRF computation for shock 3. Elapsed time is 0.02 seconds.
+IRF computation for shock 2. Elapsed time is 0.02 seconds.
+IRF computation for shock 1. Elapsed time is 0.02 seconds.
+Across the full for/parfor loop, the start to finish elapsed time is 0.14 sec.
+IBM 20161003 irf finished. elapsed time is 0.21 seconds.
+IRF calculation finished for IBM 20161003. secondFactor=1. Elapsed time is 0.21512 sec.
+Random walk decomposition for secondFactor=1. 09-Nov-2018 12:43:14
+Random walk decomposition for secondFactor=1
+Sum of vma coefficients:
+  nbbLex  nboLex  nbbExl  nboExl
+  0.2198  0.4277  0.2614  0.2388
+per period var_w:    0.000063 sd_w:    0.007933
+annualized var_w:  368.139458 sd_w:   19.186961
+info share bounds:

@@ -1,0 +1,7 @@
+The /sastemp directory is intended for temporary storage on the WRDS Cloud
+and should not be used to store files that persist after execution.
+
+To store large files temporarily, use the /scratch/<group> directory,
+where <group> is your primary Unix group.
+
+To determine this, type "id -gn" at the command prompt.

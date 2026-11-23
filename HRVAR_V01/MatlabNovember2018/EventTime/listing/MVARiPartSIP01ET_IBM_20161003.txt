@@ -1,0 +1,459 @@
+MVARiPartSIP01ET_IBM_20161003 starting at 09-Nov-2018 16:13:29
+Reading data for event-time analysis (09-Nov-2018 16:13:29)
+ans =
+       37986           5
+  35100.131687  157.510000  157.620000  157.510000  157.630000
+  35100.132117  157.510000  157.620000  157.510000  157.620000
+  35101.846640  157.520000  157.620000  157.510000  157.620000
+  35101.846892  157.520000  157.620000  157.520000  157.620000
+  35101.935398  157.520000  157.610000  157.520000  157.620000
+  35101.935826  157.520000  157.610000  157.520000  157.610000
+  35108.278441  157.510000  157.610000  157.520000  157.610000
+  35108.278488  157.510000  157.600000  157.520000  157.610000
+  35108.278683  157.500000  157.600000  157.520000  157.610000
+  35108.278724  157.500000  157.600000  157.510000  157.610000
+  57595.168951  157.580000  157.600000  157.580000  157.600000
+  57595.181581  157.570000  157.600000  157.580000  157.600000
+  57595.181835  157.570000  157.600000  157.570000  157.600000
+  57595.213135  157.570000  157.610000  157.570000  157.600000
+  57595.214101  157.570000  157.610000  157.570000  157.610000
+  57595.218850  157.580000  157.610000  157.570000  157.610000
+  57595.219750  157.580000  157.610000  157.580000  157.610000
+  57595.534013  157.590000  157.610000  157.580000  157.610000
+  57595.535806  157.590000  157.610000  157.590000  157.610000
+  57596.560533  157.600000  157.610000  157.590000  157.610000
+  57596.562570  157.600000  157.610000  157.600000  157.610000
+{Unrecognized property 'nObsEventTime' for class 'MVARi'.
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('MVARiPartSIP01ET', 'C:\Active\PDL\MatlabNovember2018\MVARiPartSIP01ET.m', 100)" style="font-weight:bold">MVARiPartSIP01ET</a> (<a href="matlab: opentoline('C:\Active\PDL\MatlabNovember2018\MVARiPartSIP01ET.m',100,0)">line 100</a>)
+mv.nObsEventTime = length(x);} 
+MVARiPartSIP01ET_IBM_20161003 starting at 10-Nov-2018 07:34:49
+Reading data for event-time analysis (10-Nov-2018 07:34:49)
+ans =
+       37986           5
+  35100.131687  157.510000  157.620000  157.510000  157.630000
+  35100.132117  157.510000  157.620000  157.510000  157.620000
+  35101.846640  157.520000  157.620000  157.510000  157.620000
+  35101.846892  157.520000  157.620000  157.520000  157.620000
+  35101.935398  157.520000  157.610000  157.520000  157.620000
+  35101.935826  157.520000  157.610000  157.520000  157.610000
+  35108.278441  157.510000  157.610000  157.520000  157.610000
+  35108.278488  157.510000  157.600000  157.520000  157.610000
+  35108.278683  157.500000  157.600000  157.520000  157.610000
+  35108.278724  157.500000  157.600000  157.510000  157.610000
+  57595.168951  157.580000  157.600000  157.580000  157.600000
+  57595.181581  157.570000  157.600000  157.580000  157.600000
+  57595.181835  157.570000  157.600000  157.570000  157.600000
+  57595.213135  157.570000  157.610000  157.570000  157.600000
+  57595.214101  157.570000  157.610000  157.570000  157.610000
+  57595.218850  157.580000  157.610000  157.570000  157.610000
+  57595.219750  157.580000  157.610000  157.580000  157.610000
+  57595.534013  157.590000  157.610000  157.580000  157.610000
+  57595.535806  157.590000  157.610000  157.590000  157.610000
+  57596.560533  157.600000  157.610000  157.590000  157.610000
+  57596.562570  157.600000  157.610000  157.600000  157.610000
+{Unrecognized property 'nObsEventTime' for class 'MVARi'.
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('MVARiPartSIP01ET', 'C:\Active\PDL\MatlabNovember2018\MVARiPartSIP01ET.m', 100)" style="font-weight:bold">MVARiPartSIP01ET</a> (<a href="matlab: opentoline('C:\Active\PDL\MatlabNovember2018\MVARiPartSIP01ET.m',100,0)">line 100</a>)
+mv.nObsEventTime = length(x);} 
+opentoline('C:\Active\PDL\MatlabNovember2018\MVARiPartSIP01ET.m',100,0)
+MVARiPartSIP01ET
+MVARiPartSIP01ET_IBM_20161003 starting at 10-Nov-2018 07:38:06
+Reading data for event-time analysis (10-Nov-2018 07:38:06)
+ans =
+       37986           5
+  35100.131687  157.510000  157.620000  157.510000  157.630000
+  35100.132117  157.510000  157.620000  157.510000  157.620000
+  35101.846640  157.520000  157.620000  157.510000  157.620000
+  35101.846892  157.520000  157.620000  157.520000  157.620000
+  35101.935398  157.520000  157.610000  157.520000  157.620000
+  35101.935826  157.520000  157.610000  157.520000  157.610000
+  35108.278441  157.510000  157.610000  157.520000  157.610000
+  35108.278488  157.510000  157.600000  157.520000  157.610000
+  35108.278683  157.500000  157.600000  157.520000  157.610000
+  35108.278724  157.500000  157.600000  157.510000  157.610000
+  57595.168951  157.580000  157.600000  157.580000  157.600000
+  57595.181581  157.570000  157.600000  157.580000  157.600000
+  57595.181835  157.570000  157.600000  157.570000  157.600000
+  57595.213135  157.570000  157.610000  157.570000  157.600000
+  57595.214101  157.570000  157.610000  157.570000  157.610000
+  57595.218850  157.580000  157.610000  157.570000  157.610000
+  57595.219750  157.580000  157.610000  157.580000  157.610000
+  57595.534013  157.590000  157.610000  157.580000  157.610000
+  57595.535806  157.590000  157.610000  157.590000  157.610000
+  57596.560533  157.600000  157.610000  157.590000  157.610000
+  57596.562570  157.600000  157.610000  157.600000  157.610000
+{Unrecognized property 'vecmEst' for class 'MVARi'.
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('MVARiPartSIP01ET', 'C:\Active\PDL\MatlabNovember2018\MVARiPartSIP01ET.m', 111)" style="font-weight:bold">MVARiPartSIP01ET</a> (<a href="matlab: opentoline('C:\Active\PDL\MatlabNovember2018\MVARiPartSIP01ET.m',111,0)">line 111</a>)
+mv.vecmEst = est;} 
+MVARiPartSIP01ET
+MVARiPartSIP01ET_IBM_20161003 starting at 10-Nov-2018 07:38:40
+Reading data for event-time analysis (10-Nov-2018 07:38:40)
+ans =
+       37986           5
+  35100.131687  157.510000  157.620000  157.510000  157.630000
+  35100.132117  157.510000  157.620000  157.510000  157.620000
+  35101.846640  157.520000  157.620000  157.510000  157.620000
+  35101.846892  157.520000  157.620000  157.520000  157.620000
+  35101.935398  157.520000  157.610000  157.520000  157.620000
+  35101.935826  157.520000  157.610000  157.520000  157.610000
+  35108.278441  157.510000  157.610000  157.520000  157.610000
+  35108.278488  157.510000  157.600000  157.520000  157.610000
+  35108.278683  157.500000  157.600000  157.520000  157.610000
+  35108.278724  157.500000  157.600000  157.510000  157.610000
+  57595.168951  157.580000  157.600000  157.580000  157.600000
+  57595.181581  157.570000  157.600000  157.580000  157.600000
+  57595.181835  157.570000  157.600000  157.570000  157.600000
+  57595.213135  157.570000  157.610000  157.570000  157.600000
+  57595.214101  157.570000  157.610000  157.570000  157.610000
+  57595.218850  157.580000  157.610000  157.570000  157.610000
+  57595.219750  157.580000  157.610000  157.580000  157.610000
+  57595.534013  157.590000  157.610000  157.580000  157.610000
+  57595.535806  157.590000  157.610000  157.590000  157.610000
+  57596.560533  157.600000  157.610000  157.590000  157.610000
+  57596.562570  157.600000  157.610000  157.600000  157.610000
+est = 
+  <a href="matlab:helpPopup vecm" style="font-weight:bold">vecm</a> with properties:
+
+             Description: "4-Dimensional Rank = 3 VEC(10) Model"
+             SeriesNames: "nbbPart"  "nboPart"  "nbbSIP"  ... and 1 more
+               NumSeries: 4
+                    Rank: 3
+                       P: 11
+                Constant: [4×1 vector of zeros]
+              Adjustment: [4×3 matrix]
+           Cointegration: [4×3 matrix]
+                  Impact: [4×4 matrix]
+   CointegrationConstant: [3×1 vector of zeros]
+      CointegrationTrend: [3×1 vector of zeros]
+                ShortRun: {4×4 matrices} at lags [1 2 3 ... and 7 more]
+                   Trend: [4×1 vector of zeros]
+                    Beta: [4×0 matrix]
+              Covariance: [4×4 matrix]
+se = 
+  <a href="matlab:helpPopup struct" style="font-weight:bold">struct</a> with fields:
+
+      Constant: [4×1 double]
+    Adjustment: [4×3 double]
+      ShortRun: {[4×4 double]  [4×4 double]  [4×4 double]  [4×4 double]  [4×4 double]  [4×4 double]  [4×4 double]  [4×4 double]  [4×4 double]  [4×4 double]}
+          Beta: [4×0 double]
+         Trend: [4×1 double]
+        Impact: [4×4 double]
+MVARiPartSIP01ET
+{Error: <a href="matlab: opentoline('C:\Active\PDL\MatlabNovember2018\MVARiPartSIP01ET.m',118,4)">File: MVARiPartSIP01ET.m Line: 118 Column: 4
+</a>Invalid expression. Check for missing or extra characters.} 
+opentoline('C:\Active\PDL\MatlabNovember2018\MVARiPartSIP01ET.m',118,4)
+MVARiPartSIP01ET
+MVARiPartSIP01ET_IBM_20161003 starting at 10-Nov-2018 10:37:11
+Reading data for event-time analysis (10-Nov-2018 10:37:11)
+  35100.131687  157.510000  157.620000  157.510000  157.630000
+  35100.132117  157.510000  157.620000  157.510000  157.620000
+  35101.846640  157.520000  157.620000  157.510000  157.620000
+  35101.846892  157.520000  157.620000  157.520000  157.620000
+  35101.935398  157.520000  157.610000  157.520000  157.620000
+  57595.218850  157.580000  157.610000  157.570000  157.610000
+  57595.219750  157.580000  157.610000  157.580000  157.610000
+  57595.534013  157.590000  157.610000  157.580000  157.610000
+  57595.535806  157.590000  157.610000  157.590000  157.610000
+  57596.560533  157.600000  157.610000  157.590000  157.610000
+  57596.562570  157.600000  157.610000  157.600000  157.610000
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('vecm/estimate', 'C:\Program Files\MATLAB\R2018b\toolbox\econ\econ\@vecm\estimate.m', 208)" style="font-weight:bold">vecm/estimate</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2018b\toolbox\econ\econ\@vecm\estimate.m',208,0)">line 208</a>)
+The value of 'Y' is invalid. Expected Responses to be an array with number of columns equal to 4.
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('MVARiPartSIP01ET', 'C:\Active\PDL\MatlabNovember2018\MVARiPartSIP01ET.m', 109)" style="font-weight:bold">MVARiPartSIP01ET</a> (<a href="matlab: opentoline('C:\Active\PDL\MatlabNovember2018\MVARiPartSIP01ET.m',109,0)">line 109</a>)
+[est,se] = estimate(mdl,xs,'Display','full','Model','H2','MaxIterations',1);} 
+MVARiPartSIP01ET
+MVARiPartSIP01ET_IBM_20161003 starting at 10-Nov-2018 10:40:03
+Reading data for event-time analysis (10-Nov-2018 10:40:04)
+  35100.131687  157.510000  157.620000  157.510000  157.630000
+  35100.132117  157.510000  157.620000  157.510000  157.620000
+  35101.846640  157.520000  157.620000  157.510000  157.620000
+  35101.846892  157.520000  157.620000  157.520000  157.620000
+  35101.935398  157.520000  157.610000  157.520000  157.620000
+  57595.218850  157.580000  157.610000  157.570000  157.610000
+  57595.219750  157.580000  157.610000  157.580000  157.610000
+  57595.534013  157.590000  157.610000  157.580000  157.610000
+  57595.535806  157.590000  157.610000  157.590000  157.610000
+  57596.560533  157.600000  157.610000  157.590000  157.610000
+  57596.562570  157.600000  157.610000  157.600000  157.610000
+ 
+   <strong>4-Dimensional Rank = 3 VEC(10) Model</strong>
+ 
+    Johansen Model: H2
+    Effective Sample Size: 37975
+    Number of Estimated Parameters: 172
+    LogLikelihood: 595970
+    AIC: -1.1916e+06
+    BIC: -1.19013e+06
+ 
+                            <strong>Value</strong>       <strong>StandardError</strong>    <strong>TStatistic</strong>      <strong>PValue</strong>  
+                         <strong>___________</strong>    <strong>_____________</strong>    <strong>__________</strong>    <strong>__________</strong>
+    <strong>Adjustment(1,1)  </strong>      -0.015786       0.014338         -1.101        0.27091
+    <strong>Adjustment(2,1)  </strong>        -0.0114        0.01478       -0.77133        0.44051
+    <strong>Adjustment(3,1)  </strong>        0.13019       0.010078         12.918     3.5427e-38
+    <strong>Adjustment(4,1)  </strong>        -0.5946       0.010354        -57.425              0
+    <strong>Adjustment(1,2)  </strong>       0.027824        0.01505         1.8488       0.064487
+    <strong>Adjustment(2,2)  </strong>     -0.0070689       0.015513       -0.45567        0.64862
+    <strong>Adjustment(3,2)  </strong>        0.60084       0.010578         56.801              0
+    <strong>Adjustment(4,2)  </strong>       -0.12723       0.010868        -11.707     1.1793e-31
+    <strong>Adjustment(1,3)  </strong>     -0.0043326       0.014379       -0.30132        0.76317
+    <strong>Adjustment(2,3)  </strong>       0.027822       0.014822         1.8771       0.060499
+    <strong>Adjustment(3,3)  </strong>       -0.13703       0.010106        -13.559     6.9938e-42
+    <strong>Adjustment(4,3)  </strong>         0.5974       0.010384         57.531              0
+    <strong>Impact(1,1)      </strong>      0.0077055        0.01495        0.51543        0.60626
+    <strong>Impact(2,1)      </strong>      0.0093532        0.01541        0.60696        0.54388
+    <strong>Impact(3,1)      </strong>        0.59399       0.010508          56.53              0
+    <strong>Impact(4,1)      </strong>       -0.12443       0.010796        -11.526     9.7873e-31
+    <strong>Impact(1,2)      </strong>       0.015786       0.014338          1.101        0.27091
+    <strong>Impact(2,2)      </strong>         0.0114        0.01478        0.77133        0.44051
+    <strong>Impact(3,2)      </strong>       -0.13019       0.010078        -12.918     3.5427e-38
+    <strong>Impact(4,2)      </strong>         0.5946       0.010354         57.425              0
+    <strong>Impact(1,3)      </strong>      -0.027824        0.01505        -1.8488       0.064487
+    <strong>Impact(2,3)      </strong>      0.0070689       0.015513        0.45567        0.64862
+    <strong>Impact(3,3)      </strong>       -0.60084       0.010578        -56.801              0
+    <strong>Impact(4,3)      </strong>        0.12723       0.010868         11.707     1.1793e-31
+    <strong>Impact(1,4)      </strong>      0.0043326       0.014379        0.30132        0.76317
+    <strong>Impact(2,4)      </strong>      -0.027822       0.014822        -1.8771       0.060499
+    <strong>Impact(3,4)      </strong>        0.13703       0.010106         13.559     6.9938e-42
+    <strong>Impact(4,4)      </strong>        -0.5974       0.010384        -57.531              0
+    <strong>ShortRun{1}(1,1) </strong>       -0.13391       0.015701        -8.5286     1.4815e-17
+    <strong>ShortRun{1}(2,1) </strong>        0.14199       0.016184         8.7731     1.7383e-18
+    <strong>ShortRun{1}(3,1) </strong>      -0.012963       0.011036        -1.1746        0.24014
+    <strong>ShortRun{1}(4,1) </strong>        0.12784       0.011339         11.274     1.7573e-29
+    <strong>ShortRun{1}(1,2) </strong>        0.12675       0.015098         8.3948     4.6687e-17
+    <strong>ShortRun{1}(2,2) </strong>       -0.12366       0.015563        -7.9455     1.9338e-15
+    <strong>ShortRun{1}(3,2) </strong>        0.12034       0.010612          11.34     8.3514e-30
+    <strong>ShortRun{1}(4,2) </strong>      -0.044103       0.010904        -4.0448     5.2372e-05
+    <strong>ShortRun{1}(1,3) </strong>       -0.13223       0.014675        -9.0104     2.0532e-19
+    <strong>ShortRun{1}(2,3) </strong>       0.043129       0.015127         2.8511       0.004357
+    <strong>ShortRun{1}(3,3) </strong>      -0.044536       0.010315        -4.3177     1.5766e-05
+    <strong>ShortRun{1}(4,3) </strong>     -0.0040119       0.010598       -0.37854        0.70503
+    <strong>ShortRun{1}(1,4) </strong>       0.066894       0.014034         4.7667      1.873e-06
+    <strong>ShortRun{1}(2,4) </strong>      -0.089649       0.014466        -6.1973     5.7458e-10
+    <strong>ShortRun{1}(3,4) </strong>      -0.014587      0.0098638        -1.4788        0.13919
+    <strong>ShortRun{1}(4,4) </strong>      -0.018061       0.010135        -1.7821       0.074736
+    <strong>ShortRun{2}(1,1) </strong>       -0.17815       0.015108        -11.792     4.2815e-32
+    <strong>ShortRun{2}(2,1) </strong>        0.15376       0.015573         9.8736     5.4192e-23
+    <strong>ShortRun{2}(3,1) </strong>       0.023596       0.010619         2.2222       0.026272
+    <strong>ShortRun{2}(4,1) </strong>       0.038253        0.01091         3.5062     0.00045459
+    <strong>ShortRun{2}(1,2) </strong>        0.12604       0.014506         8.6885     3.6711e-18
+    <strong>ShortRun{2}(2,2) </strong>       -0.15651       0.014953        -10.467     1.2244e-25
+    <strong>ShortRun{2}(3,2) </strong>       0.040188       0.010196         3.9416     8.0945e-05
+    <strong>ShortRun{2}(4,2) </strong>     -0.0064279       0.010476       -0.61359        0.53949
+    <strong>ShortRun{2}(1,3) </strong>     -0.0047727        0.01399       -0.34115        0.73299
+    <strong>ShortRun{2}(2,3) </strong>       0.011761       0.014421        0.81552        0.41478
+    <strong>ShortRun{2}(3,3) </strong>      -0.055341      0.0098331         -5.628     1.8234e-08
+    <strong>ShortRun{2}(4,3) </strong>       0.010513       0.010103         1.0405         0.2981
+    <strong>ShortRun{2}(1,4) </strong>         0.0347       0.013383         2.5927      0.0095212
+    <strong>ShortRun{2}(2,4) </strong>       0.018779       0.013796         1.3613        0.17343
+    <strong>ShortRun{2}(3,4) </strong>      0.0020564      0.0094068        0.21861        0.82696
+    <strong>ShortRun{2}(4,4) </strong>      -0.043924      0.0096651        -4.5446     5.5046e-06
+    <strong>ShortRun{3}(1,1) </strong>      -0.055196       0.014529        -3.7989     0.00014532
+    <strong>ShortRun{3}(2,1) </strong>        0.10388       0.014977         6.9361     4.0306e-12
+    <strong>ShortRun{3}(3,1) </strong>      -0.017779       0.010212         -1.741        0.08169
+    <strong>ShortRun{3}(4,1) </strong>        0.03444       0.010493         3.2823      0.0010296
+    <strong>ShortRun{3}(1,2) </strong>       0.064414       0.013894          4.636     3.5526e-06
+    <strong>ShortRun{3}(2,2) </strong>      -0.068844       0.014322        -4.8068     1.5338e-06
+    <strong>ShortRun{3}(3,2) </strong>       0.030274      0.0097658            3.1       0.001935
+    <strong>ShortRun{3}(4,2) </strong>      -0.048227       0.010034        -4.8063     1.5377e-06
+    <strong>ShortRun{3}(1,3) </strong>      -0.019722       0.013227        -1.4911        0.13595
+    <strong>ShortRun{3}(2,3) </strong>       0.020862       0.013635         1.5301          0.126
+    <strong>ShortRun{3}(3,3) </strong>      -0.051696      0.0092969        -5.5605     2.6902e-08
+    <strong>ShortRun{3}(4,3) </strong>     -0.0077688      0.0095523       -0.81329        0.41605
+    <strong>ShortRun{3}(1,4) </strong>       0.060502       0.012651         4.7825     1.7313e-06
+    <strong>ShortRun{3}(2,4) </strong>      0.0036009        0.01304        0.27614        0.78244
+    <strong>ShortRun{3}(3,4) </strong>     -0.0070878      0.0088918       -0.79712        0.42538
+    <strong>ShortRun{3}(4,4) </strong>      -0.044166       0.009136        -4.8342     1.3365e-06
+    <strong>ShortRun{4}(1,1) </strong>       0.050268       0.013775         3.6493     0.00026298
+    <strong>ShortRun{4}(2,1) </strong>        0.11786       0.014199         8.3003     1.0382e-16
+    <strong>ShortRun{4}(3,1) </strong>       0.015764      0.0096818         1.6282        0.10348
+    <strong>ShortRun{4}(4,1) </strong>       0.022664      0.0099477         2.2783       0.022707
+    <strong>ShortRun{4}(1,2) </strong>       0.066148       0.013174          5.021     5.1395e-07
+    <strong>ShortRun{4}(2,2) </strong>      0.0074865        0.01358         0.5513        0.58143
+    <strong>ShortRun{4}(3,2) </strong>       0.017638      0.0092597         1.9048       0.056803
+    <strong>ShortRun{4}(4,2) </strong>        0.01719       0.009514         1.8068       0.070799
+    <strong>ShortRun{4}(1,3) </strong>      -0.012814       0.012421        -1.0316        0.30224
+    <strong>ShortRun{4}(2,3) </strong>        0.02065       0.012804         1.6128        0.10679
+    <strong>ShortRun{4}(3,3) </strong>      0.0092446      0.0087305         1.0589        0.28965
+    <strong>ShortRun{4}(4,3) </strong>      0.0069536      0.0089703        0.77517        0.43824
+    <strong>ShortRun{4}(1,4) </strong>       0.037493       0.011906          3.149      0.0016383
+    <strong>ShortRun{4}(2,4) </strong>      0.0075883       0.012273         0.6183        0.53638
+    <strong>ShortRun{4}(3,4) </strong>      0.0089378      0.0083685          1.068        0.28551
+    <strong>ShortRun{4}(4,4) </strong>    -0.00090944      0.0085984       -0.10577        0.91577
+    <strong>ShortRun{5}(1,1) </strong>      -0.025505       0.013008        -1.9607        0.04991
+    <strong>ShortRun{5}(2,1) </strong>       0.053161       0.013408         3.9648     7.3449e-05
+    <strong>ShortRun{5}(3,1) </strong>       0.026025      0.0091426         2.8466      0.0044187
+    <strong>ShortRun{5}(4,1) </strong>       0.025547      0.0093937         2.7196      0.0065357
+    <strong>ShortRun{5}(1,2) </strong>      0.0084736       0.012402        0.68325        0.49445
+    <strong>ShortRun{5}(2,2) </strong>      -0.040247       0.012784        -3.1482      0.0016426
+    <strong>ShortRun{5}(3,2) </strong>       0.010981      0.0087169         1.2597        0.20777
+    <strong>ShortRun{5}(4,2) </strong>       0.033382      0.0089564         3.7272     0.00019362
+    <strong>ShortRun{5}(1,3) </strong>      -0.041159       0.011501        -3.5788     0.00034519
+    <strong>ShortRun{5}(2,3) </strong>       0.018669       0.011855         1.5748        0.11531
+    <strong>ShortRun{5}(3,3) </strong>      -0.026344      0.0080835        -3.2589      0.0011183
+    <strong>ShortRun{5}(4,3) </strong>     -0.0092332      0.0083055        -1.1117        0.26627
+    <strong>ShortRun{5}(1,4) </strong>       0.036284          0.011         3.2986     0.00097178
+    <strong>ShortRun{5}(2,4) </strong>      -0.022068       0.011339        -1.9463       0.051616
+    <strong>ShortRun{5}(3,4) </strong>      0.0044476      0.0077314        0.57527        0.56511
+    <strong>ShortRun{5}(4,4) </strong>      -0.024122      0.0079438        -3.0366      0.0023929
+    <strong>ShortRun{6}(1,1) </strong>      -0.018389        0.01216        -1.5123        0.13046
+    <strong>ShortRun{6}(2,1) </strong>       0.062865       0.012534         5.0154      5.291e-07
+    <strong>ShortRun{6}(3,1) </strong>       0.023705      0.0085467         2.7736      0.0055448
+    <strong>ShortRun{6}(4,1) </strong>      0.0093683      0.0087814         1.0668        0.28605
+    <strong>ShortRun{6}(1,2) </strong>       0.029846       0.011588         2.5756       0.010006
+    <strong>ShortRun{6}(2,2) </strong>      -0.058369       0.011945        -4.8866      1.026e-06
+    <strong>ShortRun{6}(3,2) </strong>     -0.0022593      0.0081447       -0.27739        0.78148
+    <strong>ShortRun{6}(4,2) </strong>       0.021019      0.0083684         2.5118       0.012013
+    <strong>ShortRun{6}(1,3) </strong>      0.0027804       0.010504        0.26469        0.79125
+    <strong>ShortRun{6}(2,3) </strong>       0.029868       0.010828         2.7585      0.0058061
+    <strong>ShortRun{6}(3,3) </strong>      -0.017879       0.007383        -2.4217       0.015448
+    <strong>ShortRun{6}(4,3) </strong>       0.003259      0.0075858        0.42962        0.66747
+    <strong>ShortRun{6}(1,4) </strong>       0.036348      0.0099948         3.6367     0.00027614
+    <strong>ShortRun{6}(2,4) </strong>       0.013416       0.010303         1.3022        0.19284
+    <strong>ShortRun{6}(3,4) </strong>        0.02121       0.007025         3.0193      0.0025339
+    <strong>ShortRun{6}(4,4) </strong>     -0.0021745       0.007218       -0.30126        0.76322
+    <strong>ShortRun{7}(1,1) </strong>      -0.035022       0.011327         -3.092      0.0019884
+    <strong>ShortRun{7}(2,1) </strong>       0.028483       0.011676         2.4395       0.014709
+    <strong>ShortRun{7}(3,1) </strong>      0.0055261      0.0079613        0.69412        0.48761
+    <strong>ShortRun{7}(4,1) </strong>       0.016044        0.00818         1.9614       0.049833
+    <strong>ShortRun{7}(1,2) </strong>      0.0052891       0.010732        0.49285        0.62212
+    <strong>ShortRun{7}(2,2) </strong>      -0.047527       0.011062        -4.2964     1.7359e-05
+    <strong>ShortRun{7}(3,2) </strong>     -0.0021571      0.0075429       -0.28598        0.77489
+    <strong>ShortRun{7}(4,2) </strong>      -0.010906      0.0077501        -1.4072        0.15938
+    <strong>ShortRun{7}(1,3) </strong>      0.0013913       0.009434        0.14748        0.88275
+    <strong>ShortRun{7}(2,3) </strong>       0.030462      0.0097245         3.1325      0.0017333
+    <strong>ShortRun{7}(3,3) </strong>       -0.01794      0.0066308        -2.7056      0.0068187
+    <strong>ShortRun{7}(4,3) </strong>     -0.0038398      0.0068129        -0.5636        0.57302
+    <strong>ShortRun{7}(1,4) </strong>       0.029484       0.008912         3.3084     0.00093844
+    <strong>ShortRun{7}(2,4) </strong>      0.0042414      0.0091864         0.4617        0.64429
+    <strong>ShortRun{7}(3,4) </strong>      0.0048601      0.0062639        0.77589        0.43782
+    <strong>ShortRun{7}(4,4) </strong>      -0.011511       0.006436        -1.7886       0.073679
+    <strong>ShortRun{8}(1,1) </strong>       0.029957       0.010228          2.929      0.0034007
+    <strong>ShortRun{8}(2,1) </strong>       0.026388       0.010543         2.5029       0.012318
+    <strong>ShortRun{8}(3,1) </strong>       0.010004      0.0071888         1.3916        0.16403
+    <strong>ShortRun{8}(4,1) </strong>        0.01042      0.0073862         1.4107        0.15832
+    <strong>ShortRun{8}(1,2) </strong>      0.0069633      0.0096661        0.72038        0.47129
+    <strong>ShortRun{8}(2,2) </strong>        -0.0124      0.0099638        -1.2445        0.21331
+    <strong>ShortRun{8}(3,2) </strong>     -0.0057245       0.006794       -0.84259        0.39946
+    <strong>ShortRun{8}(4,2) </strong>      0.0020568      0.0069806        0.29464        0.76827
+    <strong>ShortRun{8}(1,3) </strong>     -0.0073421      0.0083398       -0.88036        0.37866
+    <strong>ShortRun{8}(2,3) </strong>       0.026841      0.0085967         3.1222      0.0017949
+    <strong>ShortRun{8}(3,3) </strong>        0.01526      0.0058618         2.6033      0.0092337
+    <strong>ShortRun{8}(4,3) </strong>       0.015287      0.0060228         2.5381       0.011145
+    <strong>ShortRun{8}(1,4) </strong>       0.020119      0.0079288         2.5375       0.011165
+    <strong>ShortRun{8}(2,4) </strong>      -0.022406       0.008173        -2.7415      0.0061162
+    <strong>ShortRun{8}(3,4) </strong>       0.015861      0.0055729          2.846      0.0044266
+    <strong>ShortRun{8}(4,4) </strong>       0.027458       0.005726         4.7954     1.6233e-06
+    <strong>ShortRun{9}(1,1) </strong>      -0.011992       0.008868        -1.3522         0.1763
+    <strong>ShortRun{9}(2,1) </strong>      0.0015695      0.0091411         0.1717        0.86367
+    <strong>ShortRun{9}(3,1) </strong>      0.0047421       0.006233         0.7608        0.44678
+    <strong>ShortRun{9}(4,1) </strong>       0.010184      0.0064042         1.5901        0.11181
+    <strong>ShortRun{9}(1,2) </strong>     -0.0042993      0.0084415       -0.50931        0.61054
+    <strong>ShortRun{9}(2,2) </strong>      -0.014252      0.0087014        -1.6379        0.10144
+    <strong>ShortRun{9}(3,2) </strong>      0.0089372      0.0059332         1.5063        0.13199
+    <strong>ShortRun{9}(4,2) </strong>      -0.014592      0.0060962        -2.3936       0.016682
+    <strong>ShortRun{9}(1,3) </strong>      -0.005156      0.0067896        -0.7594        0.44761
+    <strong>ShortRun{9}(2,3) </strong>       0.032739      0.0069987         4.6779     2.8987e-06
+    <strong>ShortRun{9}(3,3) </strong>     -0.0031366      0.0047722       -0.65727        0.51101
+    <strong>ShortRun{9}(4,3) </strong>      0.0021981      0.0049032        0.44829        0.65394
+    <strong>ShortRun{9}(1,4) </strong>       0.012328      0.0065297          1.888       0.059023
+    <strong>ShortRun{9}(2,4) </strong>      -0.042092      0.0067308        -6.2537     4.0094e-10
+    <strong>ShortRun{9}(3,4) </strong>      0.0012508      0.0045895        0.27253        0.78522
+    <strong>ShortRun{9}(4,4) </strong>     -0.0043699      0.0047156       -0.92669        0.35409
+    <strong>ShortRun{10}(1,1)</strong>       -0.01452      0.0074308         -1.954       0.050698
+    <strong>ShortRun{10}(2,1)</strong>     0.00037966      0.0076596       0.049566        0.96047
+    <strong>ShortRun{10}(3,1)</strong>      0.0069576      0.0052229         1.3321        0.18281
+    <strong>ShortRun{10}(4,1)</strong>      0.0012467      0.0053663        0.23232        0.81629
+    <strong>ShortRun{10}(1,2)</strong>       0.010755      0.0071566         1.5028        0.13288
+    <strong>ShortRun{10}(2,2)</strong>      -0.013099       0.007377        -1.7756       0.075793
+    <strong>ShortRun{10}(3,2)</strong>     -0.0023272      0.0050302       -0.46266        0.64361
+    <strong>ShortRun{10}(4,2)</strong>     0.00033464      0.0051683       0.064748        0.94837
+    <strong>ShortRun{10}(1,3)</strong>    -0.00078474        0.00511       -0.15357        0.87795
+    <strong>ShortRun{10}(2,3)</strong>       0.011869      0.0052674         2.2533       0.024243
+    <strong>ShortRun{10}(3,3)</strong>     -0.0018466      0.0035917       -0.51415        0.60715
+    <strong>ShortRun{10}(4,3)</strong>       0.008474      0.0036903         2.2963       0.021659
+    <strong>ShortRun{10}(1,4)</strong>      0.0091398      0.0050532         1.8087       0.070496
+    <strong>ShortRun{10}(2,4)</strong>      -0.014135      0.0052088        -2.7136      0.0066556
+    <strong>ShortRun{10}(3,4)</strong>      0.0060223      0.0035517         1.6956       0.089962
+    <strong>ShortRun{10}(4,4)</strong>      -0.015111      0.0036493        -4.1408     3.4611e-05
+ 
+<strong>   Cointegration Matrix (User-Specified):</strong>
+     1     1     1
+    -1     0     0
+     0    -1     0
+     0     0    -1
+ 
+<strong>   Innovations Covariance Matrix:</strong>
+   1.0e-04 *
+    0.3194    0.0333    0.0121   -0.0210
+    0.0333    0.3394   -0.0246    0.0091
+    0.0121   -0.0246    0.1578   -0.0038
+   -0.0210    0.0091   -0.0038    0.1666
+ 
+<strong>   Innovations Correlation Matrix:</strong>
+    1.0000    0.1010    0.0538   -0.0910
+    0.1010    1.0000   -0.1065    0.0382
+    0.0538   -0.1065    1.0000   -0.0233
+   -0.0910    0.0382   -0.0233    1.0000
+Random walk decomposition in event time
+Sum of vma coefficients:
+  nbbPart  nboPart    nbbSIP    nboSIP
+   0.6133   0.7461  -0.02737  -0.03658
+per period var_w:    0.000034 sd_w:    0.005838
+info share bounds:
+             Min      Max
+nbbPart  0.34423  0.45519
+nboPart  0.53990  0.65285
+nbbSIP   0.00033  0.01031
+nboSIP   0.00007  0.00665
+Grouped info share bounds
+                     Min      Max
+nbbPart nboPart  0.98715  0.99955
+nbbSIP nboSIP    0.00045  0.01285
+
+Ending IBM 20161003 analysis at 10-Nov-2018 10:40:20. Elapsed time is 00:16.86.
+
+MVARiPartSIP01ET_IBM_20161003 starting at 10-Nov-2018 07:40:53
+Reading data for event-time analysis (10-Nov-2018 07:40:53)
+ans =
+       37986           5
+  35100.131687  157.510000  157.620000  157.510000  157.630000
+  35100.132117  157.510000  157.620000  157.510000  157.620000
+  35101.846640  157.520000  157.620000  157.510000  157.620000
+  35101.846892  157.520000  157.620000  157.520000  157.620000
+  35101.935398  157.520000  157.610000  157.520000  157.620000
+  35101.935826  157.520000  157.610000  157.520000  157.610000
+  35108.278441  157.510000  157.610000  157.520000  157.610000
+  35108.278488  157.510000  157.600000  157.520000  157.610000
+  35108.278683  157.500000  157.600000  157.520000  157.610000
+  35108.278724  157.500000  157.600000  157.510000  157.610000
+  57595.168951  157.580000  157.600000  157.580000  157.600000
+  57595.181581  157.570000  157.600000  157.580000  157.600000
+  57595.181835  157.570000  157.600000  157.570000  157.600000
+  57595.213135  157.570000  157.610000  157.570000  157.600000
+  57595.214101  157.570000  157.610000  157.570000  157.610000
+  57595.218850  157.580000  157.610000  157.570000  157.610000
+  57595.219750  157.580000  157.610000  157.580000  157.610000
+  57595.534013  157.590000  157.610000  157.580000  157.610000
+  57595.535806  157.590000  157.610000  157.590000  157.610000
+  57596.560533  157.600000  157.610000  157.590000  157.610000
+  57596.562570  157.600000  157.610000  157.600000  157.610000
+est = 
+  <a href="matlab:helpPopup vecm" style="font-weight:bold">vecm</a> with properties:
+
+             Description: "4-Dimensional Rank = 3 VEC(10) Model"
+             SeriesNames: "nbbPart"  "nboPart"  "nbbSIP"  ... and 1 more
+               NumSeries: 4
+                    Rank: 3
+                       P: 11
+                Constant: [4×1 vector of zeros]
+              Adjustment: [4×3 matrix]
+           Cointegration: [4×3 matrix]
+                  Impact: [4×4 matrix]
+   CointegrationConstant: [3×1 vector of zeros]
+      CointegrationTrend: [3×1 vector of zeros]
+                ShortRun: {4×4 matrices} at lags [1 2 3 ... and 7 more]
+                   Trend: [4×1 vector of zeros]
+                    Beta: [4×0 matrix]
+              Covariance: [4×4 matrix]
+{No appropriate method, property, or field 'copy' for class 'vecm'.
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('MVARiPartSIP01ET', 'C:\Active\PDL\MatlabNovember2018\MVARiPartSIP01ET.m', 112)" style="font-weight:bold">MVARiPartSIP01ET</a> (<a href="matlab: opentoline('C:\Active\PDL\MatlabNovember2018\MVARiPartSIP01ET.m',112,0)">line 112</a>)
+e2=est.copy} 
+helpPopup vecm
