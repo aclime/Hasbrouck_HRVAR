@@ -221,3 +221,7 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Batch job outputs (derived from proprietary TAQ data)
+replication/**/output/
+logs/
